@@ -1,3 +1,21 @@
 *{
-    
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    text-color:#FFFFFF;
+    bottom-color:#651563;
+    box-name: #D9D9D9;
+    inst-name: #000000;
+}
+
+body{
+    background-image: url('../img/fundo-site1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    overflow-x: hidden;
+    height: 60vh;
+    margin: 0 0;
 }
