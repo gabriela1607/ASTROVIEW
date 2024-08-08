@@ -4,7 +4,6 @@
 }
 
 :root{
-    text-color:#FFFFFF;
     bottom-color:#651563;
     box-name: #D9D9D9;
     inst-name: #000000;
@@ -16,17 +15,82 @@ body{
     background-position: center;
     background-attachment: scroll;
     overflow-x: hidden;
-    height: 60vh;
-    margin: 0 0;
+    height: 139.44vh;
+    color: #FFFFFF;
 
-    padding: 1.75rem 1rem;
+    padding: 2.5rem 5.125rem
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
-    max-width: 1110px;
-    margin-inline: 90px;
+    font-size: 26px;
+    padding: 1.5rem 2.125rem;
+}
+
+header img {
+    width: 4.36rem;
+    height: auto;    
+}
+
+header .logo {
+    width: 2.5rem;
+    height: 2.5rem; 
+    margin-right: 0.625rem; 
+}
+
+
+header nav {
+    width: 71.66rem;
+    height: auto;
+}
+
+nav.pags a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+.inicio h1 {
+    font-size: 5.9375rem;
+    margin-top: 22.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.inicio p {
+    font-size: 1.875rem;
+    line-height: 1.5;
+    margin-top: 0.125rem;
+    margin-bottom: 1rem;
+}
+
+.inicio h5 {
+    font-size: 1.125rem;
+    margin-bottom: 0.625rem; 
+}
+
+.inicio img {
+    height: 1.875rem;
+    text-decoration: none;
+}
+
+.redes_sociais {
+    margin-top: 22.5rem;
+}
+
+.info h2{ 
+    margin-top: 15.56rem;
+    font-size: 3.375rem;   
+}
+
+.info p {
+    margin-top: 4.3125rem;
+    font-size: 2.9rem;
+    padding-left: 1.1rem;
+}
+
+.texto{
+    justify-content: space-around;
 }
