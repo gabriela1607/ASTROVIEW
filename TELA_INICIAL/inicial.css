@@ -4,9 +4,10 @@
 }
 
 :root{
-    bottom-color:#651563;
-    box-name: #D9D9D9;
-    inst-name: #000000;
+    --botton-color:#651563;
+    --box-name: #D9D9D9;
+    --inst-name: #000000;
+    --color-text: #ffff;
 }
 
 body{
@@ -15,18 +16,20 @@ body{
     background-position: center;
     background-attachment: scroll;
     overflow-x: hidden;
-    height: 139.44vh;
-    color: #FFFFFF;
+    height: 139.44svh;
+    color: var(--color-text);
 
-    padding: 2.5rem 5.125rem
+    
 }
+
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 26px;
-    padding: 1.5rem 2.125rem;
+    padding: 4rem 7.25rem;
 }
 
 header img {
@@ -40,21 +43,24 @@ header .logo {
     margin-right: 0.625rem; 
 }
 
-
 header nav {
     width: 71.66rem;
     height: auto;
 }
 
-nav.pags a {
+nav a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--color-text);
 }
 
 
 
+.inicio {
+    padding: 2.5rem 5.125rem;
+}
+
 .inicio h1 {
-    font-size: 5.9375rem;
+    font-size: 5.937rem;
     margin-top: 22.5rem;
     margin-bottom: 0.625rem;
 }
@@ -68,11 +74,10 @@ nav.pags a {
 
 .inicio h5 {
     font-size: 1.125rem;
-    margin-bottom: 0.625rem; 
 }
 
 .inicio img {
-    height: 1.875rem;
+    height: 1.87rem;
     text-decoration: none;
 }
 
@@ -80,17 +85,98 @@ nav.pags a {
     margin-top: 22.5rem;
 }
 
+.info {
+    padding-left: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.4rem 6rem;
+}
+
 .info h2{ 
-    margin-top: 15.56rem;
+    margin-bottom: 0.625rem; 
+    margin-top: 4.56rem;
     font-size: 3.375rem;   
 }
 
 .info p {
-    margin-top: 4.3125rem;
+    margin-bottom: 2.25rem;
     font-size: 2.9rem;
-    padding-left: 1.1rem;
+    padding: 1.1rem;
 }
 
-.texto{
-    justify-content: space-around;
+.info button {
+    width: 18.5rem;
+    height: 4.56rem;
+    padding: 1.1rem;
+
+    background-color: var(--botton-color);
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1.5rem;
+
+    color: var(--color-text); 
+    display: inline-block;
+    font-size: 1.9rem;
+    margin: 0;
+    cursor: pointer;
+}
+
+.info button:hover {
+    background-color: #D7B0E8;
+    color: #51114F;
+}
+
+.info img {
+    width: 26.7rem;
+    height: 38.7rem;
+
+    max-width: 100%;
+    border-radius: 2.9rem;
+    margin-top: -2.3rem;
+}
+
+
+
+.contato {
+    padding: 12.5rem;
+}
+
+.contato img {
+    width: 15.8rem;
+    height: 17.125rem;
+
+    border-radius: 5rem;
+    margin-top: 9rem;
+}
+
+.contato h3{ 
+    margin-bottom: 4.75rem; 
+    margin-top: 9rem;
+    font-size: 1.75rem;   
+}
+
+.contato p {
+    font-size: 1.75rem;
+}
+ 
+.fileira1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.fileira2{
+    display: flex;
+    justify-content: space-between;
+    padding: 15.8rem ;
+}
+
+.dados {
+    margin: 1rem;
+    display: flex;
+
+    margin: 0%;
+    background: rgba(0, 0, 0, 0.5);
 }
