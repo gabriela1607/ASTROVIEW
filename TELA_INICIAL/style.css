@@ -53,6 +53,18 @@ nav a {
     color: var(--color-text);
 }
 
+nav.pags a {
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+nav.pags a:hover {
+    text-decoration: underline;
+}
+
 
 
 .inicio {
