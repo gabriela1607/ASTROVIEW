@@ -4,8 +4,9 @@
 }
 
 :root{
+    --barra-color: #5F0087;
     --botton-color:#651563;
-    --box-name: #D9D9D9;
+    --box-name: rgba(217, 217, 217, 0.123);
     --inst-name: #000000;
     --color-text: #ffff;
 }
@@ -18,8 +19,6 @@ body{
     overflow-x: hidden;
     height: 139.44svh;
     color: var(--color-text);
-
-    
 }
 
 
@@ -29,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 26px;
-    padding: 4rem 7.25rem;
+    padding: 2rem 6.25rem;
 }
 
 header img {
@@ -48,6 +47,7 @@ header nav {
     height: auto;
 }
 
+
 nav a {
     text-decoration: none;
     color: var(--color-text);
@@ -56,8 +56,8 @@ nav a {
 nav.pags a {
     color: white;
     text-decoration: none;
-    margin-left: 40px;
-    font-size: 18px;
+    margin-left: 15%;
+    font-size: 1.625rem;
     font-weight: 300;
 }
 
@@ -72,20 +72,20 @@ nav.pags a:hover {
 }
 
 .inicio h1 {
-    font-size: 5.937rem;
-    margin-top: 22.5rem;
+    font-size: 6rem;
+    margin-top: 8rem;
     margin-bottom: 0.625rem;
 }
 
 .inicio p {
     font-size: 1.875rem;
-    line-height: 1.5;
+    line-height: 1.9;
     margin-top: 0.125rem;
-    margin-bottom: 1rem;
 }
 
 .inicio h5 {
-    font-size: 1.125rem;
+    font-size: 2.2rem;
+    margin-top: -8rem;
 }
 
 .inicio img {
@@ -97,22 +97,26 @@ nav.pags a:hover {
     margin-top: 22.5rem;
 }
 
+
+
 .info {
     padding-left: 1.1rem;
     display: flex;
     justify-content: space-between;
     padding: 2.4rem 6rem;
+    
+    margin-top: 8rem;
 }
 
 .info h2{ 
     margin-bottom: 0.625rem; 
-    margin-top: 4.56rem;
-    font-size: 3.375rem;   
+    margin-top: 3.4rem;
+    font-size: 5.375rem;   
 }
 
 .info p {
     margin-bottom: 2.25rem;
-    font-size: 2.9rem;
+    font-size: 2.2rem;
     padding: 1.1rem;
 }
 
@@ -150,11 +154,11 @@ nav.pags a:hover {
 
 
 
-.contato {
+.Contato {
     padding: 12.5rem;
 }
 
-.contato img {
+.Contato img {
     width: 15.8rem;
     height: 17.125rem;
 
@@ -162,13 +166,13 @@ nav.pags a:hover {
     margin-top: 9rem;
 }
 
-.contato h3{ 
+.Contato h3{ 
     margin-bottom: 4.75rem; 
     margin-top: 9rem;
     font-size: 1.75rem;   
 }
 
-.contato p {
+.Contato p {
     font-size: 1.75rem;
 }
  
@@ -185,10 +189,89 @@ nav.pags a:hover {
     padding: 15.8rem ;
 }
 
-.dados {
-    margin: 1rem;
-    display: flex;
 
-    margin: 0%;
-    background: rgba(0, 0, 0, 0.5);
+.dados h3{ 
+    margin-bottom: 4.75rem; 
+    font-size: 1.75rem;   
+}
+
+.dados p {
+    margin-top: 4.5rem;
+    font-size: 1.75rem;
+    color: var(--inst-name);
+}
+ 
+.dados {
+    display: flex;
+    border-radius: 35px;
+    width: 20rem;
+    height: 7rem;
+    padding: 1rem;
+    background: var(--box-name);
+}
+
+.feedback, #img_principal{
+    margin-top: -11rem;
+    width: 96.5rem;
+    height: 30.6rem;
+}
+
+.feedback h2 {
+    font-size: 3.125rem;
+    margin: 2rem;
+}
+
+hr {  
+    height: 3px;
+    width: 7800%;
+    color: var(--barra-color);
+    background-color: var(--barra-color);
+    border: 0;
+    margin: 2rem 3rem;
+}
+
+.feedback{
+    margin-bottom: -30rem;
+}
+
+.feedback p {
+    margin-top: 2.5rem;
+    font-size: 2.2rem;
+    width: 33.25rem;
+    height: 10.125rem;
+
+    display: flex;
+    justify-content: left;
+    padding-left: 3.9rem;
+}
+
+.lugar_contato, img{
+    width: 2.75rem;
+    height: auto; 
+}
+
+.feedback div {
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20rem;
+    margin-top: -22rem;
+    margin-left: 25%;
+    margin-top: -32.60rem;
+}
+
+.feedback div > p{
+    padding-left: 0%;
+    font-size: 1.875rem;
+}
+
+.feedback h5{
+    display: flex;
+    font-size: 1.1.75rem;
+    justify-content: right;
+    margin-top: 2.125rem;
+}
+
+#inst, #email {
+    align-items: flex-start;
 }
