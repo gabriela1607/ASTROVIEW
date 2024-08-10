@@ -46,14 +46,17 @@
 }
 
 body{
-    background-image: url('../img/fundo-site1.jpg');
+    background-image: url("../img/fundo-site1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
+    background-repeat: repeat-y, no-repeat;
     overflow-x: hidden;
-    height: 139.33svh;
-    color: var(--color-text);
+    height: 90.19vh;
+    color: var(--color-text);    
 }
+
+
 
 header {
     display: flex;
@@ -69,8 +72,8 @@ header img {
 }
 
 header .logo {
-    width: 3.5rem;
-    height: 3.5rem; 
+    width: 2.5rem;
+    height: 2.5rem; 
     margin-right: 0.625rem; 
 }
 
@@ -79,9 +82,6 @@ header nav {
     height: auto;
 }
 
-nav h1 {
-
-}
 
 nav a {
     text-decoration: none;
@@ -128,35 +128,16 @@ nav.pags a:hover {
     text-decoration: none;
 }
 
-
 .redes_sociais {
+    margin-top: 22.5rem;
+}
+
+.redes_sociais img {
     display: flex;
-    align-items: center;
-    margin-top: 25.5rem;
+    flex-direction: column;
 }
 
-.redes_sociais h5 {
-    color: white;
-    margin-right: 10px; 
-    font-family: 'Garet', sans-serif;
-    line-height: 1; /* Garante que o texto e o ícone estejam no mesmo nível */
-    display: inline-block; /* Para garantir que h5 e o ícone estejam na mesma linha */
-}
 
-.redes_sociais button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    display: inline-block; /* Para alinhar o ícone na mesma linha */
-}
-
-.redes_sociais button img {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle; /* Alinhamento vertical do ícone */
-}
 
 .info {
     padding-left: 1.1rem;
@@ -204,73 +185,70 @@ nav.pags a:hover {
 
 .info img {
     width: 26.7rem;
-    height: 38.7rem;
+    height: 38rem;
 
     max-width: 100%;
     border-radius: 2.9rem;
-    margin-top: -2.3rem;
 }
 
-
-
 .Contato {
-    padding: 12.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .Contato img {
-    width: 15.8rem;
-    height: 17.125rem;
-
+    width: 16.5rem;
+    height: 17rem;
     border-radius: 5rem;
-    margin-top: 9rem;
+    margin-top: 5.875rem;
 }
 
-.Contato h3{ 
-    margin-bottom: 4.75rem; 
-    margin-top: 9rem;
-    font-size: 1.75rem;   
+.Contato h2 {
+    font-size: 3.125rem;
+    margin: 5rem;
 }
 
-.Contato p {
-    font-size: 1.75rem;
-}
- 
-.fileira1{
+.fileira1, .fileira2{
     display: flex;
-    justify-content: space-between;
-    
 }
 
+.fileira1 {
+    margin-left: 10.375rem;
+}
 
 .fileira2{
-    display: flex;
-    justify-content: space-between;
-    padding: 15.8rem ;
+    margin-left: 15.8rem ;
 }
 
-
-.dados h3{ 
-    margin-bottom: 4.75rem; 
-    font-size: 1.75rem;   
+.Contato h2 {
+    font-size: 3.125rem;
+    margin: 5rem;
 }
 
-.dados p {
-    margin-top: 4.5rem;
+.pessoas h3{ 
+    margin-top: 1rem;
+    font-size: 1.75rem;  
+}
+
+.pessoas p {
     font-size: 1.75rem;
     color: var(--inst-name);
 }
  
-.dados {
+.pessoas {
     display: flex;
-    border-radius: 35px;
-    width: 20rem;
-    height: 7rem;
-    padding: 1rem;
+    border-radius: 1.25rem;
+    width: 18.5rem;
+    height: 5.6rem;
+    align-items: center;
     background: var(--box-name);
-}
+    flex-direction: column;
+} 
+
+
+ 
 
 .feedback, #img_principal{
-    margin-top: -11rem;
     width: 96.5rem;
     height: 30.6rem;
 }
@@ -278,6 +256,7 @@ nav.pags a:hover {
 .feedback h2 {
     font-size: 3.125rem;
     margin: 2rem;
+    margin-left: 3.9rem;
 }
 
 hr {  
@@ -289,12 +268,9 @@ hr {
     margin: 2rem 3rem;
 }
 
-.feedback{
-    margin-bottom: -30rem;
-}
-
 .feedback p {
     margin-top: 2.5rem;
+    margin-bottom: -7rem;
     font-size: 2.2rem;
     width: 33.25rem;
     height: 10.125rem;
@@ -304,19 +280,13 @@ hr {
     padding-left: 3.9rem;
 }
 
-.lugar_contato, img{
-    width: 2.75rem;
-    height: auto; 
-}
-
 .feedback div {
     padding-left: 1.1rem;
     display: flex;
     flex-direction: column;
     padding: 20rem;
-    margin-top: -22rem;
     margin-left: 25%;
-    margin-top: -32.60rem;
+    margin-top: -32.60rem
 }
 
 .feedback div > p{
@@ -324,13 +294,18 @@ hr {
     font-size: 1.875rem;
 }
 
-.feedback h5{
-    display: flex;
-    font-size: 1.1.75rem;
-    justify-content: right;
-    margin-top: 2.125rem;
+.contato-info p strong {
+    flex-direction: left;
 }
 
-#inst, #email {
-    align-items: flex-start;
+table img{
+    width: 2.75rem;
+    height: 2.94rem; 
+    margin-right: 1.56rem;
+}
+
+table p{
+    font-size: 1.75rem;
+    padding-left: 1.5rem;
+    margin-left: -3.9rem;
 }
