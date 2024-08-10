@@ -3,6 +3,40 @@
     padding: 0;
 }
 
+/*fonte Telegraf */
+@font-face {
+    font-family: 'Telegraf';
+    src: url('caminho/para/telegraf-regular.woff2') format('woff2'),
+         url('caminho/para/telegraf-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('caminho/para/telegraf-bold.woff2') format('woff2'),
+         url('caminho/para/telegraf-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*fonte Garet */
+@font-face {
+    font-family: 'Garet';
+    src: url('caminho/para/garet-regular.woff2') format('woff2'),
+         url('caminho/para/garet-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garet';
+    src: url('caminho/para/garet-bold.woff2') format('woff2'),
+         url('caminho/para/garet-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 :root{
     --barra-color: #5F0087;
     --botton-color:#651563;
