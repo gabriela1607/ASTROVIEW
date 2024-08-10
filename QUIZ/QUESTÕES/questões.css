@@ -1,2 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --barra-color: #5F0087;
+    --botton-color: #651563;
+    --box-name: rgba(217, 217, 217, 0.123);
+    --inst-name: #000000;
+    --color-text: #ffff;
+}
+
+body {
+    background-image: url('../../img/fundo-site1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    overflow-x: hidden;
+    height: 139.44svh;
+    color: var(--color-text);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    padding: 2rem 6.25rem;
+}
+
+header img {
+    width: 4.36rem;
+    height: auto;    
+}
+
+header .logo {
+    width: 2.5rem;
+    height: 2.5rem; 
+    margin-right: 0.625rem; 
+}
+
+header nav {
+    width: 71.66rem;
+    height: auto;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+nav.pags a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15%;
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+
+nav.pags a:hover {
+    text-decoration: underline;
+}
 
 
