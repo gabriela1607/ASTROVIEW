@@ -62,8 +62,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 26px;
-    padding: 2rem 6.25rem;
+    font-size: 20px;
+    padding: 2rem 6.20rem;
+
+    font-family: 'Telegraf', sans-serif;
 }
 
 header img {
@@ -72,8 +74,8 @@ header img {
 }
 
 header .logo {
-    width: 2.5rem;
-    height: 2.5rem; 
+    width: 3.5rem;
+    height: 3.5rem; 
     margin-right: 0.625rem; 
 }
 
@@ -107,8 +109,8 @@ nav.pags a:hover {
 }
 
 .inicio h1 {
-    font-size: 6rem;
-    margin-top: 8rem;
+    font-size: 4.998rem;
+    margin-top: 10rem;
     margin-bottom: 0.625rem;
 }
 
