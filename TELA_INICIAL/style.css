@@ -51,11 +51,9 @@ body{
     background-position: center;
     background-attachment: scroll;
     overflow-x: hidden;
-    height: 139.44svh;
+    height: 139.33svh;
     color: var(--color-text);
 }
-
-
 
 header {
     display: flex;
@@ -71,8 +69,8 @@ header img {
 }
 
 header .logo {
-    width: 2.5rem;
-    height: 2.5rem; 
+    width: 3.5rem;
+    height: 3.5rem; 
     margin-right: 0.625rem; 
 }
 
@@ -81,6 +79,9 @@ header nav {
     height: auto;
 }
 
+nav h1 {
+
+}
 
 nav a {
     text-decoration: none;
@@ -127,11 +128,35 @@ nav.pags a:hover {
     text-decoration: none;
 }
 
+
 .redes_sociais {
-    margin-top: 22.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 25.5rem;
 }
 
+.redes_sociais h5 {
+    color: white;
+    margin-right: 10px; 
+    font-family: 'Garet', sans-serif;
+    line-height: 1; /* Garante que o texto e o ícone estejam no mesmo nível */
+    display: inline-block; /* Para garantir que h5 e o ícone estejam na mesma linha */
+}
 
+.redes_sociais button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Para alinhar o ícone na mesma linha */
+}
+
+.redes_sociais button img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle; /* Alinhamento vertical do ícone */
+}
 
 .info {
     padding-left: 1.1rem;
