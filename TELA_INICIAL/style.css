@@ -217,9 +217,9 @@ nav.pags a:hover {
 }
 
 .Contato img {
-    width: 16.5rem;
-    height: 17rem;
-    border-radius: 5rem;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 6rem;
     margin-top: 5.875rem;
 }
 
@@ -231,12 +231,12 @@ nav.pags a:hover {
 .fileira1 {
     display: flex;
     margin-left: 6.25rem;
-    margin-top: -10rem;
+    margin-top: -11rem;
 }
 
 .fileira2{
     display: flex;
-    margin-top: -7rem;
+    margin-top: -8rem;
     margin-left: 19rem ;
 }
 
@@ -246,23 +246,27 @@ nav.pags a:hover {
 }
 
 .Desenvolvedores {
-    margin: 2.9rem;
+    margin: 2rem;
 }
 
 .pessoas h3{ 
-    margin-top: 1rem;
-    font-size: 1.75rem;  
+    margin-top: 0.5rem;
+    font-size: 1.70rem;  
+
+    font-family: 'Garet', sans-serif;
 }
 
 .pessoas p {
-    font-size: 1.75rem;
+    font-size: 1.70rem;
     color: var(--inst-name);
+
+    font-family: 'Garet', sans-serif;
 }
  
 .pessoas {
     display: flex;
     border-radius: 1.25rem;
-    width: 18.5rem;
+    width: 17.5rem;
     height: 5.6rem;
     align-items: center;
     background: var(--box-name);
