@@ -13,7 +13,7 @@
 }
 
 @font-face {
-    font-family: 'Telegraf';
+    font-family: ' Telegraf';
     src: url('caminho/para/telegraf-bold.woff2') format('woff2'),
          url('caminho/para/telegraf-bold.woff') format('woff');
     font-weight: bold;
@@ -53,7 +53,8 @@ body{
     background-repeat: repeat-y, no-repeat;
     overflow-x: hidden;
     height: 90.19vh;
-    color: var(--color-text);    
+    color: var(--color-text);   
+    margin-bottom: 6rem; 
 }
 
 
@@ -96,6 +97,7 @@ nav.pags a {
     margin-left: 15%;
     font-size: 1.625rem;
     font-weight: 300;
+    font-family: 'Garret', 'Book';
 }
 
 nav.pags a:hover {
@@ -128,7 +130,7 @@ nav.pags a:hover {
     font-size: 2rem;
     margin-top: -8rem;
 
-    font-family: 'Telegraf', sans-serif;
+    font-family: 'Garret', sans-serif;
 }
 
 .inicio img {
@@ -138,11 +140,14 @@ nav.pags a:hover {
 
 .redes_sociais {
     margin-top: 22.5rem;
+    display: flex;
 }
 
 .redes_sociais img {
-    display: flex;
-    flex-direction: column;
+    padding-left: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: -0.20rem;
 }
 
 
@@ -153,7 +158,7 @@ nav.pags a:hover {
     justify-content: space-between;
     padding: 2.4rem 6rem;
     
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 .info h2{ 
@@ -197,6 +202,7 @@ nav.pags a:hover {
 
     max-width: 100%;
     border-radius: 2.9rem;
+    margin-bottom: 10rem;
 }
 
 .Contato {
@@ -213,24 +219,28 @@ nav.pags a:hover {
 
 .Contato h2 {
     font-size: 3.125rem;
-    margin: 5rem;
-}
-
-.fileira1, .fileira2{
-    display: flex;
+    margin-left: 5rem;
 }
 
 .fileira1 {
-    margin-left: 10.375rem;
+    display: flex;
+    margin-left: 6.25rem;
+    margin-top: -10rem;
 }
 
 .fileira2{
-    margin-left: 15.8rem ;
+    display: flex;
+    margin-top: -7rem;
+    margin-left: 19rem ;
 }
 
 .Contato h2 {
     font-size: 3.125rem;
     margin: 5rem;
+}
+
+.Desenvolvedores {
+    margin: 2.9rem;
 }
 
 .pessoas h3{ 
@@ -253,9 +263,6 @@ nav.pags a:hover {
     flex-direction: column;
 } 
 
-
- 
-
 .feedback, #img_principal{
     width: 96.5rem;
     height: 30.6rem;
@@ -263,8 +270,9 @@ nav.pags a:hover {
 
 .feedback h2 {
     font-size: 3.125rem;
-    margin: 2rem;
-    margin-left: 3.9rem;
+    margin-left: 4.9rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 hr {  
@@ -273,12 +281,12 @@ hr {
     color: var(--barra-color);
     background-color: var(--barra-color);
     border: 0;
-    margin: 2rem 3rem;
+    margin: 3rem 3rem;
 }
 
 .feedback p {
     margin-top: 2.5rem;
-    margin-bottom: -7rem;
+    margin-bottom: -6.5rem;
     font-size: 2.2rem;
     width: 33.25rem;
     height: 10.125rem;
@@ -302,12 +310,16 @@ hr {
     font-size: 1.875rem;
 }
 
-.contato-info p strong {
+.contato-info p  {
     flex-direction: left;
 }
 
+table {
+    margin-bottom: -16rem;
+}
+
 table img{
-    width: 2.75rem;
+    width: 2.9rem;
     height: 2.94rem; 
     margin-right: 1.56rem;
 }
@@ -317,3 +329,8 @@ table p{
     padding-left: 1.5rem;
     margin-left: -3.9rem;
 }
+
+#inst {
+    margin-top: 0.5rem;
+}
+
