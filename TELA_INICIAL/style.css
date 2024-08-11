@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+
 /*fonte Telegraf */
 @font-face {
     font-family: 'Telegraf';
@@ -263,12 +269,12 @@ nav.pags a:hover {
     flex-direction: column;
 } 
 
-.feedback, #img_principal{
+#feedback, #img_principal{
     width: 96.5rem;
     height: 30.6rem;
 }
 
-.feedback h2 {
+#feedback h2 {
     font-size: 3.125rem;
     margin-left: 4.9rem;
     margin-top: 4rem;
@@ -284,7 +290,7 @@ hr {
     margin: 3rem 3rem;
 }
 
-.feedback p {
+#feedback p {
     margin-top: 2.5rem;
     margin-bottom: -6.5rem;
     font-size: 2.2rem;
@@ -296,7 +302,7 @@ hr {
     padding-left: 3.9rem;
 }
 
-.feedback div {
+#feedback div {
     padding-left: 1.1rem;
     display: flex;
     flex-direction: column;
@@ -305,7 +311,7 @@ hr {
     margin-top: -32.60rem
 }
 
-.feedback div > p{
+#feedback div > p{
     padding-left: 0%;
     font-size: 1.875rem;
 }
