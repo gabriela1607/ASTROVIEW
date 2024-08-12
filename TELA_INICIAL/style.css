@@ -132,7 +132,7 @@ nav.pags a:hover {
     margin-bottom: 0.725rem;
 
     font-family: 'PP Telegraf', sans-serif;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .inicio p {
@@ -141,14 +141,15 @@ nav.pags a:hover {
     margin-top: 0.125rem;
 
     font-family: 'Garet', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .inicio h5 {
     font-size: 2rem;
     margin-top: -8rem;
 
-    font-family: 'Garret', sans-serif;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
 }
 
 .inicio img {
@@ -174,30 +175,31 @@ nav.pags a:hover {
     padding-left: 1.1rem;
     display: flex;
     justify-content: space-between;
-    padding: 2.4rem 6rem;
+    padding: 3rem 4rem;
     
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
 
 .info h2{ 
-    margin-bottom: 0.625rem; 
-    margin-top: 3.4rem;
-    font-size: 5rem; 
+    margin-bottom: 0.725rem; 
+    margin-top: 3rem;
+    font-size: 3.5rem; 
     
     font-family: 'PP Telegraf', sans-serif;
+    font-weight: 100;
 }
 
 .info p {
     margin-bottom: 2.25rem;
-    font-size: 2.2rem;
-    padding: 1.1rem;
+    font-size: 1.55rem;
+    padding: 1rem;
 
     font-family: 'Garet', sans-serif;
-    font-weight: 300; 
+    font-weight: 200; 
 }
 
 .info button {
-    width: 18.5rem;
+    width: 14.5rem;
     height: 4.56rem;
     padding: 1.1rem;
 
@@ -209,9 +211,12 @@ nav.pags a:hover {
 
     color: var(--color-text); 
     display: inline-block;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     margin: 0;
     cursor: pointer;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 900;
 }
 
 .info button:hover {
@@ -220,8 +225,8 @@ nav.pags a:hover {
 }
 
 .info img {
-    width: 26.7rem;
-    height: 38rem;
+    width: 25.7rem;
+    height: 37rem;
 
     max-width: 100%;
     border-radius: 2.9rem;
@@ -248,7 +253,7 @@ nav.pags a:hover {
 .fileira1 {
     display: flex;
     margin-left: 6.25rem;
-    margin-top: -11rem;
+    margin-top: -6rem;
 }
 
 .fileira2{
