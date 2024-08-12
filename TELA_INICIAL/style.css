@@ -63,6 +63,8 @@ body{
     height: 90.19vh;
     color: var(--color-text);   
     margin-bottom: 6rem; 
+
+    cursor: url('../img/img.logo.png'), auto;
 }
 
 
