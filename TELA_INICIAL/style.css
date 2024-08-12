@@ -76,7 +76,7 @@ header {
     font-size: 20px;
     padding: 2rem 5.20rem;
 
-    font-family: 'PP Telegraf', sans-serif;
+    
 }
 
 header img {
@@ -103,6 +103,8 @@ nav h1 {
 nav a {
     text-decoration: none;
     color: var(--color-text);
+
+    font-family: 'Garet', 'Book';
 }
 
 nav.pags a {
@@ -111,7 +113,7 @@ nav.pags a {
     margin-left: 15%;
     font-size: 1.625rem;
     font-weight: 300;
-    font-family: 'Garet', 'Book';
+    
 }
 
 nav.pags a:hover {
@@ -243,19 +245,19 @@ nav.pags a:hover {
     font-family: 'PP Telegraf', sans-serif;
     font-weight: 100;
 
-    margin-top: -5rem;
+    margin-top: -6rem;
     text-align: center;
 }
 
 .Contato img {
-    width: 16rem;
-    height: 16rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 6rem;
     margin-top: 5.875rem;
 }
 
 .Contato h2 {
-    font-size: 3.125rem;
+    font-size: 3.025rem;
     margin-left: 5rem;
 }
 
@@ -277,7 +279,7 @@ nav.pags a:hover {
 }
 
 .Desenvolvedores {
-    margin: 2rem;
+    margin: 2.5rem;
 }
 
 .pessoas h3{ 
@@ -285,19 +287,21 @@ nav.pags a:hover {
     font-size: 1.70rem;  
 
     font-family: 'Garet', sans-serif;
+    font-weight: 300;
 }
 
 .pessoas p {
-    font-size: 1.70rem;
+    font-size: 1.50rem;
     color: var(--inst-name);
 
     font-family: 'Garet', sans-serif;
+    font-weight: 800;
 }
  
 .pessoas {
     display: flex;
     border-radius: 1.25rem;
-    width: 17.5rem;
+    width: 16.5rem;
     height: 5.6rem;
     align-items: center;
     background: var(--box-name);
@@ -310,33 +314,37 @@ nav.pags a:hover {
 }
 
 #feedback h2 {
-    font-size: 3.125rem;
-    margin-left: 4.9rem;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    font-size: 3.225rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
 
     font-family: 'Telegraf', sans-serif;
+    font-weight: 100;
 }
 
 hr {  
-    height: 3px;
-    width: 7800%;
+    height: 4px;
+    width: 7700%;
     color: var(--barra-color);
     background-color: var(--barra-color);
     border: 0;
-    margin: 3rem 3rem;
+    margin: 2rem 2rem;
 }
 
 #feedback p {
     margin-top: 2.5rem;
     margin-bottom: -6.5rem;
-    font-size: 2.2rem;
-    width: 33.25rem;
+    font-size: 2rem;
+    width: 32.25rem;
     height: 10.125rem;
 
     display: flex;
     justify-content: left;
     padding-left: 3.9rem;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
 }
 
 #feedback div {
