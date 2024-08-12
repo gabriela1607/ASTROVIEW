@@ -116,23 +116,26 @@ nav.pags a:hover {
     text-decoration: underline;
 }
 
-
+.inicio2 {
+    margin-bottom: 8rem;
+}
 
 .inicio {
     padding: 2.5rem 5.125rem;
 }
 
 .inicio h1 {
-    font-size: 4.998rem;
-    margin-top: 10rem;
-    margin-bottom: 0.625rem;
+    font-size: 5.998rem;
+    margin-top: 7rem;
+    margin-bottom: 0.725rem;
 
     font-family: 'PP Telegraf', sans-serif;
+    font-weight: 400;
 }
 
 .inicio p {
-    font-size: 1.875rem;
-    line-height: 1.9;
+    font-size: 1.775rem;
+    line-height: 1.15;
     margin-top: 0.125rem;
 
     font-family: 'Garet', sans-serif;
@@ -152,7 +155,7 @@ nav.pags a:hover {
 }
 
 .redes_sociais {
-    margin-top: 22.5rem;
+    margin-top: 23.5rem;
     display: flex;
 }
 
