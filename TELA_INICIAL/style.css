@@ -238,6 +238,15 @@ nav.pags a:hover {
     flex-direction: column;
 }
 
+.desen {
+    font-size: 2rem;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 100;
+
+    margin-top: -5rem;
+    text-align: center;
+}
+
 .Contato img {
     width: 16rem;
     height: 16rem;
