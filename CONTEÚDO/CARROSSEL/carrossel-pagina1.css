@@ -54,7 +54,7 @@ html{
 }
 
 body{
-    background-image: url("../img/fundo-site1.jpg");
+    background-image: url("../../img/fundo-site1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -64,7 +64,7 @@ body{
     color: var(--color-text);   
     margin-bottom: 6rem; 
 
-    cursor: url('../img/img.logo.png'), auto;
+    cursor: url('../../img/img.logo.png'), auto;
 }
 
 
