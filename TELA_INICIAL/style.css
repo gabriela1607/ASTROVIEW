@@ -64,7 +64,7 @@ body{
     color: var(--color-text);   
     margin-bottom: 6rem; 
 
-    cursor: url('../img/img.logo.png'), auto;
+    cursor: url('../img/img.cursor.png'), auto;
 }
 
 
@@ -74,7 +74,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    padding: 2%; 
+    padding: 2%;
 }
 
 header img {
@@ -261,14 +261,14 @@ nav.pags a:hover {
 
 .fileira1 {
     display: flex;
-    margin-left: 6.25rem;
+    margin-left: 12.5%;
     margin-top: -6rem;
 }
 
 .fileira2{
     display: flex;
     margin-top: -8rem;
-    margin-left: 19rem ;
+    margin-left: 25.5%;
 }
 
 .Contato h2 {
@@ -300,7 +300,7 @@ nav.pags a:hover {
     display: flex;
     border-radius: 1.25rem;
     width: 16.5rem;
-    height: 5.6rem;
+    height: 6rem;
     align-items: center;
     background: var(--box-name);
     flex-direction: column;
@@ -379,6 +379,9 @@ table p{
     margin-left: -3.9rem;
 }
 
+#inst {
+    margin-top: 0.5rem;
+}
 #inst {
     margin-top: 0.5rem;
 }
