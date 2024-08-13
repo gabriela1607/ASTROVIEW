@@ -3,34 +3,80 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+/* PP Telegraf Regular */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('caminho/para/pp-telegraf-regular.woff2') format('woff2'),
+         url('caminho/para/pp-telegraf-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* PP Telegraf UltraBold */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('caminho/para/pp-telegraf-ultrabold.woff2') format('woff2'),
+         url('caminho/para/pp-telegraf-ultrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Garet Book */
+@font-face {
+    font-family: 'Garet';
+    src: url('caminho/para/garet-book.woff2') format('woff2'),
+         url('caminho/para/garet-book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Garet Heavy */
+@font-face {
+    font-family: 'Garet';
+    src: url('caminho/para/garet-heavy.woff2') format('woff2'),
+         url('caminho/para/garet-heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
 :root {
-    --barra-color: #5F0087;
-    --botton-color: #651563;
+    --botton-color: #5F0087;
     --box-name: rgba(217, 217, 217, 0.123);
     --inst-name: #000000;
     --color-text: #ffff;
 }
 
-body {
-    background-image: url('../img/fundo-site1.jpg');
+body{
+    background-image: url("../img/fundo-site1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
+    background-repeat: repeat-y, no-repeat;
     overflow-x: hidden;
-    height: 139.44svh;
-    color: var(--color-text);
+    height: 90.19vh;
+    color: var(--color-text);   
+    margin-bottom: 6rem; 
+    margin-left: 3.9rem;
+
+    cursor: url('../img/img.cursor.png'), auto;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 26px;
-    padding: 2rem 6.25rem;
+    font-size: 20px;
+    padding: 2%;
 }
 
 header img {
-    width: 4.36rem;
+    width: 5.36rem;
     height: auto;    
 }
 
@@ -45,10 +91,15 @@ header nav {
     height: auto;
 }
 
+nav h1 {
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 600;
+}
 
 nav a {
     text-decoration: none;
     color: var(--color-text);
+    font-family: 'Garet', 'Book';
 }
 
 nav.pags a {
@@ -61,4 +112,58 @@ nav.pags a {
 
 nav.pags a:hover {
     text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 8rem;
+    display: flex;
+    padding: 3rem 4rem;    
+    margin-top: 1rem;
+}
+
+.div {
+    padding: 2.5rem 5.125rem;
+}
+
+h2 {
+    font-size: 5.9rem;
+    margin-top: 6rem;
+    margin-bottom: 0.725rem;
+
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 100;
+}
+
+p {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 300;
+}
+
+button {
+    width: 14.5rem;
+    height: 4.56rem;
+    padding: 1.1rem;
+
+    background-color: var(--botton-color);
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1.5rem;
+
+    color: var(--color-text); 
+    display: inline-block;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    font-family: 'PP Telegraf', normal;
+    font-weight: 900;
+    
+}
+
+button:hover {
+    background-color: #D7B0E8;
+    color: #51114F;
 }
