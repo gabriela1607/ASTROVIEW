@@ -1,15 +1,18 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll('.carrossel-de-imagens div');
+const slides = document.querySelectorAll('.carrossel .slide a');
 const totalSlides = slides.length;
 
 document.querySelector('.next').addEventListener('click', () => {
-    slides[currentSlide].style.transform = 'translateX(-100%)';
     currentSlide = (currentSlide + 1) % totalSlides;
-    slides[currentSlide].style.transform = 'translateX(0)';
+    updateSlidePosition();
 });
 
 document.querySelector('.prev').addEventListener('click', () => {
-    slides[currentSlide].style.transform = 'translateX(100%)';
     currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    slides[currentSlide].style.transform = 'translateX(0)';
+    updateSlidePosition();
 });
+
+function updateSlidePosition() {
+    const slideWidth = slides[0].clientWidth;
+    document.querySelector('.carrossel .slide').style.transform = `translateX(${-slideWidth * currentSlide}px)`;
+}
