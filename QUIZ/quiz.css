@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    max-width: 1400px;
 }
 
 html{
@@ -62,9 +63,8 @@ body{
     height: 90.19vh;
     color: var(--color-text);   
     margin-bottom: 6rem; 
-    margin-left: 3.9rem;
 
-    cursor: url('../img/img.cursor.png'), auto;
+    cursor: url('../img/img.logo.png'), auto;
 }
 
 header {
@@ -99,6 +99,7 @@ nav h1 {
 nav a {
     text-decoration: none;
     color: var(--color-text);
+
     font-family: 'Garet', 'Book';
 }
 
@@ -114,11 +115,12 @@ nav.pags a:hover {
     text-decoration: underline;
 }
 
+
 .section {
+    margin-top: 1rem;
     margin-bottom: 8rem;
     display: flex;
-    padding: 3rem 4rem;    
-    margin-top: 1rem;
+    justify-content: space-between;
 }
 
 .div {
@@ -129,13 +131,12 @@ h2 {
     font-size: 5.9rem;
     margin-top: 6rem;
     margin-bottom: 0.725rem;
-
     font-family: 'PP Telegraf', sans-serif;
     font-weight: 100;
 }
 
 p {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     margin-top: 0.5rem;
 
     font-family: 'Garet', sans-serif;
@@ -143,19 +144,20 @@ p {
 }
 
 button {
-    width: 14.5rem;
-    height: 4.56rem;
-    padding: 1.1rem;
-
+    width: 18.5rem;
+    height: 6.125rem;
+    max-width: 100%;
+    margin-right: 13rem;
+    margin-top: 8rem;
+    
     background-color: var(--botton-color);
     border: none;
     text-decoration: none;
     text-align: center;
-    border-radius: 1.5rem;
+    border-radius: 3rem;
 
     color: var(--color-text); 
-    display: inline-block;
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     cursor: pointer;
 
     font-family: 'PP Telegraf', normal;
@@ -166,4 +168,11 @@ button {
 button:hover {
     background-color: #D7B0E8;
     color: #51114F;
+}
+
+.estrutura {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3.75rem;
 }
