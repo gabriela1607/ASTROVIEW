@@ -105,8 +105,7 @@ nav a {
     text-decoration: none;
     color: var(--color-text);
 
-    font-family: 'Garet', 'sans-serif';
-    font-weight: 200;
+    font-family: 'Garet', 'Book';
 }
 
 nav.pags a {
@@ -141,7 +140,7 @@ nav.pags a:hover {
 }
 
 ul {
-    width: 18rem;
+    width: 15rem;
     height: 2.125rem; 
     font-size: 2.8rem;
     color: var(--texto);
@@ -152,13 +151,15 @@ ul {
 }
 
 li{
+    font-size: 2.7rem;
     padding-top: 3rem;
+    margin-right: -20rem;
 }
 
 .card a {
     width: 10rem;
     height: 0.4rem; 
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: var(--texto);
 
     display: flex;
@@ -172,7 +173,7 @@ li{
 .navigation {
     display: flex; 
     margin-left: 6.5rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
@@ -183,4 +184,33 @@ li{
     color: var(--background);
 
     text-decoration: none;
+}
+
+#finalizar {
+    width: 10rem;
+    height: 0.4rem; 
+    font-size: 2rem;
+
+    margin-left: 80%;
+}
+
+.borda {
+    background: var(--background);
+    height: 26.5rem;
+    width: 2.5rem;
+    padding: 4px;
+    border-radius: 3.125rem;
+    
+    margin-left: 85%;
+    margin-top: -34.8rem;
+}
+
+.progresso {
+    height: 50%;
+    background: var(--botton-color);
+    border-radius: 999px;
+}
+
+section {
+    margin-bottom: 20rem;
 }
