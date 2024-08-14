@@ -54,7 +54,7 @@ html{
 }
 
 body{
-    background-image: url("../../img/fundo-site1.jpg");
+    background-image: url("../img/fundo-site1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -64,7 +64,7 @@ body{
     color: var(--color-text);   
     margin-bottom: 6rem; 
 
-    cursor: url('./img/img.cursor.png'), auto;
+    cursor: url('../img/img.cursor.png'), auto;
 }
 
 
@@ -134,6 +134,8 @@ nav.pags a:hover {
     margin-top: -60rem; 
     width: 100%; 
 }
+
+
 
 .img1 {
     margin-right: 15rem;
