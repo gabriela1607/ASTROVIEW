@@ -68,8 +68,6 @@ body{
     cursor: url('../../img/img.cursor.png'), auto;
 }
 
-
-
 header {
     display: flex;
     justify-content: space-between;
@@ -118,4 +116,9 @@ nav.pags a {
 
 nav.pags a:hover {
     text-decoration: underline;
+}
+
+div.text-box2 {
+    width: none;
+    height: none;
 }
