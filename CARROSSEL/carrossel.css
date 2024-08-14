@@ -120,43 +120,80 @@ nav.pags a:hover {
     text-decoration: underline;
 }
 
+/* Estrutura principal do carrossel */
 .estrutura {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -95rem; /* Espaçamento superior para posicionar abaixo do cabeçalho */
 }
 
+/* Container do carrossel incluindo as setas e os ícones */
 .carrossel-de-imagens1 {
     display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    gap: 10rem; 
-    margin-top: -60rem; 
+    align-items: center;
+    gap: 2rem; /* Espaçamento entre setas e ícones */
     width: 100%; 
 }
 
-
-
 .img1 {
-    margin-right: 15rem;
+    margin-left: 1rem;
 }
 
 .img2 {
-    margin-right: 15rem;
+    margin-left: 1rem;
 }
 
 .img3 {
-    margin-right: 15rem;
+    margin-left: 1rem;
 }
 
-.carrossel-de-imagens1 img { 
-    width: 300%;
+/* Estilização das imagens dos ícones */
+.carrossel-de-imagens1 .img1 img,
+.carrossel-de-imagens1 .img2 img,
+.carrossel-de-imagens1 .img3 img { 
+    width: 15rem; /* Aumenta o tamanho dos ícones */
     height: auto; 
     border-radius: 1.5rem;
     transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Indica que os ícones são clicáveis */
+
+    margin-left: 6rem;
+    margin-right: -3rem;
 }
 
-/* Efeito de zoom ao passar o mouse sobre a imagem */
-.carrossel-de-imagens1 img:hover {
+/* Efeito de zoom ao passar o mouse nos ícones */
+.carrossel-de-imagens1 .img1 img:hover,
+.carrossel-de-imagens1 .img2 img:hover,
+.carrossel-de-imagens1 .img3 img:hover {
     transform: scale(1.05);
+}
+
+/* Estilização das setas */
+.seta-esquerda img, .seta-direita img {
+    width: 5rem; /* Aumenta o tamanho das setas */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    margin-top: -95rem;
+}
+
+/* Efeito de zoom ao passar o mouse nas setas */
+.seta-esquerda img:hover, .seta-direita img:hover {
+    transform: scale(1.2); /* Aumenta levemente mais o zoom para destaque */
+}
+
+/* Ajuste de posicionamento das setas */
+.seta-esquerda, .seta-direita {
+    display: flex;
+    align-items: center;
+}
+
+.seta-direita {
+    margin-left: 4rem;
+}
+
+.seta-esquerda {
+    margin-right: -1rem;
 }
