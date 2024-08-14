@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    max-width: 1400;
 }
 
 html{
@@ -49,8 +50,10 @@ html{
     --barra-color: #5F0087;
     --botton-color:#651563;
     --box-name: rgba(217, 217, 217, 0.123);
-    --inst-name: #000000;
+    --texto: #000000;
+    --pergunta: #5B5B5B;
     --color-text: #ffff;
+    --background: #D9D9D9;
 }
 
 body{
@@ -74,9 +77,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    padding: 2rem 5.20rem;
-
-    
+    padding: 2rem 4.20rem;    
 }
 
 header img {
@@ -113,9 +114,72 @@ nav.pags a {
     margin-left: 15%;
     font-size: 1.625rem;
     font-weight: 300;
-    
 }
 
 nav.pags a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+.card {
+    width: 50rem;
+    height: 23rem;
+    margin-top: 6.5rem;
+    margin-left: 5.8rem;
+    padding: 3.5rem;
+    background-color: var(--background);
+    border-radius: 4.6rem;
+
+    align-items: center;
+}
+
+.question {
+    width: 50rem;
+    height: 4.6rem; 
+    font-size: 2.8rem;
+    color: var(--pergunta);
+}
+
+ul {
+    width: 18rem;
+    height: 2.125rem; 
+    font-size: 2.8rem;
+    color: var(--texto);
+    text-decoration: none;
+
+    margin-left: 4.2rem;
+    list-style-type: none;
+}
+
+li{
+    padding-top: 3rem;
+}
+
+.card a {
+    width: 10rem;
+    height: 0.4rem; 
+    font-size: 2.2rem;
+    color: var(--texto);
+
+    display: flex;
+    margin-left: 85%;
+    margin-top: 15rem;
+
+    text-decoration: none;
+
+}
+
+.navigation {
+    display: flex; 
+    margin-left: 6.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.navigation a{
+    width: 10rem;
+    height: 0.4rem; 
+    font-size: 2.2rem;
+    color: var(--background);
+
+    text-decoration: none;
 }
