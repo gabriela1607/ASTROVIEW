@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1400px;
+    max-width: 1440px;
 }
 
 html{
@@ -204,6 +204,7 @@ nav.pags a:hover {
     width: 14.5rem;
     height: 4.56rem;
     padding: 1.1rem;
+    margin-left: 1rem;
 
     background-color: var(--botton-color);
     border: none;

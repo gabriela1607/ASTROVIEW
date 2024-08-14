@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1400;
+    max-width: 1440px;
 }
 
 html{
@@ -67,7 +67,7 @@ body{
     color: var(--color-text);   
     margin-bottom: 6rem; 
 
-    cursor: url('../../img/img.logo.png'), auto;
+    cursor: url('../../img/img.cursor.png'), auto;
 }
 
 
