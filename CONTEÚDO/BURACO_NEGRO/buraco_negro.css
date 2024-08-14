@@ -55,11 +55,7 @@ html{
 }
 
 body{
-<<<<<<< HEAD
     background-image: url('../../img/fundo-site1.jpg');
-=======
-    background-image: url("../img/fundo-site1.jpg");
->>>>>>> 38abc20 (Carrossel 50% completo)
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
