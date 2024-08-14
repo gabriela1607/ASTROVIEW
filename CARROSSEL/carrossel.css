@@ -49,8 +49,6 @@ html{
 :root{
     --barra-color: #5F0087;
     --botton-color:#651563;
-    --box-name: rgba(217, 217, 217, 0.123);
-    --inst-name: #000000;
     --color-text: #ffff;
 }
 
@@ -63,20 +61,16 @@ body{
     overflow-x: hidden;
     height: 90.19vh;
     color: var(--color-text);   
-    margin-bottom: 6rem; 
 
     cursor: url('../../img/img.cursor.png'), auto;
 }
-
-
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    padding: 2rem 5.20rem;
-    
+    padding: 2%;
 }
 
 header img {
@@ -114,87 +108,74 @@ nav.pags a {
     margin-left: 15%;
     font-size: 1.625rem;
     font-weight: 300;
-    
+
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
 }
 
 nav.pags a:hover {
     text-decoration: underline;
 }
 
-/* Estrutura principal do carrossel */
-.estrutura {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -95rem; /* Espaçamento superior para posicionar abaixo do cabeçalho */
+section {
+    margin: 4rem;
 }
 
-/* Container do carrossel incluindo as setas e os ícones */
+.estrutura {
+    display: flex;
+    margin-top: 4%; 
+    justify-content: space-between;
+}
+
 .carrossel-de-imagens1 {
     display: flex;
     align-items: center;
-    gap: 2rem; /* Espaçamento entre setas e ícones */
+    gap: 2rem; 
     width: 100%; 
 }
 
-.img1 {
-    margin-left: 1rem;
-}
-
-.img2 {
-    margin-left: 1rem;
-}
-
-.img3 {
-    margin-left: 1rem;
-}
-
-/* Estilização das imagens dos ícones */
 .carrossel-de-imagens1 .img1 img,
 .carrossel-de-imagens1 .img2 img,
 .carrossel-de-imagens1 .img3 img { 
-    width: 15rem; /* Aumenta o tamanho dos ícones */
+    width: 15rem; 
     height: auto; 
     border-radius: 1.5rem;
     transition: transform 0.3s ease-in-out;
-    cursor: pointer; /* Indica que os ícones são clicáveis */
+    cursor: pointer; 
 
-    margin-left: 6rem;
-    margin-right: -3rem;
+    margin-left: 20%;
 }
 
-/* Efeito de zoom ao passar o mouse nos ícones */
+
 .carrossel-de-imagens1 .img1 img:hover,
 .carrossel-de-imagens1 .img2 img:hover,
 .carrossel-de-imagens1 .img3 img:hover {
     transform: scale(1.05);
 }
 
-/* Estilização das setas */
+
 .seta-esquerda img, .seta-direita img {
-    width: 5rem; /* Aumenta o tamanho das setas */
+    width: 5rem; 
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
 
-    margin-top: -95rem;
+    margin-top: 5rem;
 }
 
-/* Efeito de zoom ao passar o mouse nas setas */
 .seta-esquerda img:hover, .seta-direita img:hover {
-    transform: scale(1.2); /* Aumenta levemente mais o zoom para destaque */
+    transform: scale(1.2);
 }
 
-/* Ajuste de posicionamento das setas */
 .seta-esquerda, .seta-direita {
     display: flex;
     align-items: center;
 }
 
 .seta-direita {
-    margin-left: 4rem;
+    margin-left: 10%;
 }
 
 .seta-esquerda {
-    margin-right: -1rem;
+    margin-right: 10%;
 }
