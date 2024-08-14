@@ -1,19 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    max-width: 1440px;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
 }
-
 
 /* PP Telegraf Regular */
 @font-face {
     font-family: 'PP Telegraf';
     src: url('caminho/para/pp-telegraf-regular.woff2') format('woff2'),
-         url('caminho/para/pp-telegraf-regular.woff') format('woff');
+        url('caminho/para/pp-telegraf-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,7 +22,7 @@ html{
 @font-face {
     font-family: 'PP Telegraf';
     src: url('caminho/para/pp-telegraf-ultrabold.woff2') format('woff2'),
-         url('caminho/para/pp-telegraf-ultrabold.woff') format('woff');
+        url('caminho/para/pp-telegraf-ultrabold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -31,7 +31,7 @@ html{
 @font-face {
     font-family: 'Garet';
     src: url('caminho/para/garet-book.woff2') format('woff2'),
-         url('caminho/para/garet-book.woff') format('woff');
+        url('caminho/para/garet-book.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -40,20 +40,18 @@ html{
 @font-face {
     font-family: 'Garet';
     src: url('caminho/para/garet-heavy.woff2') format('woff2'),
-         url('caminho/para/garet-heavy.woff') format('woff');
+        url('caminho/para/garet-heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
-:root{
-    --barra-color: #5F0087;
-    --botton-color:#651563;
-    --box-name: rgba(217, 217, 217, 0.123);
-    --inst-name: #000000;
+:root {
+    --botton-color: #7F00B4;
+    --box: rgba(126, 0, 180, 0.486);
     --color-text: #ffff;
 }
 
-body{
+body {
     background-image: url("../../img/fundo-site1.jpg");
     background-size: cover;
     background-position: center;
@@ -61,33 +59,29 @@ body{
     background-repeat: repeat-y, no-repeat;
     overflow-x: hidden;
     height: 90.19vh;
-    color: var(--color-text);   
-    margin-bottom: 6rem; 
+    color: var(--color-text);
+    margin-bottom: 10rem;
 
-    cursor: url('../../img/img.logo.png'), auto;
+    cursor: url('../../img/img.cursor.png'), auto;
 }
-
-
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    padding: 2rem 5.20rem;
-
-    
+    padding: 2%;
 }
 
 header img {
     width: 5.36rem;
-    height: auto;    
+    height: auto;
 }
 
 header .logo {
     width: 3.5rem;
-    height: 3.5rem; 
-    margin-right: 0.725rem; 
+    height: 3.5rem;
+    margin-right: 0.725rem;
 }
 
 header nav {
@@ -114,9 +108,83 @@ nav.pags a {
     margin-left: 15%;
     font-size: 1.625rem;
     font-weight: 300;
-    
+
 }
 
 nav.pags a:hover {
     text-decoration: underline;
+}
+
+section {
+    margin-left: 5.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 5.9rem;
+    margin-top: 6rem;
+    margin-bottom: 0.725rem;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 100;
+}
+
+.score {
+    background-color: var(--box);
+    width: 20rem;
+    height: 18rem;
+    border-radius:3.135rem;
+    font-size: 3.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5rem;
+    margin-left: 6rem;
+
+}
+
+.score h3 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 5.9rem;
+}
+
+.opicoes p{
+    margin-top: 8rem;
+    margin-left: 5.9rem;
+    margin-right: 4rem;
+    font-size: 1.5rem;
+    width: 35.75rem;
+}
+
+#texto2 p{
+    margin-top: 2rem;
+}
+
+button {
+    width: 28.125rem;
+    height: 6rem;
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-left: 7.3rem;
+
+    
+    background-color: var(--botton-color);
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3rem;
+
+    color: var(--color-text); 
+    font-size: 3rem;
+    cursor: pointer;
+
+    font-family: 'PP Telegraf', normal;
+    font-weight: 900;
+    
+}
+
+button:hover {
+    background-color: #D7B0E8;
+    color: #51114F;
 }
