@@ -65,7 +65,7 @@ body{
     color: var(--color-text);   
     margin-bottom: 6rem; 
 
-    cursor: url('../../img/img.cursor.png'), auto;
+    cursor: url('./img/img.cursor.png'), auto;
 }
 
 
