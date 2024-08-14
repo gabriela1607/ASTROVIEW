@@ -105,7 +105,8 @@ nav a {
     text-decoration: none;
     color: var(--color-text);
 
-    font-family: 'Garet', 'Book';
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
 }
 
 nav.pags a {
@@ -113,7 +114,8 @@ nav.pags a {
     text-decoration: none;
     margin-left: 15%;
     font-size: 1.625rem;
-    font-weight: 300;
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
 }
 
 nav.pags a:hover {
@@ -123,7 +125,7 @@ nav.pags a:hover {
 .card {
     width: 50rem;
     height: 23rem;
-    margin-top: 6.5rem;
+    margin-top: 6.4rem;
     margin-left: 5.8rem;
     padding: 3.5rem;
     background-color: var(--background);
@@ -133,10 +135,13 @@ nav.pags a:hover {
 }
 
 .question {
-    width: 50rem;
-    height: 4.6rem; 
+    width: 45rem;
+    height: 4.8rem; 
     font-size: 2.8rem;
     color: var(--pergunta);
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 500;
 }
 
 ul {
@@ -146,8 +151,12 @@ ul {
     color: var(--texto);
     text-decoration: none;
 
+
     margin-left: 4.2rem;
     list-style-type: none;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200; 
 }
 
 li{
@@ -167,6 +176,8 @@ li{
     margin-top: 15rem;
 
     text-decoration: none;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200; 
 
 }
 
@@ -175,6 +186,9 @@ li{
     margin-left: 6.5rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
 }
 
 .navigation a{

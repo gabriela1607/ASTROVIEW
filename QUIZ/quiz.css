@@ -112,7 +112,9 @@ nav.pags a {
     text-decoration: none;
     margin-left: 15%;
     font-size: 1.625rem;
-    font-weight: 300;
+    
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
     
 }
 
