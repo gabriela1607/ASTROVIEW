@@ -13,7 +13,7 @@ html{
 /* PP Telegraf Regular */
 @font-face {
     font-family: 'PP Telegraf';
-    src: url('caminho/para/pp-telegraf-regular.woff2') format('woff2'),
+    src: url('caminho/para/pp-telegraf-regular.woff2') format ('woff2'),
          url('caminho/para/pp-telegraf-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -65,7 +65,7 @@ body{
     color: var(--color-text);   
     margin-bottom: 6rem; 
 
-    cursor: url('../img/img.cursor.png'), auto;
+    cursor: url('./img/img.cursor.png'), auto;
 }
 
 
@@ -103,7 +103,8 @@ nav a {
     text-decoration: none;
     color: var(--color-text);
 
-    font-family: 'Garet', 'Book';
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
 }
 
 nav.pags a {

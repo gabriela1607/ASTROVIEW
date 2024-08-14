@@ -105,7 +105,8 @@ nav a {
     text-decoration: none;
     color: var(--color-text);
 
-    font-family: 'Garet', 'Book';
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
 }
 
 nav.pags a {

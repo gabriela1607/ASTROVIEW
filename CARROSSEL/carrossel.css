@@ -64,7 +64,7 @@ body{
     color: var(--color-text);   
     margin-bottom: 6rem; 
 
-    cursor: url('../../img/img.cursor.png'), auto;
+    cursor: url('./img/img.cursor.png'), auto;
 }
 
 
@@ -75,7 +75,6 @@ header {
     align-items: center;
     font-size: 20px;
     padding: 2rem 5.20rem;
-
     
 }
 
@@ -104,7 +103,8 @@ nav a {
     text-decoration: none;
     color: var(--color-text);
 
-    font-family: 'Garet', 'Book';
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
 }
 
 nav.pags a {
@@ -120,30 +120,41 @@ nav.pags a:hover {
     text-decoration: underline;
 }
 
+.estrutura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .carrossel-de-imagens1 {
     display: flex;
-    margin-left: 10rem;
-    margin-top: -60rem;
-    
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 10rem; 
+    margin-top: -60rem; 
+    width: 100%; 
 }
 
-.carrossel-de-imagens1 {
-    flex: 2;
-    text-align: center;
+.img1 {
+    margin-right: 15rem;
 }
 
-.carrossel-de-imagens1 img {
-    width: 22%;
+.img2 {
+    margin-right: 15rem;
+}
+
+.img3 {
+    margin-right: 15rem;
+}
+
+.carrossel-de-imagens1 img { 
+    width: 300%;
     height: auto; 
-    display: block;
-    border-radius: 1.5rem; 
-    transition: transform 0.3s ease-in-out; 
+    border-radius: 1.5rem;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Adicionando um efeito de zoom ao passar o mouse sobre a imagem */
+/* Efeito de zoom ao passar o mouse sobre a imagem */
 .carrossel-de-imagens1 img:hover {
-    transform: scale(1.05); /* Zoom da imagem ao passar o mouse */
+    transform: scale(1.05);
 }

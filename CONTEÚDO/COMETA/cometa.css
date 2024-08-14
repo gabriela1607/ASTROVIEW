@@ -1,6 +1,49 @@
 *{
     margin: 0;
     padding: 0;
+    max-width: 1400px;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+
+/* PP Telegraf Regular */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('caminho/para/pp-telegraf-regular.woff2') format ('woff2'),
+         url('caminho/para/pp-telegraf-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* PP Telegraf UltraBold */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('caminho/para/pp-telegraf-ultrabold.woff2') format('woff2'),
+         url('caminho/para/pp-telegraf-ultrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Garet Book */
+@font-face {
+    font-family: 'Garet';
+    src: url('caminho/para/garet-book.woff2') format('woff2'),
+         url('caminho/para/garet-book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Garet Heavy */
+@font-face {
+    font-family: 'Garet';
+    src: url('caminho/para/garet-heavy.woff2') format('woff2'),
+         url('caminho/para/garet-heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
 }
 
 :root{
@@ -8,17 +51,21 @@
     --botton-color:#651563;
     --box-name: rgba(217, 217, 217, 0.123);
     --inst-name: #000000;
-    --color-text: #ffffff;
+    --color-text: #ffff;
 }
 
 body{
-    background-image: url('../img/fundo-site1.jpg');
+    background-image: url("../img/fundo-site1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
+    background-repeat: repeat-y, no-repeat;
     overflow-x: hidden;
-    height: 139.44svh;
-    color: var(--color-text);
+    height: 90.19vh;
+    color: var(--color-text);   
+    margin-bottom: 6rem; 
+
+    cursor: url('./img/img.cursor.png'), auto;
 }
 
 
@@ -27,19 +74,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 26px;
-    padding: 2rem 6.25rem;
+    font-size: 20px;
+    padding: 2%;
 }
 
 header img {
-    width: 4.36rem;
+    width: 5.36rem;
     height: auto;    
 }
 
 header .logo {
-    width: 2.5rem;
-    height: 2.5rem; 
-    margin-right: 0.625rem; 
+    width: 3.5rem;
+    height: 3.5rem; 
+    margin-right: 0.725rem; 
 }
 
 header nav {
@@ -47,18 +94,26 @@ header nav {
     height: auto;
 }
 
+nav h1 {
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 600;
+}
 
 nav a {
     text-decoration: none;
     color: var(--color-text);
+
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
 }
 
 nav.pags a {
     color: white;
     text-decoration: none;
-    margin-left: 18%;
+    margin-left: 15%;
     font-size: 1.625rem;
     font-weight: 300;
+    
 }
 
 nav.pags a:hover {

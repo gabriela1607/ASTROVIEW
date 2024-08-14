@@ -65,11 +65,7 @@ body{
     color: var(--color-text);   
     margin-bottom: 6rem; 
 
-<<<<<<< HEAD
-    cursor: url('../img/img.logo.png'), auto;
-=======
-    cursor: url('../../img/img.logo.png'), auto;
->>>>>>> 3cb2e2b (Carrossel, começando o CSS)
+    cursor: url('./img/img.cursor.png'), auto;
 }
 
 
@@ -109,7 +105,8 @@ nav a {
     text-decoration: none;
     color: var(--color-text);
 
-    font-family: 'Garet', 'Book';
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
 }
 
 nav.pags a {
@@ -178,7 +175,6 @@ button {
 button:hover {
     background-color: #D7B0E8;
     color: #51114F;
-<<<<<<< HEAD
 }
 
 .estrutura {
@@ -187,6 +183,4 @@ button:hover {
     justify-content: space-between;
     margin-left: 3.75rem;
 }
-=======
-}
->>>>>>> 3cb2e2b (Carrossel, começando o CSS)
+
