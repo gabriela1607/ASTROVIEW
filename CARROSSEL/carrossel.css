@@ -64,7 +64,7 @@ body{
     color: var(--color-text);   
     margin-bottom: 6rem; 
 
-    cursor: url('../../img/img.logo.png'), auto;
+    cursor: url('../../img/img.cursor.png'), auto;
 }
 
 
@@ -118,4 +118,32 @@ nav.pags a {
 
 nav.pags a:hover {
     text-decoration: underline;
+}
+
+
+.carrossel-de-imagens1 {
+    display: flex;
+    margin-left: 10rem;
+    margin-top: -60rem;
+    
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.carrossel-de-imagens1 {
+    flex: 2;
+    text-align: center;
+}
+
+.carrossel-de-imagens1 img {
+    width: 22%;
+    height: auto; 
+    display: block;
+    border-radius: 1.5rem; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Adicionando um efeito de zoom ao passar o mouse sobre a imagem */
+.carrossel-de-imagens1 img:hover {
+    transform: scale(1.05); /* Zoom da imagem ao passar o mouse */
 }
