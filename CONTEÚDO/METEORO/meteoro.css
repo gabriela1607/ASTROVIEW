@@ -119,3 +119,119 @@ nav.pags a {
 nav.pags a:hover {
     text-decoration: underline;
 }
+
+/* Estilização do main */
+main {
+    padding: 2rem 5rem;
+    position: relative;
+}
+
+/* Estilização das seções */
+.Pag1, .pag2, .pag3, .material-de-estudo {
+    background-color: rgba(128, 0, 128, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Centralização dos títulos H1 e H2 */
+.Pag1 h1, .Pag1 h2,  .pag2 h2, .pag3 h2, .material-de-estudo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 500;
+}
+
+/* Section Pag1 */
+.Pag1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Pag1 h1 {
+    margin-bottom: 2rem;
+}
+
+.Pag1 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 100%; /* Ajuste de largura para o texto */
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.Pag1 .texo-meteoro {
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+/* Section Pag2 */
+.pag2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.pag2 h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.pag2 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Section Pag3 */
+.pag3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pag3 h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.pag3 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Section Material de Estudo */
+.material-de-estudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.material-de-estudo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.material-de-estudo img {
+    max-width: 80%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.material-de-estudo iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}

@@ -119,3 +119,163 @@ nav.pags a {
 nav.pags a:hover {
     text-decoration: underline;
 }
+
+/* Estilização do Main */
+main {
+    padding: 2rem 5rem;
+    position: relative;
+}
+
+/* Estilização das seções */
+.Pag1, .caracteristicas, .pag2, .pag3, .material-de-estudo {
+    background-color: rgba(128, 0, 128, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Centralização dos títulos H1 */
+.Pag1 h1, .caracteristicas h2, .pag2 h2, .pag3 h2, .material-de-estudo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 500;
+}
+
+/* Seção Pag1 */
+.Pag1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Pag1 h1 {
+    margin-bottom: 2rem;
+}
+
+.Pag1 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 80%; /* Ajuste de largura para o texto */
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+/* Seção Características */
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caracteristicas h2 {
+    margin-bottom: 2rem;
+}
+
+.caracteristicas .texo-caracteristicas p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 80%;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+/* Seção Pag2 */
+.pag2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pag2 .Fases, .pag2 .Origem, .pag2 .Estrutura {
+    margin-bottom: 2rem;
+    max-width: 80%;
+}
+
+.pag2 h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 500;
+}
+
+.pag2 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+}
+
+/* Seção Pag3 */
+.pag3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pag3 h2 {
+    margin-bottom: 2rem;
+}
+
+.pag3 .Curiosidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 80%;
+}
+
+.pag3 .Curiosidades p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 48%;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.pag3 .Os estudos sobre a Lua {
+    max-width: 80%;
+}
+
+.pag3 .Os estudos sobre a Lua p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+}
+
+/* Seção Material de Estudo */
+.material-de-estudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.material-de-estudo .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+}
+
+.material-de-estudo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 500;
+}
+
+.material-de-estudo img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.material-de-estudo iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}

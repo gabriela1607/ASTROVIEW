@@ -126,10 +126,11 @@ main {
 }
 
 /* Estilização das seções */
-.intro, .curio, .carac, .camadas, .sol-morrer, .material-de-estudo {
+.estrutura {
     background-color: rgba(128, 0, 128, 0.8);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 /* Centralização dos títulos H1 */
@@ -149,8 +150,7 @@ main {
 }
 
 .intro h1 {
-    margin-bottom: 25rem;
-    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .intro {
@@ -298,9 +298,4 @@ main {
     max-width: 80%; /* Ajuste de largura para a imagem */
     margin: 0 auto;
     border-radius: 10px;
-}
-
-strong {
-    font-family: 'Garet', sans-serif;
-    font-weight: 700; 
 }
