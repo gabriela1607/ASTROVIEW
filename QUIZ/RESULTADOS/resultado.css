@@ -138,7 +138,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6.5rem;
+    margin-top: 3.5rem;
     margin-left: 6rem;
 
 }
@@ -147,6 +147,15 @@ h2 {
     margin-top: 4rem;
     margin-bottom: 1rem;
     font-size: 5.9rem;
+
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 700;
+}
+
+.score p {
+    font-size: 2.5rem;
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
 }
 
 .opicoes p{
@@ -155,6 +164,9 @@ h2 {
     margin-right: 4rem;
     font-size: 1.5rem;
     width: 35.75rem;
+
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
 }
 
 #texto2 p{
@@ -176,11 +188,11 @@ button {
     border-radius: 3rem;
 
     color: var(--color-text); 
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
 
-    font-family: 'PP Telegraf', normal;
-    font-weight: 900;
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 700;
     
 }
 
