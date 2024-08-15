@@ -124,7 +124,6 @@ nav.pags a:hover {
 
 
 .section {
-    margin-top: 1rem;
     margin-bottom: 8rem;
     display: flex;
     justify-content: space-between;
@@ -182,5 +181,6 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     margin-left: 3.75rem;
+    margin-top: 9rem;
 }
 
