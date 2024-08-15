@@ -123,7 +123,7 @@ section {
 
 .estrutura {
     display: flex;
-    margin-top: 4%; 
+    margin-top: 10rem; 
     justify-content: space-between;
 }
 
@@ -137,13 +137,18 @@ section {
 .carrossel-de-imagens1 .img1 img,
 .carrossel-de-imagens1 .img2 img,
 .carrossel-de-imagens1 .img3 img { 
-    width: 15rem; 
-    height: auto; 
+    width: 18rem; 
+    height: 20rem; 
     border-radius: 1.5rem;
     transition: transform 0.3s ease-in-out;
     cursor: pointer; 
 
     margin-left: 20%;
+}
+
+.carrossel-de-imagens1 .img3 img {
+    width: 15rem; 
+    height: 20rem; 
 }
 
 
