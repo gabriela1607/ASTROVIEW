@@ -132,6 +132,7 @@ section {
     align-items: center;
     gap: 2rem; 
     width: 100%; 
+    margin-left: 3rem;
 }
 
 .carrossel-de-imagens1 .img1 img,
@@ -165,7 +166,7 @@ section {
     cursor: pointer;
     transition: transform 0.3s ease;
 
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 .seta-esquerda img:hover, .seta-direita img:hover {
