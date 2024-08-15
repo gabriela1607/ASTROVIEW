@@ -150,7 +150,8 @@ main {
 }
 
 .intro h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 25rem;
+    text-align: center;
 }
 
 .intro {
@@ -176,7 +177,7 @@ main {
 
 /* Curiosidades Section */
 .curio h1 {
-    margin-bottom: 2rem;
+    margin-bottom: -1rem;
 }
 
 .curio {
@@ -189,16 +190,27 @@ main {
     border-radius: 10px;
 }
 
-.curio .texo-curio {
+.curio .texto-curio1 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: left;
     margin-top: 2rem;
 }
 
-.curio .texo-curio p {
+.curio .texto-curio2 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.curio .texto-curio1 p, .texto-curio2 p {
     width: 45%;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    gap: 4rem;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
 }
 
 /* Características Section */
@@ -209,12 +221,13 @@ main {
 }
 
 .carac h1 {
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .carac .foto-carac {
-    max-width: 30%; /* Diminuição da largura da imagem */
-    margin-bottom: 1rem;
+    max-width: 25%; /* Diminuição da largura da imagem */
+    margin-top: -0.5rem;
+    margin-right: 45rem;
     border-radius: 10px;
 }
 
@@ -224,16 +237,27 @@ main {
 }
 
 .carac1 {
-    margin-right: 2rem;
+    margin-right: 35rem;
+    margin-top: 2rem;
+    text-align: left;
 }
 
 .carac2 {
-    align-self: flex-end; /* Posiciona o carac2 à direita */
+    margin-top: -14rem;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
 }
 
 .carac3 {
     width: 80%;
     margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: -9rem;
+    text-align: left;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
 }
 
 /* Camadas Section */
@@ -241,15 +265,25 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
 }
 
-.camadas .foto-camada {
+.camadas h1 {
+    margin-bottom: 25rem;
+    text-align: center;
+}
+
+.foto-camada {
     max-width: 40%; /* Ajuste de largura para a imagem */
-    margin-right: 2rem; /* Espaçamento entre a imagem e o texto */
+    margin-left: 15rem; /* Espaçamento entre a imagem e o texto */
 }
 
 .camadas .camadas-sol {
-    max-width: 45%; /* Ajuste de largura para a lista */
+    max-width: 45%;
+    text-align: left;
+    margin-left: -40rem;
 }
 
 /* Sol Morrer Section */
@@ -259,7 +293,11 @@ main {
 
 .sol-morrer p {
     max-width: 80%; /* Ajuste de largura para o texto */
-    margin: 0 auto 2rem auto; /* Centralização do texto com margem inferior */
+    margin: 0 auto 1rem auto; /* Centralização do texto com margem inferior */
+
+    
+    font-family: 'Garet', sans-serif;
+    font-weight: 400;
 }
 
 .sol-morrer .paragr {
@@ -268,9 +306,13 @@ main {
 }
 
 .sol-morrer .paragr p {
-    width: 45%;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    width: 35%;
+    margin-bottom: 4rem;
+    text-align: left;
+
+    
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
 }
 
 /* Material de Estudo Section */
@@ -298,4 +340,9 @@ main {
     max-width: 80%; /* Ajuste de largura para a imagem */
     margin: 0 auto;
     border-radius: 10px;
+}
+
+strong {
+    font-family: 'Garet', sans-serif;
+    font-weight: 600;
 }
