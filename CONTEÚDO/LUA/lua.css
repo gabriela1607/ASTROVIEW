@@ -127,10 +127,11 @@ main {
 }
 
 /* Estilização das seções */
-.Pag1, .caracteristicas, .pag2, .pag3, .material-de-estudo {
+.estrutura {
     background-color: rgba(128, 0, 128, 0.8);
     padding: 2rem;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 /* Centralização dos títulos H1 */
@@ -145,53 +146,74 @@ main {
 /* Seção Pag1 */
 .Pag1 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .Pag1 h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 25rem;
+    text-align: center;
+}
+
+.Pag1 img {
+    max-width: 45%;
+    margin-right: 2rem;
+    border-radius: 10px;
 }
 
 .Pag1 p {
     font-size: 1.2rem;
     line-height: 1.6;
-    max-width: 80%; /* Ajuste de largura para o texto */
+    max-width: 50%;
     font-family: 'Garet', sans-serif;
     font-weight: 200;
-    margin-bottom: 1rem;
 }
 
 /* Seção Características */
-.caracteristicas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .caracteristicas h2 {
-    margin-bottom: 2rem;
+    margin-bottom: -1rem;
 }
 
-.caracteristicas .texo-caracteristicas p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 80%;
+.caracteristicas {
+    text-align: center;
+}
+
+.caracteristicas .foto-carac {
+    max-width: 70%; /* Ajuste de largura para a imagem */
+    margin: 2rem auto; /* Centralização da imagem com margem superior */
+    border-radius: 10px;
+}
+
+.caracteristicas .carac1 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.caracteristicas .carac2 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.caracteristicas .carac1 p, .carac2 p {
+    width: 45%;
+    margin-bottom: 2rem;
+    gap: 4rem;
+
     font-family: 'Garet', sans-serif;
     font-weight: 200;
-    margin-bottom: 1rem;
 }
+
 
 /* Seção Pag2 */
 .pag2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.pag2 .Fases, .pag2 .Origem, .pag2 .Estrutura {
-    margin-bottom: 2rem;
-    max-width: 80%;
 }
 
 .pag2 h2 {
@@ -202,11 +224,36 @@ main {
     font-weight: 500;
 }
 
-.pag2 p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+.pag2 .Fases, .pag2 .Origem, .pag2 .Estrutura {
+    max-width: 80%;
+    margin-bottom: 2rem;
+    text-align: left;
     font-family: 'Garet', sans-serif;
     font-weight: 200;
+}
+
+.Fases p {
+    width: 45%;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+}
+
+.Fases .fase1 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+
+.pag2 img {
+    max-width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
 }
 
 /* Seção Pag3 */
@@ -225,26 +272,22 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 80%;
+    text-align: left;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
 }
 
 .pag3 .Curiosidades p {
     font-size: 1.2rem;
     line-height: 1.6;
     width: 48%;
-    font-family: 'Garet', sans-serif;
-    font-weight: 200;
     margin-bottom: 1rem;
 }
 
-.pag3 .Os estudos sobre a Lua {
-    max-width: 80%;
-}
-
-.pag3 .Os estudos sobre a Lua p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-family: 'Garet', sans-serif;
-    font-weight: 200;
+.pag3 img {
+    max-width: 50%;
+    margin: 2rem auto;
+    border-radius: 10px;
 }
 
 /* Seção Material de Estudo */
@@ -252,13 +295,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.material-de-estudo .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 80%;
 }
 
 .material-de-estudo h2 {
@@ -269,13 +305,19 @@ main {
     font-weight: 500;
 }
 
-.material-de-estudo img {
-    max-width: 100%;
-    margin-bottom: 2rem;
+.vida-aula, .mapa-mental {
+    width: 80%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.vida-aula iframe, .mapa-mental img {
+    max-width: 80%;
+    margin: 0 auto;
     border-radius: 10px;
 }
 
-.material-de-estudo iframe {
-    max-width: 100%;
-    border-radius: 10px;
+strong {
+    font-family: 'Garet', sans-serif;
+    font-weight: 600;
 }
