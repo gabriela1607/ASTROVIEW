@@ -147,6 +147,32 @@ nav.pags a:hover {
     font-weight: 500;
 }
 
+input[type="radio"] {
+    -webkit-appearance: none; /* Remove o estilo padrão do rádio no Safari */
+    appearance: none; /* Remove o estilo padrão do rádio */
+    width: 3rem; /* Ajuste o tamanho conforme necessário */
+    height: 3rem; /* Ajuste o tamanho conforme necessário */
+    border: 0.3rem solid var(--texto); /* Cor e espessura da borda */
+    border-radius: 50%; /* Faz com que o elemento seja redondo */
+    background-color: #fff; /* Cor de fundo quando não selecionado */
+    cursor: pointer; /* Indica que o elemento é clicável */
+    position: relative; /* Para posicionar o "checkmark" */
+    margin-right: 1rem; /* Espaço entre a bolinha e o texto */
+}
+
+/* Estilo do "checkmark" dentro do rádio */
+input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.5rem; /* Ajuste o tamanho do "checkmark" */
+    height: 1.5rem; /* Ajuste o tamanho do "checkmark" */
+    border-radius: 50%;
+    background: #fff; /* Cor do "checkmark" */
+    transform: translate(-50%, -50%);
+}
+
 ul {
     width: 15rem;
     height: 2.125rem; 
@@ -161,9 +187,12 @@ ul {
 
     font-family: 'Garet', sans-serif;
     font-weight: 200; 
+    padding: 0;
 }
 
 li{
+    display: flex;
+    align-items: center;
     font-size: 2.7rem;
     padding-top: 3rem;
     margin-right: -20rem;
