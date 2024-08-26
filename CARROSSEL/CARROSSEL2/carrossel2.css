@@ -151,13 +151,11 @@ section {
     height: 20rem; 
 }
 
-
 .carrossel-de-imagens1 .img1 img:hover,
 .carrossel-de-imagens1 .img2 img:hover,
 .carrossel-de-imagens1 .img3 img:hover {
     transform: scale(1.05);
 }
-
 
 .seta-esquerda img, .seta-direita img {
     width: 5rem; 

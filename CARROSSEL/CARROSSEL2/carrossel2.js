@@ -1,4 +1,3 @@
-
     // Seleciona as setas e as imagens
     const setaEsquerda = document.querySelector('.seta-esquerda img');
     const setaDireita = document.querySelector('.seta-direita img');
@@ -6,26 +5,25 @@
 
     let imagemAtual = 0;
 
-    // Inicializar o carrossel mostrando apenas a primeira imagem
-    function inicializarCarrossel() {
+    // Função para mostrar a imagem atual
+    function mostrarImagem(index) {
         imagens.forEach((img, i) => {
-            img.style.display = i === 0 ? 'block' : 'none';
+            img.style.display = i === index ? 'block' : 'none';
         });
     }
 
     // Evento para a seta direita
     setaDireita.addEventListener('click', () => {
-        imagens[imagemAtual].style.display = 'none';
         imagemAtual = (imagemAtual + 1) % imagens.length;
-        imagens[imagemAtual].style.display = 'block';
+        mostrarImagem(imagemAtual);
     });
 
     // Evento para a seta esquerda
     setaEsquerda.addEventListener('click', () => {
-        imagens[imagemAtual].style.display = 'none';
         imagemAtual = (imagemAtual - 1 + imagens.length) % imagens.length;
-        imagens[imagemAtual].style.display = 'block';
+        mostrarImagem(imagemAtual);
     });
 
-    // Inicializa o carrossel
-    inicializarCarrossel();
+    // Inicializar o carrossel mostrando apenas a primeira imagem
+    mostrarImagem(imagemAtual);
+
