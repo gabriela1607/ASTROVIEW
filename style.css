@@ -58,6 +58,7 @@ body{
     background-image: url("../../img/fundo-site1.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; 
     background-attachment: scroll;
     background-repeat: repeat-y, no-repeat;
     overflow-x: hidden;
@@ -391,4 +392,3 @@ table p{
 #inst {
     margin-top: 0.5rem;
 }
-
