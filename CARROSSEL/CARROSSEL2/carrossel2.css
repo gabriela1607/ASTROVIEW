@@ -126,7 +126,7 @@ section {
     justify-content: space-between;
 }
 
-.carrossel-de-imagens1 {
+.carrossel-de-imagens2 {
     display: flex;
     align-items: center;
     gap: 2rem; 
@@ -134,9 +134,9 @@ section {
     margin-left: 3rem;
 }
 
-.carrossel-de-imagens1 .img1 img,
-.carrossel-de-imagens1 .img2 img,
-.carrossel-de-imagens1 .img3 img { 
+.carrossel-de-imagens2 .img1 img,
+.carrossel-de-imagens2 .img2 img,
+.carrossel-de-imagens2 .img3 img { 
     width: 18rem; 
     height: 20rem; 
     border-radius: 1.5rem;
@@ -146,14 +146,14 @@ section {
     margin-left: 20%;
 }
 
-.carrossel-de-imagens1 .img3 img {
+.carrossel-de-imagens2 .img3 img {
     width: 15rem; 
     height: 20rem; 
 }
 
-.carrossel-de-imagens1 .img1 img:hover,
-.carrossel-de-imagens1 .img2 img:hover,
-.carrossel-de-imagens1 .img3 img:hover {
+.carrossel-de-imagens2 .img1 img:hover,
+.carrossel-de-imagens2 .img2 img:hover,
+.carrossel-de-imagens2 .img3 img:hover {
     transform: scale(1.05);
 }
 
@@ -177,7 +177,7 @@ section {
 
 .seta-direita {
     margin-left: 10%;
-}
+} 
 
 .seta-esquerda {
     margin-right: 10%;
