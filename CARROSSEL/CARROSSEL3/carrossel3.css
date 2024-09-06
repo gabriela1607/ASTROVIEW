@@ -55,6 +55,7 @@ body{
     background-image: url("../../img/fundo-site1.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-attachment: scroll;
     background-repeat: repeat-y, no-repeat;
     overflow-x: hidden;
@@ -126,17 +127,26 @@ section {
     justify-content: space-between;
 }
 
-.carrossel-de-imagens2 {
+.carrossel-de-imagens3 {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem; 
     width: 100%; 
     margin-left: 3rem;
+    margin: 0 auto;
 }
 
-.carrossel-de-imagens2 .img1 img,
-.carrossel-de-imagens2 .img2 img,
-.carrossel-de-imagens2 .img3 img { 
+.estrutura {
+    display: flex;
+    justify-content: center; 
+    gap: 2rem; 
+    margin-top: 10rem;
+}
+
+.carrossel-de-imagens3 .img1 img,
+.carrossel-de-imagens3 .img2 img,
+.carrossel-de-imagens3 .img3 img { 
     width: 18rem; 
     height: 20rem; 
     border-radius: 1.5rem;
@@ -146,14 +156,15 @@ section {
     margin-left: 20%;
 }
 
-.carrossel-de-imagens2 .img3 img {
+.carrossel-de-imagens3 .img3 img {
     width: 15rem; 
     height: 20rem; 
 }
 
-.carrossel-de-imagens2 .img1 img:hover,
-.carrossel-de-imagens2 .img2 img:hover,
-.carrossel-de-imagens2 .img3 img:hover {
+
+.carrossel-de-imagens3 .img1 img:hover,
+.carrossel-de-imagens3 .img2 img:hover,
+.carrossel-de-imagens3 .img3 img:hover {
     transform: scale(1.05);
 }
 
@@ -177,7 +188,7 @@ section {
 
 .seta-direita {
     margin-left: 10%;
-} 
+}
 
 .seta-esquerda {
     margin-right: 10%;

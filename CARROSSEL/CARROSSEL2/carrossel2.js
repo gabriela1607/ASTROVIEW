@@ -1,25 +1,17 @@
-    const setaEsquerda = document.querySelector('.seta-esquerda img');
-    const setaDireita = document.querySelector('.seta-direita img');
-    const imagens = document.querySelectorAll('.estrutura > div');
+document.addEventListener('DOMContentLoaded', function() {
+    const rightArrow = document.querySelector('.seta-direita img');
+    const leftArrow = document.querySelector('.seta-esquerda img');
 
-    let imagemAtual = 0;
-
-    function mostrarImagem(index) {
-        imagens.forEach((img, i) => {
-            img.style.display = i === index ? 'block' : 'none';
+    if (rightArrow) {
+        rightArrow.addEventListener('click', function() {
+            window.location.href = "./CARROSSEL3/carrossel3.html";
         });
     }
 
-    setaDireita.addEventListener('click', () => {
-        imagemAtual = (imagemAtual + 1) % imagens.length;
-        mostrarImagem(imagemAtual);
-    });
-
-    
-    setaEsquerda.addEventListener('click', () => {
-        imagemAtual = (imagemAtual - 1 + imagens.length) % imagens.length;
-        mostrarImagem(imagemAtual);
-    });
-
-    mostrarImagem(imagemAtual);
+    if (leftArrow) {
+        leftArrow.addEventListener('click', function() {
+            window.location.href = "carrossel2.html"; 
+        });
+    }
+});
 

@@ -57,7 +57,7 @@ html{
 body{
     background-image: url("../../img/fundo-site1.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 0px; 
     background-attachment: fixed; 
     background-attachment: scroll;
     background-repeat: repeat-y, no-repeat;
