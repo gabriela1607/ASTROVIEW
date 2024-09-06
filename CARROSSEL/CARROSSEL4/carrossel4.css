@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+/* PP Telegraf Regular */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('caminho/para/pp-telegraf-regular.woff2') format('woff2'),
+         url('caminho/para/pp-telegraf-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* PP Telegraf UltraBold */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('caminho/para/pp-telegraf-ultrabold.woff2') format('woff2'),
+         url('caminho/para/pp-telegraf-ultrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Garet Book */
+@font-face {
+    font-family: 'Garet';
+    src: url('caminho/para/garet-book.woff2') format('woff2'),
+         url('caminho/para/garet-book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Garet Heavy */
+@font-face {
+    font-family: 'Garet';
+    src: url('caminho/para/garet-heavy.woff2') format('woff2'),
+         url('caminho/para/garet-heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root{
+    --barra-color: #5F0087;
+    --botton-color:#651563;
+    --color-text: #ffff;
+}
+
+body{
+    background-image: url("../../img/fundo-site1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-attachment: scroll;
+    background-repeat: repeat-y, no-repeat;
+    overflow-x: hidden;
+    height: 90.19vh;
+    color: var(--color-text);   
+
+    cursor: url('../../img/img.cursor.png'), auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 2%;
+}
+
+header img {
+    width: 5.36rem;
+    height: auto;    
+}
+
+header .logo {
+    width: 3.5rem;
+    height: 3.5rem; 
+    margin-right: 0.725rem; 
+}
+
+header nav {
+    width: 71.66rem;
+    height: auto;
+}
+
+nav h1 {
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text);
+
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
+}
+
+nav.pags a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15%;
+    font-size: 1.625rem;
+    font-weight: 300;
+
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
+}
+
+nav.pags a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 4rem;
+}
+
+.estrutura {
+    display: flex;
+    margin-top: 10rem; 
+    justify-content: space-between;
+}
+
+.carrossel-de-imagens4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    width: 100%; 
+    margin-left: 3rem;
+    margin: 0 auto;
+}
+
+.estrutura {
+    display: flex;
+    justify-content: center; 
+    gap: 2rem; 
+    margin-top: 10rem;
+}
+
+.carrossel-de-imagens4 .img1 img,
+.carrossel-de-imagens4 .img2 img,
+.carrossel-de-imagens4 .img3 img { 
+    width: 18rem; 
+    height: 20rem; 
+    border-radius: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; 
+
+    margin-left: 20%;
+}
+
+.carrossel-de-imagens4 .img3 img {
+    width: 15rem; 
+    height: 20rem; 
+}
+
+
+.carrossel-de-imagens4 .img1 img:hover,
+.carrossel-de-imagens4 .img2 img:hover,
+.carrossel-de-imagens4 .img3 img:hover {
+    transform: scale(1.05);
+}
+
+
+.seta-esquerda img, .seta-direita img {
+    width: 5rem; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    margin-top: 10rem;
+}
+
+.seta-esquerda img:hover, .seta-direita img:hover {
+    transform: scale(1.2);
+}
+
+.seta-esquerda, .seta-direita {
+    display: flex;
+    align-items: center;
+}
+
+.seta-direita {
+    margin-left: 10%;
+}
+
+.seta-esquerda {
+    margin-right: 10%;
+}
