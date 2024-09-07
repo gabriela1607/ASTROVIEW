@@ -134,21 +134,34 @@ section {
     margin-left: 3rem;
 }
 
-.carrossel-de-imagens2 .img1 img,
-.carrossel-de-imagens2 .img2 img,
-.carrossel-de-imagens2 .img3 img { 
-    width: 18rem; 
+.carrossel-de-imagens2 .img1 img { 
+    width: 15rem; 
     height: 20rem; 
     border-radius: 1.5rem;
     transition: transform 0.3s ease-in-out;
     cursor: pointer; 
 
-    margin-left: 20%;
+    margin-left: 2%;
+}
+
+.carrossel-de-imagens2 .img2 img {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; 
+
+    margin-left: 6%;
 }
 
 .carrossel-de-imagens2 .img3 img {
     width: 15rem; 
     height: 20rem; 
+    border-radius: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; 
+
+    margin-left: 10%;
 }
 
 .carrossel-de-imagens2 .img1 img:hover,
