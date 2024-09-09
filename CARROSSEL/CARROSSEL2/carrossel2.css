@@ -130,7 +130,7 @@ section {
     display: flex;
     align-items: center;
     gap: 2rem; 
-    width: 100%; 
+    width: 50%; 
     margin-left: 3rem;
 }
 
@@ -189,9 +189,9 @@ section {
 }
 
 .seta-direita {
-    margin-left: 10%;
+    margin-left: 4%;
 } 
 
 .seta-esquerda {
-    margin-right: 10%;
+    margin-right: 19%;
 }

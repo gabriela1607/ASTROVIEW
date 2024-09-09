@@ -40,7 +40,7 @@ html{
 @font-face {
     font-family: 'Garet';
     src: url('caminho/para/garet-heavy.woff2') format('woff2'),
-         url('caminho/para/garet-heavy.woff') format('woff');
+        url('caminho/para/garet-heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
@@ -161,13 +161,11 @@ section {
     height: 20rem; 
 }
 
-
 .carrossel-de-imagens4 .img1 img:hover,
 .carrossel-de-imagens4 .img2 img:hover,
 .carrossel-de-imagens4 .img3 img:hover {
     transform: scale(1.05);
 }
-
 
 .seta-esquerda img, .seta-direita img {
     width: 5rem; 

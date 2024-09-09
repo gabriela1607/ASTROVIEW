@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (rightArrow) {
         rightArrow.addEventListener('click', function() {
-            window.location.href = "./CARROSSEL4/carrossel4.html";
+            window.location.href = "../CARROSSEL4/carrossel4.html";
         });
     }
 
     if (leftArrow) {
         leftArrow.addEventListener('click', function() {
-            window.location.href = "./CARROSSEL3/carrossel3.html"; 
+            window.location.href = "../CARROSSEL2/carrossel2.html"; 
         });
     }
 });

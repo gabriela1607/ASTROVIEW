@@ -52,28 +52,20 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.style.backgroundAttachment = "fixed";
 });
 
-// Seleciona a barra de progresso
 const barraProgresso = document.getElementById('barra-progresso');
 
-// Defina o número total de perguntas
-const totalPerguntas = 10; // Mude este valor para o número de perguntas do seu quiz
-let progressoAtual = 0; // Começa com progresso 0
+const totalPerguntas = 10; 
+let progressoAtual = 0; 
 
-// Função para atualizar o progresso
 function atualizarProgresso() {
-    // Calcula a porcentagem do progresso
     const porcentagemProgresso = (progressoAtual / totalPerguntas) * 100;
     
-    // Atualiza a altura da barra de progresso
     barraProgresso.style.height = `${porcentagemProgresso}%`;
 }
 
-// Função para verificar se a resposta está correta e aumentar o progresso
 function verificarResposta(correta) {
     if (correta) {
-        progressoAtual++; // Aumenta o contador de progresso
-        atualizarProgresso(); // Atualiza a barra de progresso
+        progressoAtual++; 
+        atualizarProgresso();
     }
 }
-
-// Exemplo de uso: Quando uma pergunta for respondida corretamente, chamar verificarResposta(true)
