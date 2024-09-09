@@ -58,9 +58,8 @@ body{
     background-image: url("../../img/fundo-site1.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    background-attachment: scroll;
-    background-repeat: repeat-y, no-repeat;
+    background-attachment: fixed; /* Mantém a imagem fixa */
+    background-repeat: no-repeat;
     overflow-x: hidden;
     height: 90.19vh;
     color: var(--color-text);   
@@ -119,7 +118,201 @@ nav.pags a:hover {
     text-decoration: underline;
 }
 
-div.text-box2 {
-    width: none;
-    height: none;
+
+main {
+    padding: 2rem 5rem;
+    position: relative;
+}
+
+/* Estilização das seções */
+.estrutura {
+    background-color: rgba(128, 0, 128, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* Centralização dos títulos H1 */
+.Pag1 h1, .caracteristicas h2, .pag2 h2, .pag3 h2, .material-de-estudo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 500;
+}
+
+.Pag1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Pag1 h1 {
+    margin-bottom: 25rem;
+    text-align: center;
+}
+
+.Pag1 img {
+    max-width: 45%;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+
+.Pag1 p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 50%;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+}
+
+.caracteristicas h2 {
+    margin-bottom: -1rem;
+}
+
+.caracteristicas {
+    text-align: center;
+}
+
+.caracteristicas .foto-carac {
+    max-width: 70%; /* Ajuste de largura para a imagem */
+    margin: 2rem auto; /* Centralização da imagem com margem superior */
+    border-radius: 10px;
+}
+
+.caracteristicas .carac1 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.caracteristicas .carac2 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.caracteristicas .carac1 p, .carac2 p {
+    width: 45%;
+    margin-bottom: 2rem;
+    gap: 4rem;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+}
+
+
+.pag2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pag2 h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 500;
+}
+
+.pag2 .Fases, .pag2 .Origem, .pag2 .Estrutura {
+    max-width: 80%;
+    margin-bottom: 2rem;
+    text-align: left;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+}
+
+.Fases p {
+    width: 45%;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+}
+
+.Fases .fase1 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.pag2 img {
+    max-width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+/* Seção Pag3 */
+.pag3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pag3 h2 {
+    margin-bottom: 2rem;
+}
+
+.pag3 .Curiosidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 80%;
+    text-align: left;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+}
+
+.pag3 .Curiosidades p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 48%;
+    margin-bottom: 1rem;
+}
+
+.pag3 img {
+    max-width: 50%;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+/* Seção Material de Estudo */
+.material-de-estudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.material-de-estudo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 500;
+}
+
+.vida-aula, .mapa-mental {
+    width: 80%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.vida-aula iframe, .mapa-mental img {
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+strong {
+    font-family: 'Garet', sans-serif;
+    font-weight: 600;
 }
