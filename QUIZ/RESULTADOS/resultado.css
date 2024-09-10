@@ -1,7 +1,7 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    max-width: 1440px;
+    box-sizing: border-box;
 }
 
 html {
@@ -63,6 +63,11 @@ body {
     margin-bottom: 10rem;
 
     cursor: url('../../img/img.cursor.png'), auto;
+}
+
+main{
+    margin-inline: auto;
+    max-width: 1440px;
 }
 
 header {
@@ -159,7 +164,7 @@ h2 {
 }
 
 .opicoes p{
-    margin-top: 11rem;
+    margin-top: 6.5rem;
     margin-left: 5.9rem;
     margin-right: 4rem;
     font-size: 1.5rem;
@@ -179,6 +184,7 @@ button {
     max-width: 100%;
     margin-top: 1rem;
     margin-left: 7.3rem;
+    margin-bottom: 1rem;
 
     
     background-color: var(--botton-color);
