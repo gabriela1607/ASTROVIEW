@@ -13,8 +13,8 @@ html{
 /* PP Telegraf Regular */
 @font-face {
     font-family: 'PP Telegraf';
-    src: url('caminho/para/pp-telegraf-regular.woff2') format ('woff2'),
-         url('caminho/para/pp-telegraf-regular.woff') format('woff');
+    src: url('../../FONTES/PPTelegraf-Regular.woff2') format ('woff2'),
+         url('../../FONTES/PPTelegraf-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,8 +22,8 @@ html{
 /* PP Telegraf UltraBold */
 @font-face {
     font-family: 'PP Telegraf';
-    src: url('caminho/para/pp-telegraf-ultrabold.woff2') format('woff2'),
-         url('caminho/para/pp-telegraf-ultrabold.woff') format('woff');
+    src: url('../../FONTES/PPTelegraf-UltraBold.woff2') format('woff2'),
+         url('../../FONTES/PPTelegraf-UltraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -31,8 +31,8 @@ html{
 /* Garet Book */
 @font-face {
     font-family: 'Garet';
-    src: url('caminho/para/garet-book.woff2') format('woff2'),
-         url('caminho/para/garet-book.woff') format('woff');
+    src: url('../../FONTES/Garet-Book.woff2') format('woff2'),
+         url('../../FONTES/Garet-Book.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -40,8 +40,8 @@ html{
 /* Garet Heavy */
 @font-face {
     font-family: 'Garet';
-    src: url('caminho/para/garet-heavy.woff2') format('woff2'),
-         url('caminho/para/garet-heavy.woff') format('woff');
+    src: url('../../FONTES/Garet-Heavy.woff2') format('woff2'),
+         url('../../FONTES/Garet-Heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
