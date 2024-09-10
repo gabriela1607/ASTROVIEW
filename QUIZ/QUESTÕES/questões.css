@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1440px;
+    box-sizing: border-box;
 }
 
 html{
@@ -71,7 +71,10 @@ body{
     cursor: url('../../img/img.cursor.png'), auto;
 }
 
-
+main{
+    margin-inline: auto;
+    max-width: 1440px;
+}
 
 header {
     display: flex;
@@ -141,7 +144,7 @@ nav.pags a:hover {
 .question {
     width: 45rem;
     height: 4.8rem; 
-    font-size: 2.8rem;
+    font-size: 1.9rem;
     color: var(--pergunta);
 
     font-family: 'Garet', sans-serif;
@@ -151,39 +154,36 @@ nav.pags a:hover {
 input[type="radio"] {
     -webkit-appearance: none; /* Remove o estilo padrão do rádio no Safari */
     appearance: none; /* Remove o estilo padrão do rádio */
-    width: 3rem; /* Ajuste o tamanho conforme necessário */
-    height: 3rem; /* Ajuste o tamanho conforme necessário */
-    border: 0.3rem solid var(--texto); /* Cor e espessura da borda */
-    border-radius: 50%; /* Faz com que o elemento seja redondo */
-    background-color: #fff; /* Cor de fundo quando não selecionado */
-    cursor: pointer; /* Indica que o elemento é clicável */
-    position: relative; /* Para posicionar o "checkmark" */
-    margin-right: 1rem; /* Espaço entre a bolinha e o texto */
+    width: 1.8rem; 
+    height: 1.8rem; 
+    border: 0.3rem solid var(--texto);
+    border-radius: 50%; 
+    background-color: #fff; 
+    cursor: pointer; 
+    position: relative; 
+    margin-right: 1rem; 
 }
 
-/* Estilo do "checkmark" dentro do rádio */
 input[type="radio"]:checked::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 1.5rem; /* Ajuste o tamanho do "checkmark" */
-    height: 1.5rem; /* Ajuste o tamanho do "checkmark" */
+    width: 1.5rem;
     border-radius: 50%;
-    background: #fff; /* Cor do "checkmark" */
+    background: #fff; 
     transform: translate(-50%, -50%);
 }
 
 ul {
-    width: 15rem;
-    height: 2.125rem; 
-    font-size: 2.8rem;
+    
+    font-size: 1.5rem;
     color: var(--texto);
     text-decoration: none;
 
 
     margin-left: 4.2rem;
-    margin-top: 1rem;
+    margin-top: -4rem;
     list-style-type: none;
 
     font-family: 'Garet', sans-serif;
@@ -194,7 +194,7 @@ ul {
 li{
     display: flex;
     align-items: center;
-    font-size: 2.7rem;
+    font-size: 1.8rem;
     padding-top: 3rem;
     margin-right: -20rem;
 }
@@ -230,7 +230,6 @@ li{
     height: 0.4rem; 
     font-size: 2.2rem;
     color: var(--background);
-
     text-decoration: none;
 }
 
