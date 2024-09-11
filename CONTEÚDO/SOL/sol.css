@@ -185,30 +185,30 @@ main {
     text-align: center;
 }
 
+.curiopp {
+    display: flex;
+}
+
 .curio .foto-curio {
-    max-width: 50%; /* Ajuste de largura para a imagem */
+    max-width: 55%; /* Ajuste de largura para a imagem */
     margin: 2rem auto; /* Centralização da imagem com margem superior */
     border-radius: 10px;
 }
 
 .curio .texto-curio1 {
-    display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     text-align: left;
-    margin-top: 2rem;
 }
 
 .curio .texto-curio2 {
-    display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     text-align: left;
-    margin-top: 2rem;
 }
 
 .curio .texto-curio1 p, .texto-curio2 p {
-    width: 45%;
+    width: 75%;
     margin-bottom: 2rem;
-    gap: 4rem;
+
 
     font-family: 'Garet', sans-serif;
     font-weight: 200;
@@ -292,26 +292,34 @@ main {
     text-align: center;
 }
 
-.sol-morrer p {
-    max-width: 80%; /* Ajuste de largura para o texto */
-    margin: 0 auto 1rem auto; /* Centralização do texto com margem inferior */
-
-    
-    font-family: 'Garet', sans-serif;
-    font-weight: 400;
+.sol-morrer h1 {
+    margin-bottom: 2rem;
 }
 
-.sol-morrer .paragr {
+.sol-morrer .subtittle {
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.paragpp {
     display: flex;
-    justify-content: space-between;
 }
 
-.sol-morrer .paragr p {
-    width: 35%;
-    margin-bottom: 4rem;
+.sol-morrer .paragr1 {
+    flex-direction: column;
     text-align: left;
+}
 
-    
+.sol-morrer .paragr2 {
+    flex-direction: column;
+    text-align: left;
+}
+
+.sol-morrer .paragr1 p, .paragr2 p {
+    width: 75%;
+    margin-bottom: 2rem;
+
+
     font-family: 'Garet', sans-serif;
     font-weight: 200;
 }
