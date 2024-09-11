@@ -153,6 +153,7 @@ main {
 .intro h1 {
     margin-bottom: 25rem;
     text-align: center;
+    font-size: 5rem;
 }
 
 .intro {
@@ -163,9 +164,10 @@ main {
 }
 
 .intro .foto-intro {
-    max-width: 45%; /* Ajuste de largura para a imagem */
+    max-width: 39%; /* Ajuste de largura para a imagem */
     margin-right: 2rem; /* Espaçamento entre a imagem e o texto */
     border-radius: 10px;
+    margin-left: 7rem;
 }
 
 .intro p {
@@ -197,7 +199,8 @@ main {
 
 .curio .texto-curio1 {
     flex-direction: column;
-    text-align: left;
+    text-align: left;  
+    margin-left: 8rem;  
 }
 
 .curio .texto-curio2 {
@@ -230,6 +233,7 @@ main {
     margin-top: -0.5rem;
     margin-right: 45rem;
     border-radius: 10px;
+    height: 15rem;
 }
 
 .carac1, .carac2 {
@@ -241,6 +245,7 @@ main {
     margin-right: 35rem;
     margin-top: 2rem;
     text-align: left;
+    height: 11rem;
 }
 
 .carac2 {
@@ -248,11 +253,12 @@ main {
 
     font-family: 'Garet', sans-serif;
     font-weight: 200;
+    margin-left: 7rem;
 }
 
 .carac3 {
     width: 80%;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
     margin-left: -9rem;
     text-align: left;
@@ -274,6 +280,7 @@ main {
 .camadas h1 {
     margin-bottom: 25rem;
     text-align: center;
+    margin-left: 14.5rem;
 }
 
 .foto-camada {
@@ -284,7 +291,7 @@ main {
 .camadas .camadas-sol {
     max-width: 45%;
     text-align: left;
-    margin-left: -40rem;
+    margin-left: -37rem;
 }
 
 /* Sol Morrer Section */
@@ -294,11 +301,13 @@ main {
 
 .sol-morrer h1 {
     margin-bottom: 2rem;
+    margin-left: -5rem;
 }
 
 .sol-morrer .subtittle {
     margin-bottom: 2rem;
     font-weight: 600;
+    margin-left: -5rem;
 }
 
 .paragpp {
@@ -308,6 +317,7 @@ main {
 .sol-morrer .paragr1 {
     flex-direction: column;
     text-align: left;
+    margin-left: 7rem;
 }
 
 .sol-morrer .paragr2 {
@@ -333,6 +343,7 @@ main {
 
 .material-de-estudo h1 {
     margin-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 .vida-aula, .mapa-mental {
