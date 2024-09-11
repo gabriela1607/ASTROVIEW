@@ -180,7 +180,7 @@ main {
 
 /* Curiosidades Section */
 .curio h1 {
-    margin-bottom: -1rem;
+    margin-bottom: -0rem;
 }
 
 .curio {
@@ -229,10 +229,10 @@ main {
 }
 
 .carac .foto-carac {
-    max-width: 25%; /* Diminuição da largura da imagem */
-    margin-top: -0.5rem;
+    max-width: 30%; /* Diminuição da largura da imagem */
+    margin-top: -0.05rem;
     margin-right: 45rem;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 15rem;
 }
 
@@ -250,7 +250,6 @@ main {
 
 .carac2 {
     margin-top: -14rem;
-
     font-family: 'Garet', sans-serif;
     font-weight: 200;
     margin-left: 7rem;
