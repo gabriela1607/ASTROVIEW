@@ -1,16 +1,34 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const rightArrow = document.querySelector('.seta-direita img');
-    const leftArrow = document.querySelector('.seta-esquerda img');
+const carroselContainer = document.querySelector("#carrosel_container");
+const estrutura = carroselContainer.querySelector(".estrutura");
+const imagens = estrutura.querySelectorAll(".imagem_carrosel");
+const setaEsquerda = carroselContainer.querySelector("#SD");
+const setaDireita = carroselContainer.querySelector("#SE");
 
-    if (rightArrow) {
-        rightArrow.addEventListener('click', function() {
-            window.location.href = "./CARROSSEL2/carrossel2.html";
-        });
-    }
+let indexAtual = 0;
 
-    if (leftArrow) {
-        leftArrow.addEventListener('click', function() {
-            window.location.href = "./CARROSSEL5/carrossel5.html"; 
-        });
+function atualizarCarrossel() {
+    const larguraImagem = imagens[0].offsetWidth;
+    const deslocamento = -indexAtual * larguraImagem;
+    estrutura.style.transform = `translateX(${deslocamento}px)`;
+}
+
+setaDireita.addEventListener("click", () => {
+    if (indexAtual < imagens.length - 1) {
+        indexAtual++;
+    } else {
+        indexAtual = 0; // Volta para o início
     }
+    atualizarCarrossel();
 });
+
+setaEsquerda.addEventListener("click", () => {
+    if (indexAtual > 0) {
+        indexAtual--;
+    } else {
+        indexAtual = imagens.length - 1; // Vai para o final
+    }
+    atualizarCarrossel();
+});
+
+// Inicializa o carrossel na posição do inicial 
+atualizarCarrossel();

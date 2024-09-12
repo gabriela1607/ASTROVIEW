@@ -133,7 +133,7 @@ main {
 }
 
 /* Centralização dos títulos H1 */
-.Pag1 h1, .caracteristicas h2, .pag2 h2, .pag3 h2, .material-de-estudo h2 {
+.Pag1 h1, .caracteristicas h2, .pag2 h2, .pag3 h2, .material-de-estudo h2, .titulo-principal {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -315,4 +315,100 @@ main {
 strong {
     font-family: 'Garet', sans-serif;
     font-weight: 600;
+}
+
+.flex{
+    display: flex;
+}
+
+.section{
+    margin: 100px 0;
+    padding: 0 50px;
+
+}
+
+.flex-50{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+
+.container p {
+    max-width: 40%;
+    font-size: 24px;
+}
+
+.titulo-principal{
+    margin: 72px 0;
+}
+
+.border-32{
+    border-radius: 32px;
+}
+
+#introducao img{
+    width: 100%;
+    border-radius: 32px;
+}
+
+#curiosidades {
+    padding: 0 50px;
+    text-align: center;
+}
+
+p{
+    font-size: 24px;
+}
+
+#curiosidades p{
+    text-align: left;
+}
+
+#curiosidades img{
+    display: block;
+    margin: 32px auto;
+}
+
+#curiosidades .flex-50{
+    margin-top: 32px;
+    align-items: flex-start;
+}
+
+#caracteristicas{
+    padding: 0 50px;
+}
+
+#caracteristicas .flex-50{
+    margin-bottom: 32px;
+}
+
+#caracteristicas .carac1{
+    margin-bottom: 32px;
+}
+
+#caracteristicas img{
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    border-radius: 32px;
+}
+
+#camadas_container {
+    padding: 0 50px;
+}
+
+#curiosidades_2{
+    padding: 0 50px;
+}
+
+#curiosidades_2 .flex-50 ul{
+    width: 50%;
+    list-style: none;
+    font-size: 24px;
+}
+
+#curiosidades_2 img{
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    border-radius: 32px;
 }
