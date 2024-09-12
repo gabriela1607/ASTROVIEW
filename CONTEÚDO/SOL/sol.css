@@ -230,7 +230,7 @@ main {
 
 .carac .foto-carac {
     max-width: 30%; /* Diminuição da largura da imagem */
-    margin-top: -0.05rem;
+    margin-top: -0.2rem;
     margin-right: 45rem;
     border-radius: 8px;
     height: 15rem;
@@ -245,7 +245,8 @@ main {
     margin-right: 35rem;
     margin-top: 2rem;
     text-align: left;
-    height: 11rem;
+    height: 13.5rem;
+    margin-top: 2rem;
 }
 
 .carac2 {
