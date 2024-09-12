@@ -1,7 +1,7 @@
 {
     "quizzes": [
         {
-            "title": "Astroview",
+            "title": "Iniciar",
             "questions": [
                 {
                     "question": "1) Qual é o planeta mais próximo do sol?",
@@ -67,16 +67,16 @@
                     "answer": "Constelação"
                 },
                 {
-                    "question": "8) Qual são os dois principais componentes do Sol?",
+                    "question": "8) Quais são os dois principais componentes do Sol?",
                     "options": [
-                        "Gas Carbonico e Helio",
+                        "Gás Carbônico e Hélio",
                         "Ferro e Níquel",
-                        "Hidrogenio e Helio"
+                        "Hidrogênio e Hélio"
                     ],
-                    "answer": "Hidrogenio e Helio"
+                    "answer": "Hidrogênio e Hélio"
                 },
                 {
-                    "question": "8) Qual são os dois principais componentes do Sol?",
+                    "question": "9) O que é um meteorito?",
                     "options": [
                         "Reflexo da Lua",
                         "Estrela anã",
@@ -85,11 +85,11 @@
                     "answer": "Meteorito"
                 },
                 {
-                    "question": "10 ) Qual o nome do centro de um buraco negro de onde a luz é incapaz de sair?",
+                    "question": "10) Qual o nome do centro de um buraco negro de onde a luz é incapaz de sair?",
                     "options": [
                         "Horizonte de Eventos",
                         "Centro gravitacional",
-                        "Espaço tempo"
+                        "Espaço-tempo"
                     ],
                     "answer": "Horizonte de Eventos"
                 }
