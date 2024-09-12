@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1400px;
+    box-sizing: border-box;
 }
 
 html{
@@ -122,6 +122,8 @@ nav.pags a:hover {
 main {
     padding: 2rem 5rem;
     position: relative;
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 /* Estilização das seções */
@@ -133,7 +135,7 @@ main {
 }
 
 /* Centralização dos títulos H1 */
-.Pag1 h1, .caracteristicas h2, .pag2 h2, .pag3 h2, .material-de-estudo h2 {
+.intro h1, .curio h1, .carac h1, .camadas h1, .sol-morrer h1, .material-de-estudo h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -141,148 +143,196 @@ main {
     font-weight: 500;
 }
 
-.Pag1 {
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h1 {
+    margin-bottom: 25rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.intro {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-.Pag1 h1 {
-    margin-bottom: 25rem;
-    text-align: center;
-}
-
-.Pag1 img {
-    max-width: 45%;
-    margin-right: 2rem;
+.intro .foto-intro {
+    width: 22rem; /* Ajuste de largura para a imagem */
+    height: 18rem;
+    margin-right: 2rem; /* Espaçamento entre a imagem e o texto */
     border-radius: 10px;
+    margin-left: 7rem;
 }
 
-.Pag1 p {
+.intro p {
     font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 50%;
+    line-height: 1.6rem;
+    max-width: 50rem; /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
     font-weight: 200;
 }
 
-.caracteristicas h2 {
-    margin-bottom: -1rem;
+.curio h1 {
+    margin-bottom: 1rem;
+    line-height: 1.6rem;
+    font-size: 3.75rem;
+    
 }
 
-.caracteristicas {
+.curio {
     text-align: center;
 }
 
-.caracteristicas .foto-carac {
-    max-width: 70%; /* Ajuste de largura para a imagem */
+.curio div {
+    padding-left: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+    
+    margin-top: 1rem;
+}
+
+.curiopp {
+    display: flex;
+}
+
+.curio .foto-curio {
+    width: 50rem; /* Ajuste de largura para a imagem */
     margin: 2rem auto; /* Centralização da imagem com margem superior */
     border-radius: 10px;
 }
 
-.caracteristicas .carac1 {
+.curio .texto-curio1 {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     text-align: left;
-    margin-top: 2rem;
+    max-width: 70rem;
 }
 
-.caracteristicas .carac2 {
+.curio .texto-curio2 {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     text-align: left;
-    margin-top: 2rem;
+    margin-right: -5rem;
 }
 
-.caracteristicas .carac1 p, .carac2 p {
+
+.curio .texto-curio1 p, .texto-curio2 p {
     width: 45%;
     margin-bottom: 2rem;
     gap: 4rem;
 
+
     font-family: 'Garet', sans-serif;
     font-weight: 200;
 }
 
-
-.pag2 {
+/* Características Section */
+.carac {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.pag2 h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.carac h1 {
+    margin-top: 2rem;
+    font-size: 3.75rem;
+}
+
+.carac .foto-carac {
+    max-width: 25%; /* Diminuição da largura da imagem */
+    margin-right: 45rem;
+    border-radius: 10px;
+    height: 15rem;
+}
+
+.carac1, .carac2 {
+    height: 11rem;
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+
+.carac1 {
+    margin-right: 35rem;
+    margin-top: 2rem;
+    padding-right: -20rem;
+    text-align: left;
+    height: 11rem;
+}
+
+.carac2 {
+    margin-top: -14rem;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+    margin-left: 23rem;
+    
+    margin-bottom: 20rem;
+}
+
+
+.camadas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+}
+
+.camadas h1 {
+    margin-bottom: 25rem;
+    margin-top: 2rem;
     text-align: center;
-    font-family: 'PP Telegraf', sans-serif;
-    font-weight: 500;
+    margin-left: 18rem;
+    font-size: 3.75rem;
+    width: 30rem;
 }
 
-.pag2 .Fases, .pag2 .Origem, .pag2 .Estrutura {
-    max-width: 80%;
+.foto-camada {
+    max-width: 40%; /* Ajuste de largura para a imagem */
+    margin-left: 15rem; /* Espaçamento entre a imagem e o texto */
+}
+
+.paragpp {
+    text-align: center;
+}
+
+.paragr1 h1 {
     margin-bottom: 2rem;
-    text-align: left;
-    font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    margin-left: -5rem;
 }
 
-.Fases p {
-    width: 45%;
-    margin-bottom: 2rem;
-    margin-left: 5rem;
-
-    font-family: 'Garet', sans-serif;
-    font-weight: 200;
-}
-
-.Fases .fase1 {
+.paragpp {
     display: flex;
-    flex-direction: row-reverse;
-    text-align: left;
-    margin-top: 2rem;
 }
 
-.pag2 img {
-    max-width: 80%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-}
-
-/* Seção Pag3 */
-.pag3 {
-    display: flex;
+.sol-morrer .paragr1 {
     flex-direction: column;
-    align-items: center;
-}
-
-.pag3 h2 {
-    margin-bottom: 2rem;
-}
-
-.pag3 .Curiosidades {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 80%;
     text-align: left;
+    margin-left: 7rem;
+}
+
+.sol-morrer .paragr2 {
+    flex-direction: column;
+    text-align: left;
+}
+
+.sol-morrer .paragr1 p, .paragr2 p {
+    width: 75%;
+    margin-bottom: 2rem;
+
+
     font-family: 'Garet', sans-serif;
     font-weight: 200;
 }
 
-.pag3 .Curiosidades p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    width: 48%;
-    margin-bottom: 1rem;
-}
-
-.pag3 img {
-    max-width: 50%;
-    margin: 2rem auto;
-    border-radius: 10px;
-}
 
 /* Seção Material de Estudo */
 .material-de-estudo {
@@ -291,13 +341,9 @@ main {
     align-items: center;
 }
 
-
-.material-de-estudo h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-family: 'PP Telegraf', sans-serif;
-    font-weight: 500;
+.material-de-estudo h1 {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 .vida-aula, .mapa-mental {
@@ -306,8 +352,12 @@ main {
     text-align: center;
 }
 
+.vida-aula h2, .mapa-mental h2 {
+    margin-bottom: 1rem;
+}
+
 .vida-aula iframe, .mapa-mental img {
-    max-width: 80%;
+    max-width: 80%; /* Ajuste de largura para a imagem */
     margin: 0 auto;
     border-radius: 10px;
 }
