@@ -13,8 +13,8 @@ html{
 /* PP Telegraf Regular */
 @font-face {
     font-family: 'PP Telegraf';
-    src: url('./FONTES/PPTelegraf-Regular.woff2') format ('woff2'),
-         url('./FONTES/PPTelegraf-Regular.woff') format('woff');
+    src: url('../FONTES/PPTelegraf-Regular.woff2') format ('woff2'),
+         url('../FONTES/PPTelegraf-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,8 +22,8 @@ html{
 /* PP Telegraf UltraBold */
 @font-face {
     font-family: 'PP Telegraf';
-    src: url('./FONTES/PPTelegraf-UltraBold.woff2') format('woff2'),
-         url('./FONTES/PPTelegraf-UltraBold.woff') format('woff');
+    src: url('../FONTES/PPTelegraf-UltraBold.woff2') format('woff2'),
+         url('../FONTES/PPTelegraf-UltraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -31,8 +31,8 @@ html{
 /* Garet Book */
 @font-face {
     font-family: 'Garet';
-    src: url('./FONTES/Garet-Book.woff2') format('woff2'),
-         url('./FONTES/Garet-Book.woff') format('woff');
+    src: url('../FONTES/Garet-Book.woff2') format('woff2'),
+         url('../FONTES/Garet-Book.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -40,8 +40,8 @@ html{
 /* Garet Heavy */
 @font-face {
     font-family: 'Garet';
-    src: url('./FONTES/Garet-Heavy.woff2') format('woff2'),
-         url('./FONTES/Garet-Heavy.woff') format('woff');
+    src: url('../FONTES/Garet-Heavy.woff2') format('woff2'),
+         url('../FONTES/Garet-Heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
@@ -67,6 +67,8 @@ body{
     height: 90.19vh;
     color: var(--color-text);   
     margin-bottom: 6rem; 
+
+    opacity: 40;
 
     cursor: url('../../img/img.cursor.png'), auto;
 }
@@ -131,10 +133,10 @@ nav.pags a:hover {
     text-decoration: underline;
 }
 
-.card {
-    width: 50rem;
-    height: 23rem;
-    margin-top: 6.4rem;
+.app {
+    width: 55rem;
+    height: 25rem;
+    margin-top: 5rem;
     margin-left: 5.8rem;
     padding: 3.5rem;
     background-color: var(--background);
@@ -143,104 +145,67 @@ nav.pags a:hover {
     align-items: center;
 }
 
-.question {
+.quiz h2 {
     width: 45rem;
     height: 4.8rem; 
     font-size: 1.9rem;
     color: var(--pergunta);
 
     font-family: 'Garet', sans-serif;
+    font-weight: 600;
+}
+
+.btn {
+    background: #D9D9D9;
+    color: #222;
+    width: 100%;
+    border: 1px solid var(--background);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    font-size: 1.5rem;
+    font-family: 'Garet', sans-serif;
     font-weight: 500;
 }
 
-input[type="radio"] {
-    -webkit-appearance: none; /* Remove o estilo padrão do rádio no Safari */
-    appearance: none; /* Remove o estilo padrão do rádio */
-    width: 1.8rem; 
-    height: 1.8rem; 
-    border: 0.3rem solid var(--texto);
-    border-radius: 50%; 
-    background-color: #fff; 
-    cursor: pointer; 
-    position: relative; 
-    margin-right: 1rem; 
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+
 }
 
-input[type="radio"]:checked::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1.5rem;
-    border-radius: 50%;
-    background: #fff; 
-    transform: translate(-50%, -50%);
+;btn:disabled {
+   cursor: no-drop; 
 }
 
-ul {
-    
-    font-size: 1.5rem;
-    color: var(--texto);
-    text-decoration: none;
+#next-btn {
+    background: var(--botton-color);
+    color: #fff;
+    font-weight: 500;
+    width: 250px;
+    border: 0;
+    padding: 10px;
+    margin: 25px auto 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
 
-
-    margin-left: 4.2rem;
-    margin-top: -4rem;
-    list-style-type: none;
+    margin-top: -0.2rem;
 
     font-family: 'Garet', sans-serif;
-    font-weight: 200; 
-    padding: 0;
+    font-weight: 600;
 }
 
-li{
-    display: flex;
-    align-items: center;
-    font-size: 1.8rem;
-    padding-top: 3rem;
-    margin-right: -20rem;
+.correct {
+    background: #9aeabc;
 }
 
-.card a {
-    width: 10rem;
-    height: 0.4rem; 
-    font-size: 2.5rem;
-    color: var(--texto);
-
-    display: flex;
-    margin-left: 85%;
-    margin-top: 15rem;
-
-    text-decoration: none;
-    font-family: 'Garet', sans-serif;
-    font-weight: 200; 
-
-}
-
-.navigation {
-    display: flex; 
-    margin-left: 6.5rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-
-    font-family: 'Garet', sans-serif;
-    font-weight: 200;
-}
-
-.navigation a{
-    width: 10rem;
-    height: 0.4rem; 
-    font-size: 2.2rem;
-    color: var(--background);
-    text-decoration: none;
-}
-
-#finalizar {
-    width: 10rem;
-    height: 0.4rem; 
-    font-size: 2rem;
-
-    margin-left: 80%;
+.incorrect {
+    background: #ff9393;
 }
 
 .borda {

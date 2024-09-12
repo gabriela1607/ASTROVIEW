@@ -1,140 +1,165 @@
-const body = document.querySelector("body");
-const assunto = localStorage.getItem("Iniciar");
-
-let quiz = {};
-let pontos = 0;
-let pergunta = 1;
-let resposta = "";
-let idInputResposta = "";
-let respostaCorretaId = "";
-
-async function buscarPerguntas() {
-    const urlDados = "../../data.json";
-    
-    await fetch(urlDados)
-        .then(resposta => resposta.json())
-        .then(dados => {
-            dados.quizzes.forEach(dado => {
-                if (dado.title === Iniciar) {
-                    quiz = dado;
-                }
-            });
-        });
-}
-
-function montarPergunta() {
-    const main = document.querySelector("main");
-
-    main.innerHTML = `
-        <section class="pergunta">
-        <div  class = "card">
-                <div class = "question">
-                    <p>Questão ${pergunta} de 10</p>
-
-                    <h2>${alterarSinais(quiz.questions[pergunta-1].question)}</h2>
-                </div>
-                <div class="barra_progresso">
-                    <div style="width: ${pergunta * 10}%"></div>
-                </div>
-            </section>
-
-            <section class="alternativas">
-                <form action="">
-                    <label for="alternativa_a">
-                        <input type="radio" id="alternativa_a" name="question1" value="${alterarSinais(quiz.questions[pergunta-1].options[0])}">
-
-                        <div>
-                            <span>A</span>
-                            ${alterarSinais(quiz.questions[pergunta-1].options[0])}
-                        </div>
-                    </label>
-
-                    <label for="alternativa_b">
-                        <input type="radio" id="alternativa_b" name="question1" value="${alterarSinais(quiz.questions[pergunta-1].options[1])}">
-
-                        <div>
-                            <span>B</span>
-                            ${alterarSinais(quiz.questions[pergunta-1].options[1])}
-                        </div>
-                    </label>
-
-                    <label for="alternativa_c">
-                        <input type="radio" id="alternativa_c" name="question1" value="${alterarSinais(quiz.questions[pergunta-1].options[2])}">
-
-                        <div>
-                            <span>C</span>
-                            ${alterarSinais(quiz.questions[pergunta-1].options[2])}
-                        </div>
-                    </label>
-                </form>
-        </div>
-
-                <button>Próxima</button>
-            </section>
-    `;
-}
-
-function alterarSinais(texto) {
-    return texto.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-function guardarResposta(evento) {
-    resposta = evento.target.value;
-    idInputResposta = evento.target.id;
-}
-
-function validarResposta() {
-    const botaoEnviar = document.querySelector(".alternativas button");
-
-    if (resposta === quiz.questions[pergunta - 1].answer) {
-        document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "correta");
-        pontos++;
-    } else {
-        document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "errada");
-        document.querySelector(`label[for='${respostaCorretaId}']`).setAttribute("id", "correta");
+const questions = [
+    {
+        question: ") Qual é o planeta mais próximo do sol?",
+        answers: [
+            {text: "Mercurio", correct: true},
+            {text: "Marte", correct: false},
+            {text: "Vênus", correct: false}
+        ]
+    },
+    {
+        question: ") Qual o planeta mais distante do sol em nosso sistema solar?",
+        answers: [
+            {text: "Urano", correct: false},
+            {text: "Netuno", correct: true},
+            {text: "Plutão", correct: false}
+        ] 
+    },
+    {
+        question: ") Qual é o único planeta do sistema solar que gira de lado?",
+        answers: [
+            {text: "Urano", correct: true},
+            {text: "Saturno", correct: false},
+            {text: "Marte", correct: false}
+        ] 
+    },
+    {
+        question: ") Qual o satélite natural do planeta Terra?",
+        answers: [
+            {text: "Sol", correct: false},
+            {text: "Netuno", correct: false},
+            {text: "Lua", correct: true}
+        ] 
+    },
+    {
+        question: ") O Sistema Solar possui uma estrela principal, qual o nome dela?",
+        answers: [
+            {text: "Urano", correct: false},
+            {text: "Sol", correct: true},
+            {text: "Plutão", correct: false}
+        ] 
+    },
+    {
+        question: ") Qual foi o ano que o homem pisou na Lua pela primeira vez?",
+        answers: [
+            {text: "1969", correct: true},
+            {text: "1912", correct: false},
+            {text: "1964", correct: false}
+        ] 
+    },
+    {
+        question: ") Como se chama um aglomerado de estrelas?",
+        answers: [
+            {text: "Sistema Solar", correct: false},
+            {text: "Planetoide", correct: false},
+            {text: "Constelação", correct: true}
+        ] 
+    },
+    {
+        question: ") Quais são os dois principais componentes do Sol?",
+        answers: [
+            {text: "Gás Carbônico e Hélio", correct: false},
+            {text: "Ferro e Níquel", correct: false},
+            {text: "Hidrogênio e Hélio", correct: true}
+        ] 
+    },
+    {
+        question: ") O que é um meteorito?",
+        answers: [
+            {text: "Reflexo da Lua", correct: false},
+            {text: "Estrela anã", correct: false},
+            {text: "Meteorito", correct: true}
+        ] 
+    },
+    {
+        question: ") Qual o nome do centro de um buraco negro de onde a luz é incapaz de sair?",
+        answers: [
+            {text: "Horizonte de Eventos", correct: true},
+            {text: "Centro gravitacional", correct: false},
+            {text: "Espaço-tempo", correct: false}
+        ] 
     }
+];
 
-    if (pergunta === 10) {
-        botaoEnviar.innerText = "Finalizar";
-        botaoEnviar.removeEventListener("click", proximaPergunta);
-        botaoEnviar.addEventListener("click", finalizar);
-    } else {
-        botaoEnviar.innerText = "Próxima";
-        botaoEnviar.removeEventListener("click", validarResposta);
-        botaoEnviar.addEventListener("click", proximaPergunta);
-    }
+const questionElement = document.getElementById ("question");
+const answerButtons = document.getElementById ("answer-buttons");
+const nextButton = document.getElementById ("next-btn");
 
-    pergunta++;
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startQuiz (){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
 }
 
-function finalizar() {
-    localStorage.setItem("pontos", pontos);
-    window.location.href = "./RESULTADOS/resultado.html";
-}
+function showQuestion (){
+    resetState();
+    let currentQuestion = questions [currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
-function proximaPergunta() {
-    montarPergunta();
-    adicionarEventoInputs();
-}
-
-function adicionarEventoInputs() {
-    const inputsResposta = document.querySelectorAll(".alternativas input");
-    inputsResposta.forEach(input => {
-        input.addEventListener("click", guardarResposta);
-
-        if (input.value === quiz.questions[pergunta - 1].answer) {
-            respostaCorretaId = input.id;
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement ("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        if (answer.correct){
+            button.dataset.correct = answer.correct;
         }
+        button.addEventListener("click", selectAnswer);
+    })
+}
+
+function resetState(){
+    nextButton.style.display = "none";
+    while (answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild)
+    }
+}
+
+function selectAnswer (e){
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect){
+        selectedBtn.classList.add ("correct");
+        score++;
+    } else{
+        selectedBtn.classList.add ("incorrect");
+    }
+    Array.from (answerButtons.children).forEach(button => {
+        if (button.dataset.correct === "true"){
+            button.classList.add ("correct");
+        }
+        button.disabled = true;
     });
-
-    const botaoEnviar = document.querySelector(".alternativas button");
-    botaoEnviar.addEventListener("click", validarResposta);
+    nextButton.style.display = "block";
 }
 
-async function iniciar() {
-    await buscarPerguntas();
-    montarPergunta();
-    adicionarEventoInputs();
+function showScore (){
+    resetState ();
+    questionElement.innerHTML = `${score} de ${questions.length}`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
 }
 
-iniciar();
+function handleNextButton (){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        showQuestion ();
+    } else{
+        showScore();
+    }
+};
+
+nextButton.addEventListener("click", ()=> {
+    if (currentQuestionIndex < questions.length){
+        handleNextButton ();
+    } else {
+        startQuiz ();
+    }
+});
+
+startQuiz();

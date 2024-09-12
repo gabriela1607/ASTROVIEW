@@ -11,8 +11,8 @@ html{
 /* PP Telegraf Regular */
 @font-face {
     font-family: 'PP Telegraf';
-    src: url('./FONTES/PPTelegraf-Regular.woff2') format ('woff2'),
-         url('./FONTES/PPTelegraf-Regular.woff') format('woff');
+    src: url('../FONTES/PPTelegraf-Regular.woff2') format ('woff2'),
+         url('../FONTES/PPTelegraf-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,8 +20,8 @@ html{
 /* PP Telegraf UltraBold */
 @font-face {
     font-family: 'PP Telegraf';
-    src: url('./FONTES/PPTelegraf-UltraBold.woff2') format('woff2'),
-         url('./FONTES/PPTelegraf-UltraBold.woff') format('woff');
+    src: url('../FONTES/PPTelegraf-UltraBold.woff2') format('woff2'),
+         url('../FONTES/PPTelegraf-UltraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -29,8 +29,8 @@ html{
 /* Garet Book */
 @font-face {
     font-family: 'Garet';
-    src: url('./FONTES/Garet-Book.woff2') format('woff2'),
-         url('./FONTES/Garet-Book.woff') format('woff');
+    src: url('../FONTES/Garet-Book.woff2') format('woff2'),
+         url('../FONTES/Garet-Book.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -38,8 +38,8 @@ html{
 /* Garet Heavy */
 @font-face {
     font-family: 'Garet';
-    src: url('./FONTES/Garet-Heavy.woff2') format('woff2'),
-         url('./FONTES/Garet-Heavy.woff') format('woff');
+    src: url('../FONTES/Garet-Heavy.woff2') format('woff2'),
+         url('../FONTES/Garet-Heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
@@ -187,6 +187,19 @@ section {
 .seta-esquerda, .seta-direita {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     height: 100%;
     z-index: 99;
 }
+=======
+}
+
+.seta-direita {
+    margin-left: 10%;
+}
+
+.seta-esquerda {
+    margin-right: 10%;
+}
+
+>>>>>>> c2b37c3 (Quiz finalizado.)
