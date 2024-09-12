@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1400px;
+    box-sizing: border-box;
 }
 
 html{
@@ -66,6 +66,11 @@ body{
     margin-bottom: 6rem; 
 
     cursor: url('../../img/img.cursor.png'), auto;
+}
+
+main {
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 header {
