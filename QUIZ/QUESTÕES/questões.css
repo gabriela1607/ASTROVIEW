@@ -208,7 +208,7 @@ nav.pags a:hover {
     background: #ff9393;
 }
 
-.borda {
+.barra {
     background: var(--background);
     height: 26.5rem;
     width: 2.5rem;
@@ -216,11 +216,13 @@ nav.pags a:hover {
     border-radius: 3.125rem;
     
     margin-left: 85%;
-    margin-top: -34.8rem;
+    margin-top: -26.8rem;
+
+    cursor: pointer;
 }
 
-.progresso {
-    height: 50%;
+.barra div {
+    height: 100%;
     background: var(--botton-color);
     border-radius: 999px;
 }

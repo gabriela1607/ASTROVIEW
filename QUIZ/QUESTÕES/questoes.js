@@ -88,6 +88,15 @@ const nextButton = document.getElementById ("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 
+function barraProgresso() {
+    const body = document.querySelector("body .barra")
+
+    body.innerHTML = `
+        <div style="width: ${pergunta * 6.6666666666667}%"></div>
+        
+    `
+}
+
 function startQuiz (){
     currentQuestionIndex = 0;
     score = 0;
@@ -138,11 +147,10 @@ function selectAnswer (e){
     nextButton.style.display = "block";
 }
 
-function showScore (){
-    resetState ();
-    questionElement.innerHTML = `${score} de ${questions.length}`;
-    nextButton.innerHTML = "Play Again";
-    nextButton.style.display = "block";
+function showScore() {
+    localStorage.setItem("score", score);
+    
+    window.location.href = "../RESULTADOS/resultado.html";
 }
 
 function handleNextButton (){
@@ -163,3 +171,4 @@ nextButton.addEventListener("click", ()=> {
 });
 
 startQuiz();
+
