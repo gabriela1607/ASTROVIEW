@@ -57,6 +57,7 @@ html{
 body{
     background-image: url("../../img/fundo-site1.jpg");
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     background-attachment: scroll;
     background-repeat: repeat-y, no-repeat;
@@ -171,19 +172,15 @@ main {
 
 .intro p {
     font-size: 1.2rem;
-    line-height: 1.68;
+    line-height: 1.6;
     max-width: 50%; /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
     font-weight: 200;
-    height: 15.8rem;
-    margin-left: -2.5rem;
-    margin-right: 3rem;
 }
 
 /* Curiosidades Section */
 .curio h1 {
-    margin-bottom: -1rem;
-    margin-top: 2.5rem;
+    margin-bottom: -0rem;
 }
 
 .curio {
@@ -203,13 +200,18 @@ main {
 .curio .texto-curio1 {
     flex-direction: column;
     text-align: left;  
-    margin-left: 15rem;  
+    margin-left: 8rem;  
 }
 
-.curio .texto-curio1 p{
+.curio .texto-curio2 {
+    flex-direction: column;
+    text-align: left;
+}
+
+.curio .texto-curio1 p, .texto-curio2 p {
     width: 75%;
     margin-bottom: 2rem;
-    
+
 
     font-family: 'Garet', sans-serif;
     font-weight: 200;
@@ -226,13 +228,12 @@ main {
     margin-top: 2rem;
 }
 
-.carac .foto1-carac {
-    max-width: 50%; 
-    margin-top: -0.5rem;
-    margin-right: -45rem;
-    border-radius: 10px;
+.carac .foto-carac {
+    max-width: 30%; /* Diminuição da largura da imagem */
+    margin-top: -0.2rem;
+    margin-right: 45rem;
+    border-radius: 8px;
     height: 15rem;
-    margin-left: 00.05rem;
 }
 
 .carac1, .carac2 {
@@ -244,14 +245,12 @@ main {
     margin-right: 35rem;
     margin-top: 2rem;
     text-align: left;
-    height: 11rem;
-    margin-left: 1.5rem;
+    height: 13.5rem;
     margin-top: 2rem;
 }
 
 .carac2 {
     margin-top: -14rem;
-
     font-family: 'Garet', sans-serif;
     font-weight: 200;
     margin-left: 7rem;
