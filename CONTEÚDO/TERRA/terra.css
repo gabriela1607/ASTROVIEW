@@ -68,6 +68,11 @@ body{
     cursor: url('../../img/img.cursor.png'), auto;
 }
 
+main {
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
 header {
     display: flex;
     justify-content: space-between;
