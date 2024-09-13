@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    max-width: 1400px;
 }
 
 html{
@@ -69,10 +69,7 @@ body{
     cursor: url('../../img/img.cursor.png'), auto;
 }
 
-main {
-    max-width: 1440px;
-    margin-inline: auto;
-}
+
 
 header {
     display: flex;
@@ -146,45 +143,46 @@ main {
     font-family: 'PP Telegraf', sans-serif;
     font-weight: 500;
 }
-
 /* Seção Pag1 */
 .Pag1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
 
 .Pag1 h1 {
     margin-bottom: 25rem;
     text-align: center;
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .Pag1 img {
-    max-width: 45%;
+    max-width: 39%;
     margin-right: 2rem;
     border-radius: 10px;
     margin-left: 7rem;
 }
 
 .Pag1 p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 50%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    max-width: 60%; /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
+    margin-right: -5rem;
+    margin-left: -2rem;
 }
 
 /* Seção Características */
-.caracteristicas h2 {
-    margin-bottom: -1rem;
-    margin-right: 2rem;
-    height: 5rem;
+.caracteristicas h1 {
+    margin-top: 2rem;
+    font-size: 5rem;
 }
 
 .caracteristicas {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caracteristicas .foto-carac {
@@ -194,29 +192,30 @@ main {
 }
 
 .caracteristicas .carac1 {
-    display: flex;
-    flex-direction: column;
+    margin-left: -4rem;
+    margin-top: 4rem;
+    margin-bottom: -14rem;
     text-align: left;
-   /* margin-top: 2rem;*/
-    margin-left: 15rem;
+    font-family: 'Garet', sans-serif;
+    height: 13.5rem;
+    width: 50rem;
 }
 
 .caracteristicas .carac2 {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    /*margin-top: 2rem;*/
-    margin-left: 15rem;
+    margin-top: -14rem;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+    margin-left: 30rem;
+    width: 50rem;
 }
 
 .caracteristicas .carac1 p, .carac2 p {
-    width: 75%;
-    margin-bottom: 2rem;
-
-
-    font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    width: 60%;
+    margin-bottom: 1rem;
+    margin-left: 10rem;
+    font-size: 1.5rem;
 }
+
 
 /* Seção Pag2 */
 .pag2 {
@@ -226,9 +225,8 @@ main {
 }
 
 .pag2 h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    margin-top: 13rem;
+    font-size: 5rem;
     font-family: 'PP Telegraf', sans-serif;
     font-weight: 500;
 }
@@ -244,10 +242,12 @@ main {
 .Fases p {
     width: 45%;
     margin-bottom: 2rem;
-    margin-left: 5rem;
+    margin-left: 2rem;
 
     font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    font-weight: 500;
+    font-size: 1.5rem;
+
 }
 
 .Fases .fase1 {
@@ -259,87 +259,81 @@ main {
 
 
 .pag2 img {
-    max-width: 80%;
-    margin-top: 2rem;
+    margin-top: -100rem;
     margin-bottom: 2rem;
     border-radius: 10px;
 }
 
-/* Seção Pag3 */
-.pag3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pag3 h2 {
+.pag2 .Origem p{
+    width: 58%;
+    margin-top: 7rem;
     margin-bottom: 2rem;
-}
+    margin-left: 30rem;
+    margin-right: 7em;
 
-.pag3 .Curiosidades {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 80%;
-    text-align: left;
     font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
-.pag3 .Curiosidades p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    width: 48%;
-    margin-bottom: 1rem;
+.pag2 .Estrutura p{
+    width: 1000;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* Seção Pag3 */
+
+.pag3 .texto-curio2 {
+    width: 900;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .pag3 img {
     max-width: 50%;
-    margin: 2rem auto;
+    margin-left: 28%;
     border-radius: 10px;
+}
+
+.pag3 h2 {
+    margin-top: 13rem;
+    font-size: 5rem;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 500;
 }
 
 /* Seção Material de Estudo */
 .material-de-estudo {
+    margin-top: 13rem;
+    font-size: 5rem;
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.material-de-estudo h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-family: 'PP Telegraf', sans-serif;
-    font-weight: 500;
-}
-
-.vida-aula, .mapa-mental {
-    width: 80%;
-    margin-top: 2rem;
-    text-align: center;
-}
-
-.vida-aula iframe, .mapa-mental img {
-    max-width: 80%;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-strong {
-    font-family: 'Garet', sans-serif;
-    font-weight: 600;
-}
-
-
 .material-de-estudo h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 5rem;
 }
 
 .vida-aula, .mapa-mental {
     width: 80%;
     margin-top: 2rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .vida-aula h2, .mapa-mental h2 {
