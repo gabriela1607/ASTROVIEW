@@ -219,12 +219,14 @@ nav.pags a:hover {
     margin-top: -26.8rem;
 
     cursor: pointer;
+    position: relative;
 }
-
-.barra div {
-    height: 100%;
+#myBar{
+    width: 100;
+    height: 0;
     background: var(--botton-color);
     border-radius: 999px;
+    transition: height 0.5s;
 }
 
 section {
