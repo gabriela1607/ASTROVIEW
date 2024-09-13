@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    max-width: 1440px;
 }
 
 html{
@@ -176,16 +176,16 @@ main {
 .intro p {
     font-size: 1.5rem;
     line-height: 2.5rem;
-    max-width: 60%; /* Ajuste de largura para o texto */
+    width: 150;
     font-family: 'Garet', sans-serif;
     font-weight: 300;
     margin-right: -5rem;
-    margin-left: -2rem;
+    margin-left: -10rem;
 }
 
 /* Curiosidades Section */
 .curio h1 {
-    margin-bottom: -0rem;
+    padding-bottom: 4rem;
     font-size: 5rem;
 }
 
@@ -204,6 +204,7 @@ main {
 }
 
 .curio .texto-curio1 {
+    margin-top: 8rem;
     flex-direction: column;
     text-align: left;  
     margin-left: 7rem;  
