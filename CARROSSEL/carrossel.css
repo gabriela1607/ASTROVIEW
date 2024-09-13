@@ -96,6 +96,7 @@ header nav {
 nav h1 {
     font-family: 'PP Telegraf', sans-serif;
     font-weight: 600;
+    color: white;
 }
 
 nav a {
