@@ -1,14 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    max-width: 1400px;
 }
 
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
 }
-
 
 /* PP Telegraf Regular */
 @font-face {
@@ -69,10 +68,7 @@ body{
     cursor: url('../../img/img.cursor.png'), auto;
 }
 
-main {
-    max-width: 1440px;
-    margin-inline: auto;
-}
+
 
 header {
     display: flex;
@@ -156,7 +152,7 @@ main {
 .intro h1 {
     margin-bottom: 25rem;
     text-align: center;
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .intro {
@@ -175,15 +171,17 @@ main {
 
 .intro p {
     font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 50%; /* Ajuste de largura para o texto */
+    line-height: 2.5rem;
+    max-width: 60%; /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
+    margin-left: -15rem;
 }
 
 /* Curiosidades Section */
 .curio h1 {
     margin-bottom: -0rem;
+    font-size: 5rem;
 }
 
 .curio {
@@ -203,21 +201,25 @@ main {
 .curio .texto-curio1 {
     flex-direction: column;
     text-align: left;  
-    margin-left: 8rem;  
+    margin-left: 7rem;  
+    margin-right: 3rem;
+    max-width: 42%;
 }
 
 .curio .texto-curio2 {
     flex-direction: column;
     text-align: left;
+    margin-right: -7rem;
+    max-width: 40%;
 }
 
 .curio .texto-curio1 p, .texto-curio2 p {
-    width: 75%;
     margin-bottom: 2rem;
-
-
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+     /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 /* Características Section */
@@ -229,73 +231,42 @@ main {
 
 .carac h1 {
     margin-top: 2rem;
+    font-size: 5rem;
 }
 
 .carac .foto-carac {
-    max-width: 30%; /* Diminuição da largura da imagem */
-    margin-top: -0.05rem;
+    width: 25rem; /* Diminuição da largura da imagem */
+    margin-top: 3rem;
     margin-right: 45rem;
     border-radius: 8px;
-    height: 15rem;
+    height: 23rem;
 }
 
 .carac1, .carac2 {
-    width: 40%;
+    width: 60%;
     margin-bottom: 1rem;
+    margin-left: 10rem;
+    font-size: 1.5rem;
 }
 
 .carac1 {
-    margin-right: 35rem;
+    margin-right: 40rem;
+    margin-left: 15rem;
     margin-top: 2rem;
     text-align: left;
-    height: 11rem;
+    height: 13.5rem;
+    margin-top: 2rem;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
 }
 
 .carac2 {
-    margin-top: -14rem;
+    margin-top: -20rem;
     font-family: 'Garet', sans-serif;
     font-weight: 200;
-    margin-left: 7rem;
+    margin-left: 28rem;
 }
 
-.carac3 {
-    width: 80%;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    margin-left: -9rem;
-    text-align: left;
-
-    font-family: 'Garet', sans-serif;
-    font-weight: 200;
-}
-
-/* Camadas Section */
-.camadas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: 'Garet', sans-serif;
-    font-weight: 200;
-}
-
-.camadas h1 {
-    margin-bottom: 25rem;
-    text-align: center;
-    margin-left: 14.5rem;
-    display: flex;
-}
-
-.foto-camada {
-    max-width: 40%; /* Ajuste de largura para a imagem */
-    margin-left: 15rem; /* Espaçamento entre a imagem e o texto */
-}
-
-.camadas .camadas-sol {
-    max-width: 45%;
-    text-align: left;
-    margin-left: -37rem;
-}
 
 /* Sol Morrer Section */
 .sol-morrer {
@@ -304,17 +275,50 @@ main {
 
 .sol-morrer h1 {
     margin-bottom: 2rem;
-    margin-left: -5rem;
+    margin-left: 2rem;
+    font-size: 5rem;
 }
 
 .sol-morrer .subtittle {
     margin-bottom: 2rem;
     font-weight: 600;
-    margin-left: -5rem;
+    margin-left: 2rem;
+    font-size: 1.35rem;
 }
 
 .paragpp {
+    margin-top: 10rem;
     display: flex;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.paragpp .p1{
+    margin-right: 35rem;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    width: 40rem;
+}
+
+.paragpp .p2{
+    margin-left: 38rem;
+    width: 40rem;
+    margin-top: -25rem;
+}
+.paragpp .p2 p{
+    width: 30rem;
+    margin-right: 30rem;
+    margin-top: 20rem;
+}
+.paragpp .p1 p{
+    width: 30rem;
+    padding-left: 3rem;
+}
+
+.paragpp .p2 h2{
+    padding-right: 10rem;
 }
 
 .sol-morrer .paragr1 {
@@ -329,8 +333,9 @@ main {
 }
 
 .sol-morrer .paragr1 p, .paragr2 p {
-    width: 75%;
+    width: 90%;
     margin-bottom: 2rem;
+    margin-top: 1rem;
 
 
     font-family: 'Garet', sans-serif;
@@ -345,14 +350,17 @@ main {
 }
 
 .material-de-estudo h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 5rem;
 }
 
 .vida-aula, .mapa-mental {
     width: 80%;
     margin-top: 2rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .vida-aula h2, .mapa-mental h2 {
