@@ -1,5 +1,3 @@
-
-}
 *{
     margin: 0;
     padding: 0;
@@ -70,8 +68,6 @@ body{
 
     cursor: url('../../img/img.cursor.png'), auto;
 }
-
-
 
 header {
     display: flex;
@@ -156,6 +152,7 @@ main {
     margin-bottom: 25rem;
     text-align: center;
     font-size: 6rem;
+    margin-top: 1.5rem;
 }
 
 .intro {
@@ -166,7 +163,7 @@ main {
 }
 
 .intro .foto-intro {
-    width: 50%; /* Ajuste de largura para a imagem */
+    width: 30%; /* Ajuste de largura para a imagem */
     margin-right: 2rem; /* Espaçamento entre a imagem e o texto */
     border-radius: 10px;
     margin-left: 7rem;
@@ -179,7 +176,8 @@ main {
     font-family: 'Garet', sans-serif;
     font-weight: 300;
     margin-right: -5rem;
-    margin-left: -5rem;
+    margin-left: -15rem;
+    margin-top: 4rem;
 }
 
 /* Curiosidades Section */
@@ -200,6 +198,7 @@ main {
     max-width: 55%; /* Ajuste de largura para a imagem */
     margin: 2rem auto; /* Centralização da imagem com margem superior */
     border-radius: 10px;
+    font-size: 1000rem;
 }
 
 .curio .texto-curio1 {
@@ -216,6 +215,7 @@ main {
     margin-right: -7rem;
     max-width: 40%;
 }
+
 .texto-curio1 p, .texto-curio2 p {
     margin-bottom: 2rem;
     font-size: 1.5rem;
@@ -255,7 +255,7 @@ main {
 .carac1 {
     margin-right: 35rem;
     margin-top: 2rem;
-    margin-left: 15rem;
+    margin-left: 30rem;
     text-align: left;
     height: 13.5rem;
     width: 50rem;
@@ -275,14 +275,13 @@ main {
     width: 90%;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    margin-left: -1rem;
+    margin-left: center;
     text-align: left;
 
     font-family: 'Garet', sans-serif;
     font-weight: 200;
     font-size: 1.5rem;
 }
-
 
 /* Camadas Section */
 .camadas {
@@ -305,6 +304,14 @@ main {
     margin-left: 15rem; /* Espaçamento entre a imagem e o texto */
 }
 
+
+.foto-camada2 {
+    max-width: 40%; /* Ajuste de largura para a imagem */
+    margin-left: 20rem; /* Espaçamento entre a imagem e o texto */
+    margin-top: 1rem;
+}
+
+
 .camadas .camadas-sol {
     max-width: 45%;
     text-align: left;
@@ -320,6 +327,7 @@ main {
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-size: 5rem;
+    margin-top: 5rem;
 }
 
 .sol-morrer .subtittle {
