@@ -1,14 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    max-width: 1440px;
 }
 
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
 }
-
 
 /* PP Telegraf Regular */
 @font-face {
@@ -138,7 +137,7 @@ main {
 }
 
 /* Centralização dos títulos H1 */
-.Pag1 h1, .caracteristicas h2, .pag2 h2, .pag3 h2, .material-de-estudo h2, .titulo-principal {
+.intro h1, .curio h1, .carac h1, .camadas h1, .sol-morrer h1, .material-de-estudo h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -146,173 +145,250 @@ main {
     font-weight: 500;
 }
 
-.Pag1 {
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h1 {
+    margin-bottom: 25rem;
+    text-align: center;
+    font-size: 6rem;
+}
+
+.intro {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-.Pag1 h1 {
-    margin-bottom: 25rem;
-    text-align: center;
-}
-
-.Pag1 img {
-    max-width: 45%;
-    margin-right: 2rem;
+.intro .foto-intro {
+    max-width: 39%; /* Ajuste de largura para a imagem */
+    margin-right: 2rem; /* Espaçamento entre a imagem e o texto */
     border-radius: 10px;
+    margin-left: 7rem;
 }
 
-.Pag1 p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 50%;
+.intro p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    width: 100rem;
     font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
+    margin-right: -5rem;
+    margin-left: -10rem;
 }
 
-.caracteristicas h2 {
-    margin-bottom: -1rem;
+.curio h1 {
+    margin-bottom: -0rem;
+    font-size: 5rem;
 }
 
-.caracteristicas {
+.curio {
     text-align: center;
 }
 
-.caracteristicas .foto-carac {
-    max-width: 70%; /* Ajuste de largura para a imagem */
+.curiopp {
+    display: flex;
+}
+
+.curio .foto-curio {
+    max-width: 55%; /* Ajuste de largura para a imagem */
     margin: 2rem auto; /* Centralização da imagem com margem superior */
     border-radius: 10px;
 }
 
-.caracteristicas .carac1 {
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: left;
-    margin-top: 2rem;
+.curio .texto-curio1 {
+    flex-direction: column;
+    text-align: left;  
+    margin-left: 7rem;  
+    margin-right: 3rem;
+    max-width: 42%;
 }
 
-.caracteristicas .carac2 {
-    display: flex;
-    flex-direction: row-reverse;
+.curio .texto-curio2 {
+    flex-direction: column;
     text-align: left;
-    margin-top: 2rem;
+    margin-right: -7rem;
+    max-width: 40%;
 }
-
-.caracteristicas .carac1 p, .carac2 p {
-    width: 45%;
+.texto-curio1 p, .texto-curio2 p {
     margin-bottom: 2rem;
-    gap: 4rem;
-
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+     /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 
-
-.pag2 {
+.carac {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.pag2 h2 {
-    font-size: 2rem;
+.carac h1 {
+    margin-top: 2rem;
+    font-size: 5rem;
+}
+
+.carac .foto-carac {
+    width: 25rem; /* Diminuição da largura da imagem */
+    margin-top: -5rem;
+    margin-right: 45rem;
+    border-radius: 8px;
+    height: 23rem;
+}
+
+.carac1, .carac2 {
+    width: 60%;
     margin-bottom: 1rem;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+}
+
+.carac1 {
+    margin-right: 35rem;
+    margin-top: 2rem;
+    text-align: left;
+    height: 13.5rem;
+    margin-top: 2rem;
+}
+
+.carac2 {
+    margin-top: -23rem;
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+    margin-left: 28rem;
+}
+
+.carac3 {
+    width: 90%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: -1rem;
+    text-align: left;
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.camadas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    font-family: 'Garet', sans-serif;
+    font-weight: 200;
+}
+
+.camadas p {
+    margin-top: 7.5rem;
+    margin: 2rem;
+    padding-right: 2rem;
+    line-height: 2.5rem;
+    width: 65rem;
+}
+
+.camadas h1 {
+    margin-bottom: 27rem;
+    padding-top: 2rem;
     text-align: center;
-    font-family: 'PP Telegraf', sans-serif;
-    font-weight: 500;
+    margin-left: -19rem;
+    font-size: 5rem;
+    margin-top: 5rem;
 }
 
-.pag2 .Fases, .pag2 .Origem, .pag2 .Estrutura {
-    max-width: 80%;
-    margin-bottom: 2rem;
+.foto-camada {
+    max-width: 40%; /* Ajuste de largura para a imagem */
+    margin-left: 15rem; /* Espaçamento entre a imagem e o texto */
+    margin-top: 4rem;
+}
+
+.camadas .camadas-sol {
+    max-width: 45%;
     text-align: left;
-    font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    margin-left: -59rem;
+    font-size: 1.5rem;
+    margin-top: 5rem;
 }
 
-.Fases p {
-    width: 45%;
-    margin-bottom: 2rem;
-    margin-left: 5rem;
-
-    font-family: 'Garet', sans-serif;
-    font-weight: 200;
+.sol-morrer {
+    text-align: center;
 }
 
-.Fases .fase1 {
+.sol-morrer h1 {
+    margin-top: -7rem;
+    margin-left: 2rem;
+    font-size: 5rem;
+}
+
+.paragpp {
     display: flex;
-    flex-direction: row-reverse;
-    text-align: left;
-    margin-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 
-.pag2 img {
-    max-width: 80%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-}
-
-/* Seção Pag3 */
-.pag3 {
-    display: flex;
+.sol-morrer .paragr1 {
     flex-direction: column;
-    align-items: center;
-}
-
-.pag3 h2 {
-    margin-bottom: 2rem;
-}
-
-.pag3 .Curiosidades {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 80%;
     text-align: left;
+    margin-left: 7rem;
+    font-family: 'Garet', sans-serif;
+    font-weight: 300;
+    width: 65rem;
+}
+
+.sol-morrer .paragr2 {
+    flex-direction: column;
+    text-align: left;
+    width: 65rem;
+    margin-left: 7rem;
+    font-family: 'Garet', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.sol-morrer .paragr1 p, .paragr2 p {
+    width: 90%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
     font-family: 'Garet', sans-serif;
     font-weight: 200;
+    font-size: 1.5rem;
 }
 
-.pag3 .Curiosidades p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    width: 48%;
-    margin-bottom: 1rem;
-}
-
-.pag3 img {
-    max-width: 50%;
-    margin: 2rem auto;
-    border-radius: 10px;
-}
-
-/* Seção Material de Estudo */
+/* Material de Estudo Section */
 .material-de-estudo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-.material-de-estudo h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-family: 'PP Telegraf', sans-serif;
-    font-weight: 500;
+.material-de-estudo h1 {
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 5rem;
 }
 
 .vida-aula, .mapa-mental {
     width: 80%;
     margin-top: 2rem;
     text-align: center;
+    font-size: 1.5rem;
+}
+
+.vida-aula h2, .mapa-mental h2 {
+    margin-bottom: 1rem;
 }
 
 .vida-aula iframe, .mapa-mental img {
-    max-width: 80%;
+    max-width: 80%; /* Ajuste de largura para a imagem */
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -320,100 +396,4 @@ main {
 strong {
     font-family: 'Garet', sans-serif;
     font-weight: 600;
-}
-
-.flex{
-    display: flex;
-}
-
-.section{
-    margin: 100px 0;
-    padding: 0 50px;
-
-}
-
-.flex-50{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10%;
-}
-
-.container p {
-    max-width: 40%;
-    font-size: 24px;
-}
-
-.titulo-principal{
-    margin: 72px 0;
-}
-
-.border-32{
-    border-radius: 32px;
-}
-
-#introducao img{
-    width: 100%;
-    border-radius: 32px;
-}
-
-#curiosidades {
-    padding: 0 50px;
-    text-align: center;
-}
-
-p{
-    font-size: 24px;
-}
-
-#curiosidades p{
-    text-align: left;
-}
-
-#curiosidades img{
-    display: block;
-    margin: 32px auto;
-}
-
-#curiosidades .flex-50{
-    margin-top: 32px;
-    align-items: flex-start;
-}
-
-#caracteristicas{
-    padding: 0 50px;
-}
-
-#caracteristicas .flex-50{
-    margin-bottom: 32px;
-}
-
-#caracteristicas .carac1{
-    margin-bottom: 32px;
-}
-
-#caracteristicas img{
-    width: 50%;
-    aspect-ratio: 1 / 1;
-    border-radius: 32px;
-}
-
-#camadas_container {
-    padding: 0 50px;
-}
-
-#curiosidades_2{
-    padding: 0 50px;
-}
-
-#curiosidades_2 .flex-50 ul{
-    width: 50%;
-    list-style: none;
-    font-size: 24px;
-}
-
-#curiosidades_2 img{
-    width: 50%;
-    aspect-ratio: 1 / 1;
-    border-radius: 32px;
 }
