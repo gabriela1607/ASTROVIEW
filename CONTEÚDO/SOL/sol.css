@@ -234,11 +234,13 @@ main {
 }
 
 .carac .foto-carac {
-    width: 25rem; /* Diminuição da largura da imagem */
-    margin-top: 3rem;
-    margin-right: 45rem;
-    border-radius: 8px;
-    height: 23rem;
+    width: 22rem; /* Diminuição da largura da imagem */
+    margin-top: 8rem;
+    margin-right: 40rem;
+    border-radius: 10px;
+    height: 22rem;
+
+    opacity: 85%;
 }
 
 .carac1, .carac2 {
