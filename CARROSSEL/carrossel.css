@@ -147,7 +147,7 @@ section {
     display: flex;
     justify-content: flex-start; 
     align-items: center;
-    gap: 32px; 
+    gap: 35px; 
     width: 100%;
     height: 100%;
     transition: 1s;
@@ -173,7 +173,7 @@ section {
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 
-    margin-left: 1rem;
+    margin-right: -4rem;
 }
 
 .imagem_carrosel2 img {
@@ -182,6 +182,8 @@ section {
     border-radius: 1.5rem;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
+
+    margin-right: -4rem;
 }
 
 
