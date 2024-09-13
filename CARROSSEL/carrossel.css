@@ -60,8 +60,6 @@ body{
     overflow-x: hidden;
     height: 90.19vh;
     color: var(--color-text);   
-
-    cursor: url('../../img/img.cursor.png'), auto;
 }
 
 main {
