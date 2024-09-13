@@ -1,14 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    max-width: 1440px;
 }
 
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
 }
-
 
 /* PP Telegraf Regular */
 @font-face {
@@ -156,7 +155,7 @@ main {
 .intro h1 {
     margin-bottom: 25rem;
     text-align: center;
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .intro {
@@ -184,6 +183,7 @@ main {
 /* Curiosidades Section */
 .curio h1 {
     margin-bottom: -0rem;
+    font-size: 5rem;
 }
 
 .curio {
@@ -203,21 +203,24 @@ main {
 .curio .texto-curio1 {
     flex-direction: column;
     text-align: left;  
-    margin-left: 8rem;  
+    margin-left: 7rem;  
+    margin-right: 3rem;
+    max-width: 42%;
 }
 
 .curio .texto-curio2 {
     flex-direction: column;
     text-align: left;
+    margin-right: -7rem;
+    max-width: 40%;
 }
-
-.curio .texto-curio1 p, .texto-curio2 p {
-    width: 75%;
+.texto-curio1 p, .texto-curio2 p {
     margin-bottom: 2rem;
-
-
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+     /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 /* Características Section */
@@ -229,19 +232,22 @@ main {
 
 .carac h1 {
     margin-top: 2rem;
+    font-size: 5rem;
 }
 
 .carac .foto-carac {
-    max-width: 30%; /* Diminuição da largura da imagem */
-    margin-top: -0.2rem;
+    width: 25rem; /* Diminuição da largura da imagem */
+    margin-top: 5rem;
     margin-right: 45rem;
     border-radius: 8px;
-    height: 15rem;
+    height: 23rem;
 }
 
 .carac1, .carac2 {
-    width: 40%;
+    width: 60%;
     margin-bottom: 1rem;
+    margin-left: 10rem;
+    font-size: 1.5rem;
 }
 
 .carac1 {
@@ -253,21 +259,22 @@ main {
 }
 
 .carac2 {
-    margin-top: -14rem;
+    margin-top: -25rem;
     font-family: 'Garet', sans-serif;
     font-weight: 200;
-    margin-left: 7rem;
+    margin-left: 28rem;
 }
 
 .carac3 {
-    width: 80%;
-    margin-top: 4rem;
+    width: 90%;
+    margin-top: 6rem;
     margin-bottom: 4rem;
-    margin-left: -9rem;
+    margin-left: -1rem;
     text-align: left;
 
     font-family: 'Garet', sans-serif;
     font-weight: 200;
+    font-size: 1.5rem;
 }
 
 /* Camadas Section */
@@ -304,17 +311,22 @@ main {
 
 .sol-morrer h1 {
     margin-bottom: 2rem;
-    margin-left: -5rem;
+    margin-left: 2rem;
+    font-size: 5rem;
+    margin-top: 5rem;
 }
 
 .sol-morrer .subtittle {
     margin-bottom: 2rem;
     font-weight: 600;
-    margin-left: -5rem;
+    margin-left: 2rem;
+    font-size: 1.35rem;
 }
 
 .paragpp {
     display: flex;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 
 .sol-morrer .paragr1 {
@@ -329,8 +341,9 @@ main {
 }
 
 .sol-morrer .paragr1 p, .paragr2 p {
-    width: 75%;
+    width: 90%;
     margin-bottom: 2rem;
+    margin-top: 1rem;
 
 
     font-family: 'Garet', sans-serif;
@@ -339,20 +352,27 @@ main {
 
 /* Material de Estudo Section */
 .material-de-estudo {
+    margin-right: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.material-de-estudo div {
+    margin-left: 4rem;
+}
+
 .material-de-estudo h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     margin-top: 3rem;
+    font-size: 5rem;
 }
 
 .vida-aula, .mapa-mental {
     width: 80%;
     margin-top: 2rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .vida-aula h2, .mapa-mental h2 {
