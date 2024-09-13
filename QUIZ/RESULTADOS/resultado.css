@@ -139,7 +139,6 @@ h2 {
     width: 20rem;
     height: 18rem;
     border-radius:3.135rem;
-    font-size: 3.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,19 +147,21 @@ h2 {
 
 }
 
-.score h1 {
+.score #resul {
     margin-top: 4rem;
     margin-bottom: 1rem;
-    font-size: 5.9rem;
+    font-size: 7rem;
 
     font-family: 'Garet', 'sans-serif';
-    font-weight: 700;
+    font-weight: 900;
 }
+
+
 
 .score p {
     font-size: 2.5rem;
     font-family: 'Garet', 'sans-serif';
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .opicoes p{

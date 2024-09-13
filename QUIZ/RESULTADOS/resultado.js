@@ -1,7 +1,10 @@
-
 function showScore() {
-    const divPontuacao = document.querySelector("h1 #resul")
-    const score = localStorage.getItem("score")
+    const divPontuacao = document.querySelector("#resul");
+    const score = localStorage.getItem("score");
+
+    // Exibe a pontuação no elemento h1
+    divPontuacao.innerHTML = `<p>${score}</p>`;
 }
 
-inserirResultado()
+// Chama a função para exibir o resultado
+showScore();
