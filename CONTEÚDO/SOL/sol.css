@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    max-width: 1440px;
 }
 
 html{
@@ -67,11 +67,6 @@ body{
     margin-bottom: 6rem; 
 
     cursor: url('../../img/img.cursor.png'), auto;
-}
-
- main {
-    max-width: 1440px;
-    margin-inline: auto;
 }
 
 header {
@@ -311,21 +306,23 @@ main {
 .camadas h1 {
     margin-bottom: 25rem;
     text-align: center;
-    margin-left: 12rem;
+    margin-left: 1.5rem;
     font-size: 5rem;
+    margin-top: -2rem;
 }
 
 .foto-camada {
     max-width: 40%; /* Ajuste de largura para a imagem */
     margin-left: 15rem; /* Espaçamento entre a imagem e o texto */
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 .camadas .camadas-sol {
     max-width: 45%;
     text-align: left;
-    margin-left: -65rem;
+    margin-left: -59rem;
     font-size: 1.5rem;
+    margin-top: 5rem;
 }
 
 /* Sol Morrer Section */
@@ -337,6 +334,7 @@ main {
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-size: 5rem;
+    margin-top: 5rem;
 }
 
 .sol-morrer .subtittle {
