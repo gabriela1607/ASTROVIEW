@@ -186,7 +186,8 @@ main {
     font-family: 'Garet', sans-serif;
     font-weight: 300;
     margin-right: -5rem;
-    margin-left: -2rem;
+    margin-left: -12.5rem;
+    margin-top: 2rem;
 }
 
 .curio h1 {
@@ -344,7 +345,7 @@ main {
     /* Ajuste de largura para a imagem */
     margin-left: 15rem;
     /* Espaçamento entre a imagem e o texto */
-    margin-top: 8rem;
+    margin-top: 150rem;
 }
 
 .camadas .camadas-sol {
