@@ -136,7 +136,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: -5rem;
     width: 100%; 
     margin: 0 auto;
     height: 500px;
@@ -160,70 +160,30 @@ section {
 
 .carrossel-de-imagens .imagem_carrosel img{ 
     width: 18rem; 
-    height: 20rem; 
+    height: 21rem; 
     border-radius: 1.5rem;
     transition: transform 0.3s ease-in-out;
     cursor: pointer; 
-
 }
 
 .imagem_carrosel1 img {
-    width: 15.3rem; 
-    height: 20.3rem; 
+    width: 22rem; 
+    height: 21rem; 
+    border-radius: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
+    margin-left: 1rem;
+}
+
+.imagem_carrosel2 img {
+    width: 22rem; 
+    height: 21rem; 
     border-radius: 1.5rem;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.imagem_carrosel2 img {
-    width: 14.3rem; 
-    height: 20.3rem; 
-    border-radius: 1.5rem;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
-.imagem_carrosel3 img {
-    width: 14.3rem; 
-    height: 20.3rem; 
-    border-radius: 1.5rem;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
-.imagem_carrosel4 img {
-    width: 14.3rem; 
-    height: 20.3rem; 
-    border-radius: 1.5rem;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
-.imagem_carrosel5 img {
-    width: 14.3rem; 
-    height: 20.3rem; 
-    border-radius: 2rem;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
-.imagem_carrosel6 img {
-    width: 14.3rem; 
-    height: 20.3rem; 
-    border-radius: 2rem;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
-.imagem_carrosel7 img {
-    width: 14.3rem; 
-    height: 20.4rem; 
-    border-radius: 2rem;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
-.imagem_carrosel8 img {
-    width: 14.3rem; 
-    height: 20.3rem; 
-    border-radius: 2rem;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-}
 
 .carrossel-de-imagens .imagem_carrosel img:hover{
     transform: scale(1.05);
@@ -250,10 +210,10 @@ section {
 }
 
 .seta-direita {
-    margin-left: 10%;
+    margin-left: 3%;
 }
 
 .seta-esquerda {
-    margin-right: 10%;
+    margin-right: 3%;
 }
 
