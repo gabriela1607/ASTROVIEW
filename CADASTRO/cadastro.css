@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body{
+    background-image: url("../../img/fundo-site1.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed; 
+    background-attachment: scroll;
+    background-repeat: repeat-y, no-repeat;
+    overflow-x: hidden;
+    height: 90.19vh;
+    color: var(--color-text);   
+    margin-bottom: 6rem;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 2%;
+
+}
+
+header img {
+    width: 5.36rem;
+    height: auto;    
+}
+
+header .logo {
+    width: 3.5rem;
+    height: 3.5rem; 
+    margin-right: 0.725rem; 
+}
+
+header nav {
+    width: 71.66rem;
+    height: auto;
+}
+
+
+nav h1 {
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text);
+
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
+}
+
+nav.pags a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15%;
+    font-size: 1.625rem;
+    font-weight: 300;
+
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 6rem); /* Ajusta a altura para o header */
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largura fixa do formulário */
+    text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-family: 'Garet', sans-serif;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-text); /* Use sua variável de cor */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darken(var(--color-text), 10%); /* Muda a cor ao passar o mouse */
+}
