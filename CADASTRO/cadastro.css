@@ -22,7 +22,6 @@ body{
     margin-bottom: 6rem;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -47,7 +46,6 @@ header nav {
     width: 71.66rem;
     height: auto;
 }
-
 
 nav h1 {
     font-family: 'PP Telegraf', sans-serif;
@@ -78,44 +76,78 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 6rem); /* Ajusta a altura para o header */
+   /*height: calc(100vh - 6rem);*/
+    min-height: calc(100vh - 6rem);
 }
 
 .form-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    background-color: rgba(235, 221, 221, 0.95); 
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Largura fixa do formulário */
-    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+    width: 350px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: -1rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #503477;
+    height: 10px;
+    margin-left: -10.5px;  
 }
 
 h2 {
-    margin-bottom: 1rem;
-    font-family: 'Garet', sans-serif;
-    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #250c47;/
 }
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 0.5rem 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
     font-size: 16px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
 }
 
 button {
     width: 100%;
-    padding: 10px;
-    background-color: var(--color-text); /* Use sua variável de cor */
+    padding: 12px;
+    background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: darken(var(--color-text), 10%); /* Muda a cor ao passar o mouse */
+    background-color: #0056b3; 
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    font-size: 14px; 
+}
+
+.checkbox-container input {
+    margin-right: 0.5rem;
+}
+
+.checkbox-container label {
+    color: #707074; 
 }
