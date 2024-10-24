@@ -127,7 +127,75 @@ nav.pags a:hover {
 }
 
 .form {
-    background-color: rgba(215, 209, 224, 0.8);
+    background-color: rgba(18, 5, 37, 0.8);
     padding: 20px 40px;
-    border-radius: 15px;
+    border-radius: 25px;
+    max-width: 650px;
+    width: 1100%;
+    margin-left: 20.5rem;
+    margin-top: 100px;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 21px;
+    margin-left: -395px;
+}
+
+.input-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-grupo input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #aa00ff;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.input-grupo input::placeholder {
+    color: #a88daf;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.terms input{
+    margin-right: 10px;
+}
+
+.terms a {
+    color: #aa00ff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #aa00ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 29px;
+    font-size: 1rem;
+    cursor: pointer;    
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8800cc;
 }
