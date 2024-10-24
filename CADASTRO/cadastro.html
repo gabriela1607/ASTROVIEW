@@ -3,38 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cadastro.css">
+    <link rel="stylesheet" href="cadastro.css">
     <title>Astroview</title>
     <link rel="icon" href="../img/img.logo.png" type="image/png">
-    
+    <script src="cadastro.js.js"></script>
 </head>
 <body>
+    <header>
+        <a href="../index.html"><img class="logo" src="../img/img.logo.png" alt="logo do site astroview" ></a>
+        <nav>
+            <h1>ASTROVIEW</h1>
+        </nav>
+        <nav class="pags">
+            <a href="../CARROSSEL/">Conteúdo</a>
+            <a href="../QUIZ/quiz.html">Quiz</a>
+            <a href="#feedback">Contato</a>
+        </nav>
+    </header>
     <main>
-        <div class="form-container">
-            <h2>Cadastro de Usuário</h2>
-            <body>
-                <header>
-                    <a href="../index.html"><img class="logo" src="../img/img.logo.png" alt="logo do site astroview"></a>
-                    <nav>
-                        <h1>ASTROVIEW</h1>
-                    </nav>
-                </header>
-            
-                <main>
-                    <div class="form-container">
-                        <h2>Cadastro de Usuário</h2>
-                        <form id="cadastro-form">
-                            <input type="text" placeholder="Nome" required>
-                            <input type="email" placeholder="Email" required>
-                            <input type="password" placeholder="Senha" required>
-                            <input type="password" placeholder="Confirmar Senha" required>
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="termos" required>
-                                <label for="termos">Aceito os <a href="#">termos e condições</a></label>
-                            </div>
-                            <a href="../CARROSSEL/index.html"><button>CADASTRAR</button></a>
-                        </form>
-                    </div>
-                </main>
-            </body>
+        <div class="form">
+            <h1>Cadastra-se</h1>
+
+            <form>
+                <div class="input-grupo">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="text" placeholder="Sobrenome" required>
+                </div>
+                
+               <div class="input-grupo">
+                    <input type="email" placeholder="E-mail" required>
+               </div>    
+
+               <div class="input-grupo">
+                    <input type="password" placeholder="Senha" required>
+                    <input type="password" placeholder="Confirme a senha" required>
+               </div>
+
+               <div class="termos">
+                    <input type="checkbox" requuired>
+                    <label>Ao clicar no botão, você estará concordando com a <a href="#">Política de Privacidade</a> e <a href="#">Termos e Condições</a>.</label>
+               </div>
+               <button type="submit">Cadastrar</button>
+            </form>
+        </div>  
+    </main>
+</body>
 </html>

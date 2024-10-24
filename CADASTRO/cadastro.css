@@ -9,8 +9,53 @@ html{
     scroll-padding-top: 5rem;
 }
 
+
+/* PP Telegraf Regular */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('./FONTES/PPTelegraf-Regular.woff2') format ('woff2'),
+         url('./FONTES/PPTelegraf-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* PP Telegraf UltraBold */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('./FONTES/PPTelegraf-UltraBold.woff2') format('woff2'),
+         url('./FONTES/PPTelegraf-UltraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Garet Book */
+@font-face {
+    font-family: 'Garet';
+    src: url('./FONTES/Garet-Book.woff2') format('woff2'),
+         url('./FONTES/Garet-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Garet Heavy */
+@font-face {
+    font-family: 'Garet';
+    src: url('./FONTES/Garet-Heavy.woff2') format('woff2'),
+         url('./FONTES/Garet-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root{
+    --barra-color: #5F0087;
+    --botton-color:#651563;
+    --box-name: rgba(217, 217, 217, 0.123);
+    --inst-name: #000000;
+    --color-text: #ffff;
+}
+
 body{
-    background-image: url("../../img/fundo-site1.jpg");
+    background-image: url("../img/fundo-site1.jpg");
     background-size: cover;
     background-position: center; 
     background-attachment: fixed; 
@@ -19,7 +64,12 @@ body{
     overflow-x: hidden;
     height: 90.19vh;
     color: var(--color-text);   
-    margin-bottom: 6rem;
+    margin-bottom: 6rem; 
+}
+
+main {
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 header {
@@ -72,82 +122,12 @@ nav.pags a {
     
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   /*height: calc(100vh - 6rem);*/
-    min-height: calc(100vh - 6rem);
+nav.pags a:hover {
+    text-decoration: underline;
 }
 
-.form-container {
-    background-color: rgba(235, 221, 221, 0.95); 
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
-    width: 350px;
-    text-align: center;
-    transition: all 0.3s ease;
-    margin-top: -1rem;
-}
-
-h1 {
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-    color: #503477;
-    height: 10px;
-    margin-left: -10.5px;  
-}
-
-h2 {
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-    color: #250c47;/
-}
-
-input {
-    width: 100%;
-    padding: 12px;
-    margin: 0.5rem 0;
-    border: 1px solid #ff0000;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border 0.3s;
-}
-
-input:focus {
-    border-color: #007BFF;
-    outline: none;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3; 
-}
-
-.checkbox-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0;
-    font-size: 14px; 
-}
-
-.checkbox-container input {
-    margin-right: 0.5rem;
-}
-
-.checkbox-container label {
-    color: #707074; 
+.form {
+    background-color: rgba(215, 209, 224, 0.8);
+    padding: 20px 40px;
+    border-radius: 15px;
 }
