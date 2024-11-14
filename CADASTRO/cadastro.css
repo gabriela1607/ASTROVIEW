@@ -160,6 +160,39 @@ h2 {
     outline: none;
 }
 
+
+.input-grupo1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-left: -10px;
+    font-size: 2px;
+}
+
+.input-grupo2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-grupo3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-grupo4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-grupo5 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
 .input-grupo input::placeholder {
     color: #a88daf;
 }
