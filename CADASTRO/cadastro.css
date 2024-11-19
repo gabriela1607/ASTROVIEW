@@ -132,16 +132,16 @@ nav.pags a:hover {
     border-radius: 25px;
     max-width: 650px;
     width: 1100%;
-    margin-left: 20.5rem;
+    margin-left: 21.5rem;
     margin-top: 100px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 h2 {
     color: #fff;
     font-size: 2rem;
     margin-bottom: 21px;
-    margin-left: -395px;
+    margin-left: 16px;
 }
 
 .input-grupo {
@@ -195,12 +195,12 @@ h2 {
 }
 
 .input-grupo5 {
-    /*display: flex;
-    flex-direction: column;*/
+    display: flex;
+    flex-direction: row;
     margin-bottom: 15px;
-    margin-top: -61.6px;
-    margin-left: 18rem;
-    margin-right: 15rem;
+    width: 15rem;
+    margin-top: -64px;
+    
 }
 
 .input-grupo input::placeholder {
