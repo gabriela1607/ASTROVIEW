@@ -16,7 +16,7 @@ setaDireita.addEventListener("click", () => {
     if (indexAtual < imagens.length - 1) {
         indexAtual++;
     } else {
-        indexAtual = 0; // Volta para o início
+        indexAtual = 0; 
     }
     atualizarCarrossel();
 });
@@ -25,10 +25,9 @@ setaEsquerda.addEventListener("click", () => {
     if (indexAtual > 0) {
         indexAtual--;
     } else {
-        indexAtual = imagens.length - 1; // Vai para o final
+        indexAtual = imagens.length - 1;
     }
     atualizarCarrossel();
 });
 
-// Inicializa o carrossel na posição do inicial 
 atualizarCarrossel();

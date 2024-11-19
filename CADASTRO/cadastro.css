@@ -165,32 +165,42 @@ h2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-    margin-left: -10px;
-    font-size: 2px;
+    width: 15rem;
+    margin-left: 1.2rem;
 }
 
 .input-grupo2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    width: 15rem;
+    margin-top: -64px;
+    margin-left: 18rem;
 }
 
 .input-grupo3 {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    width: 32rem;
+    margin-left: 1.2rem;
 }
 
 .input-grupo4 {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    width: 15rem;
+    margin-left: 1.2rem;
 }
 
 .input-grupo5 {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     margin-bottom: 15px;
+    margin-top: -61.6px;
+    margin-left: 18rem;
+    margin-right: 15rem;
 }
 
 .input-grupo input::placeholder {
@@ -203,6 +213,7 @@ h2 {
     margin-bottom: 15px;
     color: #fff;
     font-size: 0.8rem;
+    width: -8px;
 }
 
 .terms input{
