@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+/* PP Telegraf Regular */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('./FONTES/PPTelegraf-Regular.woff2') format ('woff2'),
+         url('./FONTES/PPTelegraf-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* PP Telegraf UltraBold */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('./FONTES/PPTelegraf-UltraBold.woff2') format('woff2'),
+         url('./FONTES/PPTelegraf-UltraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Garet Book */
+@font-face {
+    font-family: 'Garet';
+    src: url('./FONTES/Garet-Book.woff2') format('woff2'),
+         url('./FONTES/Garet-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Garet Heavy */
+@font-face {
+    font-family: 'Garet';
+    src: url('./FONTES/Garet-Heavy.woff2') format('woff2'),
+         url('./FONTES/Garet-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root{
+    --barra-color: #5F0087;
+    --botton-color:#651563;
+    --box-name: rgba(217, 217, 217, 0.123);
+    --inst-name: #000000;
+    --color-text: #ffff;
+}
+
+body{
+    background-image: url("../../img/fundo-site1.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed; 
+    background-attachment: scroll;
+    background-repeat: repeat-y, no-repeat;
+    overflow-x: hidden;
+    height: 90.19vh;
+    color: var(--color-text);   
+    margin-bottom: 6rem; 
+}
+
+
+main {
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 2%;
+
+}
+
+header img {
+    width: 5.36rem;
+    height: auto;    
+}
+
+header .logo {
+    width: 3.5rem;
+    height: 3.5rem; 
+    margin-right: 0.725rem; 
+}
+
+header nav {
+    width: 71.66rem;
+    height: auto;
+}
+
+nav h1 {
+    font-family: 'PP Telegraf', sans-serif;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-text);
+
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
+}
+
+nav.pags a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15%;
+    font-size: 1.625rem;
+    font-weight: 300;
+
+    font-family: 'Garet', 'sans-serif';
+    font-weight: 200;
+    
+}
+
+nav.pags a:hover {
+    text-decoration: underline;
+}
+
+  .ranking-container {
+    background-color: #590059;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-left: 520px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #2e012e;
+    font-weight: bold;
+    
+  }
+  
+  tr:nth-child(even) {
+    background-color: #6b006b;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #5c005c;
+  }
+  
+  .btn {
+    background-color: #390039;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #4a004a;
+  }
+  
