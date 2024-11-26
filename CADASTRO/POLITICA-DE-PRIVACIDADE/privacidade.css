@@ -140,5 +140,23 @@ h2 {
     color: #fff;
     font-size: 2rem;
     margin-bottom: 21px;
-    margin-left: 16px;
+    margin-left: 120px;
+    margin-top: -90px;
+}
+
+h3 {
+    justify-content: center;
+    width: 85rem;
+    margin-left: 230px;
+    margin-top: 70px;
+    display: flex;
+    text-justify: auto;
+}
+
+p {
+    display: contents;
+    font-stretch: condensed;
+    text-align: center;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
