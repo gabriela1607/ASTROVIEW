@@ -179,6 +179,12 @@ h2 {
     margin-top: 2rem;
 }
 
+.ranking {
+    color: var(--color-text);
+    align-items: center;
+    font-size: 1.5rem;
+}
+
 button {
     width: 28.125rem;
     height: 6rem;

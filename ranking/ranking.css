@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+/* PP Telegraf Regular */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('./FONTES/PPTelegraf-Regular.woff2') format ('woff2'),
+         url('./FONTES/PPTelegraf-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* PP Telegraf UltraBold */
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('./FONTES/PPTelegraf-UltraBold.woff2') format('woff2'),
+         url('./FONTES/PPTelegraf-UltraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Garet Book */
+@font-face {
+    font-family: 'Garet';
+    src: url('./FONTES/Garet-Book.woff2') format('woff2'),
+         url('./FONTES/Garet-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Garet Heavy */
+@font-face {
+    font-family: 'Garet';
+    src: url('./FONTES/Garet-Heavy.woff2') format('woff2'),
+         url('./FONTES/Garet-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root{
+    --barra-color: #5F0087;
+    --botton-color:#651563;
+    --box-name: rgba(217, 217, 217, 0.123);
+    --inst-name: #000000;
+    --color-text: #ffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('../img/fundo-site1.jpg');
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-left: -880px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ranking {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(128, 0, 128, 0.8);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.ranking thead {
+    color:  #5F0087;
+}
+
+.ranking table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.ranking th, .ranking td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.ranking th {
+    background-color: rgb(0, 0, 0);
+}
+
+.ranking button {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.ranking button:hover {
+    background-color: #444;
+}
