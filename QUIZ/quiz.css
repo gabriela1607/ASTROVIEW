@@ -206,6 +206,11 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     margin-left: 3.75rem;
-    margin-top: 9rem;
+    margin-top: 3rem;
 }
 
+.ranking {
+    margin-top: -189px;
+    margin-left: 426px;
+    margin-bottom: 2rem;
+}
