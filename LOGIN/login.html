@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="login.css">
     <title>Astroview</title>
     <link rel="icon" href="../img/img.logo.png" type="image/png">
-    <script src="cadastro.js.js"></script>
+    <script src="login.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,7 +28,7 @@
                 <div class="input-grupo">
 
                <div class="input-grupo1">
-                    <input type="email" placeholder="E-mail" required>
+                    <input type="email" id="email" placeholder="E-mail" required>
                </div>    
 
                <div class="input-grupo2">
@@ -39,6 +39,7 @@
                <button type="submit"> <a href="../CARROSSEL/index.html">Entrar</a> </button>
              
             </form>
+            <p class="error-message" id="errorMessage"></p>
             
             <div class="termos2">
                 <label>Você já tem login?</label>
