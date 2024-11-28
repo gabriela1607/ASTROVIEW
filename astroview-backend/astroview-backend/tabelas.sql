@@ -4,11 +4,11 @@ USE astroview;
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(50) NOT NULL UNIQUE,
+    nome VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(50) NOT NULL UNIQUE,
     sobrenome VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL
+    senha VARCHAR(10) NOT NULL
 );
-
 
 
 CREATE TABLE scores (
