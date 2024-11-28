@@ -19,3 +19,27 @@ CREATE TABLE scores (
 );
 
 SELECT * FROM users;
+
+
+
+CREATE DATABASE astroview;
+USE astroview;
+
+CREATE TABLE ranking (
+	posicao INT,
+    nome VARCHAR(255) not null,
+    pontuacao INT not null
+);
+
+SET @posicao = 0;
+
+UPDATE ranking
+JOIN (
+    SELECT nome, pontuacao, @posicao := @posicao + 1 AS posicao
+    FROM ranking
+    ORDER BY pontuacao DESC
+) AS ranking
+ON ranking.nome = ranking.nome
+SET ranking.posicao = ranking.posicao;
+
+SELECT * FROM ranking;
