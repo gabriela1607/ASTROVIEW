@@ -1,24 +1,56 @@
-document.getElementById('cadastro-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+import React, { useState } from 'react';
 
-    const nome = document.getElementById("registername").target[0].value;
-    const sobrenome = document.getElementById("registersobrenome").target[1].value;
-    const email = document.getElementById("registeremail").target[2].value;
-    const senha = document.getElementById("registerPassword").target[3].value;
+function App() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-    fetch('http://localhost:3000/api/cadastrar', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ nome,sobrenome, email, senha })
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert(data.message);
-        if (data.message === 'Usuário cadastrado com sucesso!') {
-            e.target.reset(); 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const response = await fetch('hhttp://localhost:8080/cadastro', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, password }),
+            });
+
+            const data = await response.json();
+            alert(data.message);
+        } catch (error) {
+            console.error('Erro:', error);
+            alert('Erro ao cadastrar o usuário.');
         }
-    })
-    .catch(error => console.error('Erro:', error));
-});
+    };
+
+    return (
+        <div>
+            <h1>Cadastro de Usuário</h1>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    placeholder="Nome"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
+                <input
+                    type="email"
+                    placeholder="E-mail"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                    type="password"
+                    placeholder="Senha"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    );
+}
+
+export default App;
