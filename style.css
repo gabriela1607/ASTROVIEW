@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: 1440px;
 }
 
 html{
@@ -312,12 +312,14 @@ nav.pags a:hover {
     flex-direction: column;
 } 
 
+
+
 #feedback, #img_principal{
     width: 96.5rem;
-    height: 30.6rem;
-    max-width: 100%;
-    margin-bottom: 2rem;
-    margin-right: 20rem;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 1rem 2rem 0;
+    box-sizing: border-box;
 }
 
 #feedback h2 {
@@ -338,7 +340,7 @@ hr {
     border: 0;
     margin: 2rem;
     
-    max-width: 100%;
+    max-width: auto;
     
 }
 
