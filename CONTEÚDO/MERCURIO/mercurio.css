@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
-}
-
 
 /* PP Telegraf Regular */
 @font-face {
@@ -59,7 +54,6 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-attachment: scroll;
     background-repeat: repeat-y, no-repeat;
     overflow-x: hidden;
     height: 90.19vh;
@@ -388,3 +382,4 @@ strong {
     font-family: 'Garet', sans-serif;
     font-weight: 600;
 }
+
