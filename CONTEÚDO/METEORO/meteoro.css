@@ -1,14 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1400px;
+    box-sizing: border-box;
 }
-
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
-}
-
 /* PP Telegraf Regular */
 @font-face {
     font-family: 'PP Telegraf';
@@ -56,18 +50,21 @@ html{
 body{
     background-image: url("../../img/fundo-site1.jpg");
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-attachment: scroll;
+    background-position: center; 
+    background-attachment: fixed; 
     background-repeat: repeat-y, no-repeat;
     overflow-x: hidden;
     height: 90.19vh;
     color: var(--color-text);   
     margin-bottom: 6rem; 
-
-    cursor: url('../../img/img.cursor.png'), auto;
+   
 }
 
+
+main {
+    max-width: 1440px;
+    margin-inline: auto;
+}
 
 
 header {
@@ -170,12 +167,12 @@ main {
 }
 
 .intro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
     max-width: 60%; /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
     font-weight: 300;
-    margin-left: -15rem;
+    margin-left: -20rem;
 }
 
 /* Curiosidades Section */
@@ -305,7 +302,8 @@ main {
 .paragpp .p2{
     margin-left: 38rem;
     width: 40rem;
-    margin-top: -25rem;
+    margin-top: -56.5rem;
+    margin-bottom: 28rem;
 }
 .paragpp .p2 p{
     width: 30rem;
@@ -368,7 +366,7 @@ main {
 }
 
 .vida-aula iframe, .mapa-mental img {
-    max-width: 80%; /* Ajuste de largura para a imagem */
+    max-width: 100%; /* Ajuste de largura para a imagem */
     margin: 0 auto;
     border-radius: 10px;
 }
