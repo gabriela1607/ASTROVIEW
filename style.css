@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 html{
@@ -65,12 +66,10 @@ body{
     height: 90.19vh;
     color: var(--color-text);   
     margin-bottom: 6rem; 
+   
 }
 
-main {
-    max-width: 1440px;
-    margin-inline: auto;
-}
+
 
 header {
     display: flex;
@@ -316,12 +315,14 @@ nav.pags a:hover {
 #feedback, #img_principal{
     width: 96.5rem;
     height: 30.6rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    margin-right: 20rem;
 }
 
 #feedback h2 {
     font-size: 3.225rem;
     margin-left: 3rem;
-    margin-top: 2rem;
     margin-bottom: -1rem;
 
     font-family: 'Telegraf', sans-serif;
@@ -336,6 +337,9 @@ hr {
     background-color: var(--barra-color);
     border: 0;
     margin: 2rem;
+    
+    max-width: 100%;
+    
 }
 
 #feedback p {
@@ -365,6 +369,7 @@ hr {
 #feedback div > p{
     padding-left: 0%;
     font-size: 1.875rem;
+
 }
 
 .contato-info p  {
