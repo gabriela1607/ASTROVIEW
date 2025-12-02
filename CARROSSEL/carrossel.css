@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
 html{
     scroll-behavior: smooth;
@@ -207,7 +208,7 @@ section {
     z-index: 99;
 }
 
-}
+
 
 .seta-direita {
     margin-left: 3%;
