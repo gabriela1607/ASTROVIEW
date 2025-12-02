@@ -1,13 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 1440px;
+   box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
-}
 
 /* PP Telegraf Regular */
 @font-face {
@@ -56,17 +52,17 @@ html{
 body{
     background-image: url("../../img/fundo-site1.jpg");
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-attachment: scroll;
+    background-position: center; 
+    background-attachment: fixed; 
     background-repeat: repeat-y, no-repeat;
     overflow-x: hidden;
     height: 90.19vh;
     color: var(--color-text);   
     margin-bottom: 6rem; 
-
-    cursor: url('../../img/img.cursor.png'), auto;
+   
 }
+
+
 
 main {
     max-width: 1440px;
@@ -178,6 +174,7 @@ main {
     max-width: 50%; /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
     font-weight: 200;
+    margin-left: -13rem;
 }
 
 /* Curiosidades Section */
