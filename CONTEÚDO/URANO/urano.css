@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 
@@ -63,11 +63,16 @@ body{
 }
 
 
+main {
+    max-width: 1440px;
+    margin-inline: auto;
+}
 
 main {
     max-width: 1440px;
     margin-inline: auto;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -169,22 +174,24 @@ main {
 
 .intro p {
     font-size: 1.5rem;
-    line-height: 2.5rem;
-    max-width: 60%; /* Ajuste de largura para o texto */
+    line-height: 2rem;
+    max-width: 70%; /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
     font-weight: 300;
     margin-right: -5rem;
-    margin-left: -2rem;
+    margin-left: -25rem;
 }
 
 /* Curiosidades Section */
 .curio h1 {
     margin-bottom: -0rem;
     font-size: 5rem;
+    
 }
 
 .curio {
     text-align: center;
+    margin-top: -5rem;
 }
 
 .curiopp {
@@ -233,11 +240,14 @@ main {
 }
 
 .carac .foto-carac {
-    width: 25rem; /* Diminuição da largura da imagem */
-    margin-top: 3rem;
-    margin-right: 45rem;
+    width: 22rem; /* Diminuição da largura da imagem */
+    margin-top: 6rem;
+    margin-right: 40rem;
     border-radius: 8px;
-    height: 23rem;
+    height: 22rem;
+
+    opacity: 85%;
+    
 }
 
 .carac1, .carac2 {
@@ -262,9 +272,9 @@ main {
     margin-left: 28rem;
 }
 
-.carac3 {
+.carac3 p {
     width: 90%;
-    margin-top: 10rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
     margin-left: -1rem;
     text-align: left;
@@ -305,72 +315,60 @@ main {
 .camadas h1 {
     margin-bottom: 25rem;
     text-align: center;
-    margin-left: 1.5rem;
+    margin-left: 12rem;
     font-size: 5rem;
-    margin-top: -2rem;
 }
 
 .foto-camada {
     max-width: 40%; /* Ajuste de largura para a imagem */
     margin-left: 15rem; /* Espaçamento entre a imagem e o texto */
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 .camadas .camadas-sol {
     max-width: 45%;
     text-align: left;
-    margin-left: -59rem;
+    margin-left: -65rem;
     font-size: 1.5rem;
-    margin-top: 5rem;
 }
-
 
 /* Sol Morrer Section */
 .sol-morrer {
-    text-align: center;
+    margin-top: -30rem;
 }
 
-.sol-morrer h1 {
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    font-size: 5rem;
-    margin-top: 5rem;
-}
-
-.sol-morrer .subtittle {
-    margin-bottom: 2rem;
-    font-weight: 600;
-    margin-left: 2rem;
-    font-size: 1.35rem;
-}
-
-.paragpp {
+.sol-morrer .paragpp {
     display: flex;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
 }
+.sol-morrer h1 {
+    margin-bottom: 5rem;
+    margin-top: 8rem;
+    margin-left: 1rem;
+    font-size: 4.5rem;
+}
+
 
 .sol-morrer .paragr1 {
     flex-direction: column;
-    text-align: left;
-    margin-left: 7rem;
-    margin-bottom: 8rem;
+    text-align: left;  
+    margin-left: 1rem;  
+    margin-right: 1rem;
+    max-width: 50%;
 }
 
 .sol-morrer .paragr2 {
     flex-direction: column;
     text-align: left;
-    margin-left: 7rem;
+    margin-right: -7rem;
+    max-width: 50%;
 }
-
-.sol-morrer .paragr1 p, .paragr2 p {
-    width: 90%;
+.paragr1 p, .paragr2 p {
     margin-bottom: 2rem;
-    margin-top: 1rem;
-
-
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+     /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 /* Material de Estudo Section */
@@ -387,18 +385,16 @@ main {
     font-size: 5rem;
 }
 
-.vida-aula, .mapa-mental {
+.mapa-mental {
     width: 80%;
-    margin-top: 2rem;
+    margin-top: -1rem;
     text-align: center;
     font-size: 1.5rem;
+    margin-left: 6rem;
 }
 
-.vida-aula h2, .mapa-mental h2 {
-    margin-bottom: 1rem;
-}
 
-.vida-aula iframe, .mapa-mental img {
+.mapa-mental img {
     max-width: 80%; /* Ajuste de largura para a imagem */
     margin: 0 auto;
     border-radius: 10px;
