@@ -169,7 +169,7 @@ main {
 }
 
 .intro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     max-width: 50%; /* Ajuste de largura para o texto */
     font-family: 'Garet', sans-serif;
@@ -386,3 +386,4 @@ strong {
     font-family: 'Garet', sans-serif;
     font-weight: 600;
 }
+
