@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
     <title>Astroview</title>
     <link rel="icon" href="../img/img.logo.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="cadastro.js" defer></script>
 </head>
+
 <body>
     <header>
-        <a href="../index.html"><img class="logo" src="../img/img.logo.png" alt="logo do site astroview" ></a>
+        <a href="../index.html"><img class="logo" src="../img/img.logo.png" alt="logo do site astroview"></a>
         <nav>
             <h1>ASTROVIEW</h1>
         </nav>
@@ -20,52 +23,57 @@
             <a href="#feedback">Contato</a>
         </nav>
     </header>
+
     <main>
-        <div class="form">
-            <h2>Cadastra-se</h2>
+        <div id="message-area">
+            <div class="form">
+                <h2>Cadastra-se</h2>
 
-            <form>
-                <div class="input-grupo">
+                <form>
+                    <div class="input-grupo">
 
-                <div class="input-grupo1">
-                    <input type="text" id="registername" placeholder="Nome" required>
-                </div>
+                        <div class="input-grupo1">
+                            <input type="text" id="registername" placeholder="Nome" required>
+                        </div>
 
-                <div class="input-grupo2">
-                    <input type="text" id="registersobrenome" placeholder="Sobrenome" required>
-                </div>
-                
-               <div class="input-grupo3">
-                    <input type="email" id="registeremail" placeholder="E-mail" required>
-               </div>    
+                        <div class="input-grupo2">
+                            <input type="text" id="registersobrenome" placeholder="Sobrenome" required>
+                        </div>
 
-               <div class="input-grupo4">
-                    <input type="password" id="registerPassword" placeholder="Senha" required>
-                </div>
-                    
-                <div class="input-grupo5">
-                   <input type="password" placeholder="Confirme a senha" required>
-                </div>
+                        <div class="input-grupo3">
+                            <input type="email" id="registeremail" placeholder="E-mail" required>
+                        </div>
+
+                        <div class="input-grupo4">
+                            <input type="password" id="registerPassword" placeholder="Senha" required>
+                        </div>
+
+                        <div class="input-grupo5">
+                            <input type="password" placeholder="Confirme a senha" required>
+                        </div>
 
 
-               <div class="termos">
-                    <input type="checkbox" required>
-                    <label>Ao clicar no botão, você estará concordando com a <a href="../CADASTRO/POLITICA-DE-PRIVACIDADE/privacidade.html">Política de Privacidade</a> e Termos e Condições.</label>
-               </div>
+                        <div class="termos">
+                            <input type="checkbox" required>
+                            <label>Ao clicar no botão, você estará concordando com a <a
+                                    href="../CADASTRO/POLITICA-DE-PRIVACIDADE/privacidade.html">Política de
+                                    Privacidade</a> e Termos e Condições.</label>
+                        </div>
+
+                    </div>
+                    <button type="submit"> <a href="../CARROSSEL/index.html">Cadastrar</a></button>
+                </form>
+            </div>
+            <div class="termos2">
+                <label>Você já tem cadastro?</label>
+
+                <a href="../LOGIN/login.html">Faça seu login</a>
 
             </div>
-             <button type="submit"> <a href="../CARROSSEL/index.html">Cadastrar</a></button>
-            </form>
+        </div>
 
-            <div class="termos2">
-             <label>Você já tem cadastro?</label>
-
-             <a href="../LOGIN/login.html">Faça seu login</a>
-
-             </div>
-           </div>
-
-        </div>  
+        </div>
     </main>
 </body>
+
 </html>
