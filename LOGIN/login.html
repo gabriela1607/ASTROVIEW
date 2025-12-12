@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
     <title>Astroview</title>
     <link rel="icon" href="../img/img.logo.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="login.js" defer></script>
 </head>
+
 <body>
     <header>
-        <a href="../index.html"><img class="logo" src="../img/img.logo.png" alt="logo do site astroview" ></a>
+        <a href="../index.html"><img class="logo" src="../img/img.logo.png" alt="logo do site astroview"></a>
         <nav>
             <h1>ASTROVIEW</h1>
         </nav>
@@ -23,30 +26,32 @@
     <main>
         <div class="form">
             <h2>Login</h2>
-
-            <form>
+            <div id="message-area">
                 <div class="input-grupo">
 
-               <div class="input-grupo1">
-                    <input type="email" id="email" placeholder="E-mail" required>
-               </div>    
+                    <div class="input-grupo1">
+                        <input type="email" id="email" placeholder="E-mail" required>
+                    </div>
 
-               <div class="input-grupo2">
-                    <input type="password" id="senha" placeholder="Senha" required>
+                    <div class="input-grupo2">
+                        <input type="password" id="senha" placeholder="Senha" required>
 
+                    </div>
+
+                    <button type="submit"> <a href="../CARROSSEL/index.html">Entrar</a> </button>
+
+                    </form>
+                </div>
+                <form>
+                    <p class="error-message" id="errorMessage"></p>
+
+                    <div class="termos2">
+                        <label>Você já tem login?</label>
+
+                        <a href="../CADASTRO/cadastro.html">Faça seu cadastro</a>
+                    </div>
             </div>
-              
-               <button type="submit"> <a href="../CARROSSEL/index.html">Entrar</a> </button>
-             
-            </form>
-            <p class="error-message" id="errorMessage"></p>
-            
-            <div class="termos2">
-                <label>Você já tem login?</label>
-
-                <a href="../CADASTRO/cadastro.html">Faça seu cadastro</a>
-           </div>
-        </div>  
     </main>
 </body>
+
 </html>
